@@ -36,6 +36,8 @@ Pod::Spec.new do |s|
       sources = ["Providers/#{provider}.{h,m}"]
       ss.dependency 'GRKAnalytics/Core'
       ss.source_files = sources
+      # We need to weakly link the stub classes
+      #see http://stackoverflow.com/a/32151697/397210
       if analytics_spec[:weak_classes]
         flags = '-Wl'
         analytics_spec[:weak_classes].each do |weak_class|
