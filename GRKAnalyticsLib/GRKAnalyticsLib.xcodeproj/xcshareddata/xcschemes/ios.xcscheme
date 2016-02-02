@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DBE6B5D91C59394C007A412D"
-               BuildableName = "libGRKAnalyticsLib.a"
-               BlueprintName = "GRKAnalyticsLib"
+               BuildableName = "libios.a"
+               BlueprintName = "ios"
                ReferencedContainer = "container:GRKAnalyticsLib.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DBE6B5D91C59394C007A412D"
-            BuildableName = "libGRKAnalyticsLib.a"
-            BlueprintName = "GRKAnalyticsLib"
+            BuildableName = "libios.a"
+            BlueprintName = "ios"
             ReferencedContainer = "container:GRKAnalyticsLib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DBE6B5D91C59394C007A412D"
-            BuildableName = "libGRKAnalyticsLib.a"
-            BlueprintName = "GRKAnalyticsLib"
+            BuildableName = "libios.a"
+            BlueprintName = "ios"
             ReferencedContainer = "container:GRKAnalyticsLib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

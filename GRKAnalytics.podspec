@@ -11,26 +11,18 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.0'
   s.osx.deployment_target = '10.9'
   s.frameworks = 'Foundation'
-
+  
   ### Supported Providers
-  fabric_ios = { :spec_name => "Fabric", :provider_class => "GRKFabricProvider" }
-  fabric_osx = { :spec_name => "Fabric", :provider_class => "GRKFabricProvider", :osx => true }
+  fabric = { :spec_name => 'Fabric', :provider_class => 'GRKFabricProvider', :weak_classes => ['Fabric', 'Crashlytics', 'Answers'] }
 
-  all_analytics = [fabric_ios, fabric_osx]
+  all_analytics = [fabric]
   ### 
   
-  s.subspec "CoreOSX" do |ss|
+  s.subspec "Core" do |ss|
     ss.source_files = ['*.{h,m}']
-    ss.platform = :osx
   end
 
-  s.subspec "CoreIOS" do |ss|
-    ss.source_files = ['*.{h,m}']
-    ss.platform = :ios
-  end
-
-  all_ios_names = []
-  all_osx_names = []
+  all_names = []
 
   # Dynamically make sub-specs for each provider
   all_analytics.each do |analytics_spec|
@@ -42,25 +34,22 @@ Pod::Spec.new do |s|
       # Each subspec adds a compiler flag saying that the spec was included
       ss.prefix_header_contents = "#define GRK_#{specname.upcase}_EXISTS 1"
       sources = ["Providers/#{provider}.{h,m}"]
-
-      if analytics_spec[:osx]
-        ss.osx.source_files = sources
-        ss.dependency 'GRKAnalytics/CoreOSX'
-        ss.platform = :osx
-        all_osx_names << specname
-      else
-        ss.ios.source_files = sources
-        ss.dependency 'GRKAnalytics/CoreIOS'
-        ss.platform = :ios
-        all_ios_names << specname
+      ss.dependency 'GRKAnalytics/Core'
+      ss.source_files = sources
+      if analytics_spec[:weak_classes]
+        flags = '-Wl'
+        analytics_spec[:weak_classes].each do |weak_class|
+          flags += ',-U,_OBJC_CLASS_$_' + weak_class
+        end
+        ss.pod_target_xcconfig = { 'OTHER_LDFLAGS' => "#{flags}" }
       end
+      all_names << specname
 
     end
   end
 
   # Generate a dynamic description
-  ios_spec_names = all_ios_names.length > 0 ? all_ios_names[0...-1].join(", ") + " and " + all_ios_names[-1] : ""
-  osx_spec_names = all_osx_names.length > 0 ? all_osx_names[0...-1].join(", ") + " and " + all_osx_names[-1] : ""
-  s.description  =  "GRKAnalytics is a lightweight abstraction allowing for the agnostic use of multiple and varying analytics providers. Supported iOS providers: #{ ios_spec_names }. Supported OS X providers: #{ osx_spec_names }."
+  spec_names = all_names.length > 0 ? all_names[0...-1].join(", ") + " and " + all_names[-1] : ""
+  s.description  =  "GRKAnalytics is a lightweight abstraction allowing for the agnostic use of multiple and varying analytics providers. Supported providers: #{ spec_names }."
 
 end

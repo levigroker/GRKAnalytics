@@ -56,12 +56,12 @@
 
 #endif
 
-@interface Fabric : NSObject
+__attribute__((weak_import)) @interface Fabric : NSObject
 + (instancetype)with:(NSArray *)kits;
 + (instancetype)sharedSDK;
 @end
 
-@interface Crashlytics : NSObject
+__attribute__((weak_import)) @interface Crashlytics : NSObject
 + (Crashlytics *)sharedInstance;
 - (void)setUserIdentifier:(NSString *)identifier;
 - (void)setUserName:(NSString *)name;
@@ -71,7 +71,7 @@
 @end
 
 NS_ASSUME_NONNULL_BEGIN
-@interface Answers : NSObject
+__attribute__((weak_import)) @interface Answers : NSObject
 
 + (void)logSignUpWithMethod:(nullable NSString *)signUpMethodOrNil
                     success:(nullable NSNumber *)signUpSucceededOrNil
