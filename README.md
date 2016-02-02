@@ -16,13 +16,9 @@ subspec, to your `Podfile`. Ex:
 
 or, if you are writing a module which wants to report analytics, but will be consumed by
 a larger system which will setup the analytics sytem, you can just directly include only
-the API for the platform of interest, with no providers:
+the API with no providers:
 
-	pod 'GRKAnalytics/CoreIOS'
-
-or
-
-	pod 'GRKAnalytics/CoreOSX'
+	pod 'GRKAnalytics/Core'
 
 If you are not using Cocoapods, simply add the top level *.m and *.h files, and the
 provider(s) you wish from the `Providers` directory to your project.
