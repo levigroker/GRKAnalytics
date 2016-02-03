@@ -89,7 +89,7 @@ NSString *const GRKAnalyticsEventKeyTimingLength = @"length";
 
 - (void)trackTimingEvent:(NSString *)event timeInterval:(NSTimeInterval)timeInterval properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
-    NSAssert(properties[GRKAnalyticsEventKeyTimingLength], @"Timing event '%@' contains custom property which conflicts with internal key '%@'", event, GRKAnalyticsEventKeyTimingLength);
+    NSAssert(!properties[GRKAnalyticsEventKeyTimingLength], @"Timing event '%@' contains custom property which conflicts with internal key '%@'", event, GRKAnalyticsEventKeyTimingLength);
     
     NSMutableDictionary *mutableProperties = [NSMutableDictionary dictionaryWithDictionary:properties];
     mutableProperties[GRKAnalyticsEventKeyTimingLength] = @(timeInterval);
