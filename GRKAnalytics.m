@@ -44,6 +44,7 @@
 {
     if ((self = [super init]))
     {
+        _providers = [NSMutableSet set];
         _enabled = YES;
     }
     
@@ -255,6 +256,10 @@
 {
     if (properties)
     {
+        if (!self.superProperties)
+        {
+            self.superProperties = [NSMutableDictionary dictionary];
+        }
         [self.superProperties addEntriesFromDictionary:properties];
     }
 }
