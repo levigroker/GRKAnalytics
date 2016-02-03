@@ -195,18 +195,6 @@ NS_ASSUME_NONNULL_END
     [Answers logContentViewWithName:name contentType:type contentId:identifier customAttributes:properties];
 }
 
-#pragma mark - Timing
-
-- (void)trackTimingEvent:(NSString *)event timeInterval:(NSTimeInterval)timeInterval properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
-{
-    NSAssert(properties[GRKAnalyticsEventKeyTimingLength], @"Timing event '%@' contains custom property which conflicts with internal key '%@'", event, GRKAnalyticsEventKeyTimingLength);
-    
-    NSMutableDictionary *mutableProperties = [NSMutableDictionary dictionaryWithDictionary:properties];
-    mutableProperties[GRKAnalyticsEventKeyTimingLength] = @(timeInterval);
-    
-    [self trackEvent:event properties:mutableProperties];
-}
-
 #pragma mark - Errors
 
 - (void)trackError:(NSError *)error properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
