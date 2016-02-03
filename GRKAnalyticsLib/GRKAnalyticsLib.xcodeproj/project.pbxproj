@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B2DCEB788556CD3C9E87EE6 /* libPods-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F41818999A5B78B387FFAD /* libPods-osx.a */; };
-		762C7D989FD92712F47846A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A3A40E62E7FCFAC37BC31 /* libPods.a */; };
-		CFBF3969902BB647CF882E38 /* libPods-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C4368D95AE63270FCF802A /* libPods-ios.a */; };
 		DBA9BBAF1C615869000316BF /* GRKAnalyticsLibOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA9BBAE1C615869000316BF /* GRKAnalyticsLibOSX.h */; };
 		DBA9BBB11C615869000316BF /* GRKAnalyticsLibOSX.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9BBB01C615869000316BF /* GRKAnalyticsLibOSX.m */; };
+		DBA9BBD11C61831C000316BF /* iOS_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9BBD01C61831C000316BF /* iOS_Tests.m */; };
+		DBA9BBD31C61831C000316BF /* libios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE6B5DA1C59394C007A412D /* libios.a */; };
 		DBE6B5DE1C59394C007A412D /* GRKAnalyticsLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DBE6B5DD1C59394C007A412D /* GRKAnalyticsLib.h */; };
 		DBE6B5E01C59394C007A412D /* GRKAnalyticsLib.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE6B5DF1C59394C007A412D /* GRKAnalyticsLib.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBA9BBD41C61831C000316BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBE6B5D21C59394C007A412D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBE6B5D91C59394C007A412D;
+			remoteInfo = ios;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		DBE6B5D81C59394C007A412D /* CopyFiles */ = {
@@ -33,16 +42,16 @@
 		02243DC6BC98F67F1FFC21B4 /* Pods-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios/Pods-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		5D993708E8BF083E39C25F87 /* Pods-osx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-osx/Pods-osx.debug.xcconfig"; sourceTree = "<group>"; };
 		65AAD5F415B16CEB967F5104 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
-		73C4368D95AE63270FCF802A /* libPods-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8432D94A96B9E96A731F77 /* Pods-osx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osx.release.xcconfig"; path = "Pods/Target Support Files/Pods-osx/Pods-osx.release.xcconfig"; sourceTree = "<group>"; };
 		DBA9BBAC1C615869000316BF /* libosx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libosx.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA9BBAE1C615869000316BF /* GRKAnalyticsLibOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRKAnalyticsLibOSX.h; sourceTree = "<group>"; };
 		DBA9BBB01C615869000316BF /* GRKAnalyticsLibOSX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRKAnalyticsLibOSX.m; sourceTree = "<group>"; };
+		DBA9BBCE1C61831C000316BF /* iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA9BBD01C61831C000316BF /* iOS_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Tests.m; sourceTree = "<group>"; };
+		DBA9BBD21C61831C000316BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBE6B5DA1C59394C007A412D /* libios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libios.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE6B5DD1C59394C007A412D /* GRKAnalyticsLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRKAnalyticsLib.h; sourceTree = "<group>"; };
 		DBE6B5DF1C59394C007A412D /* GRKAnalyticsLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRKAnalyticsLib.m; sourceTree = "<group>"; };
-		F1F41818999A5B78B387FFAD /* libPods-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA6A3A40E62E7FCFAC37BC31 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +59,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B2DCEB788556CD3C9E87EE6 /* libPods-osx.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA9BBCB1C61831C000316BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA9BBD31C61831C000316BF /* libios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				762C7D989FD92712F47846A0 /* libPods.a in Frameworks */,
-				CFBF3969902BB647CF882E38 /* libPods-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,9 +94,6 @@
 		8E5BF931B9E3DF37984EE2BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA6A3A40E62E7FCFAC37BC31 /* libPods.a */,
-				73C4368D95AE63270FCF802A /* libPods-ios.a */,
-				F1F41818999A5B78B387FFAD /* libPods-osx.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,11 +107,21 @@
 			path = GRKAnalyticsLibOSX;
 			sourceTree = "<group>";
 		};
+		DBA9BBCF1C61831C000316BF /* iOS Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9BBD01C61831C000316BF /* iOS_Tests.m */,
+				DBA9BBD21C61831C000316BF /* Info.plist */,
+			);
+			path = "iOS Tests";
+			sourceTree = "<group>";
+		};
 		DBE6B5D11C59394C007A412D = {
 			isa = PBXGroup;
 			children = (
 				DBE6B5DC1C59394C007A412D /* GRKAnalyticsLib */,
 				DBA9BBAD1C615869000316BF /* GRKAnalyticsLibOSX */,
+				DBA9BBCF1C61831C000316BF /* iOS Tests */,
 				DBE6B5DB1C59394C007A412D /* Products */,
 				808E9B39A02E57E02F4A8A59 /* Pods */,
 				8E5BF931B9E3DF37984EE2BB /* Frameworks */,
@@ -112,6 +133,7 @@
 			children = (
 				DBE6B5DA1C59394C007A412D /* libios.a */,
 				DBA9BBAC1C615869000316BF /* libosx.a */,
+				DBA9BBCE1C61831C000316BF /* iOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +180,24 @@
 			productReference = DBA9BBAC1C615869000316BF /* libosx.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		DBA9BBCD1C61831C000316BF /* iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA9BBD61C61831C000316BF /* Build configuration list for PBXNativeTarget "iOS Tests" */;
+			buildPhases = (
+				DBA9BBCA1C61831C000316BF /* Sources */,
+				DBA9BBCB1C61831C000316BF /* Frameworks */,
+				DBA9BBCC1C61831C000316BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBA9BBD51C61831C000316BF /* PBXTargetDependency */,
+			);
+			name = "iOS Tests";
+			productName = "iOS Tests";
+			productReference = DBA9BBCE1C61831C000316BF /* iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DBE6B5D91C59394C007A412D /* ios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBE6B5E31C59394C007A412D /* Build configuration list for PBXNativeTarget "ios" */;
@@ -189,6 +229,9 @@
 					DBA9BBAB1C615869000316BF = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					DBA9BBCD1C61831C000316BF = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					DBE6B5D91C59394C007A412D = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -208,9 +251,20 @@
 			targets = (
 				DBE6B5D91C59394C007A412D /* ios */,
 				DBA9BBAB1C615869000316BF /* osx */,
+				DBA9BBCD1C61831C000316BF /* iOS Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBA9BBCC1C61831C000316BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		1BF62A483543C4AE9B197040 /* Check Pods Manifest.lock */ = {
@@ -284,6 +338,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DBA9BBCA1C61831C000316BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA9BBD11C61831C000316BF /* iOS_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DBE6B5D61C59394C007A412D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,6 +355,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBA9BBD51C61831C000316BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBE6B5D91C59394C007A412D /* ios */;
+			targetProxy = DBA9BBD41C61831C000316BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DBA9BBB51C615E00000316BF /* Release */ = {
@@ -417,6 +487,36 @@
 			};
 			name = Debug;
 		};
+		DBA9BBD71C61831C000316BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "iOS Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.levigroker.iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DBA9BBD81C61831C000316BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.levigroker.iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -425,6 +525,15 @@
 			buildConfigurations = (
 				DBA9BBB71C615E00000316BF /* Release */,
 				DBA9BBBA1C615E40000316BF /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA9BBD61C61831C000316BF /* Build configuration list for PBXNativeTarget "iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA9BBD71C61831C000316BF /* Release */,
+				DBA9BBD81C61831C000316BF /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
