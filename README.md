@@ -20,7 +20,7 @@ the API with no providers:
 
 	pod 'GRKAnalytics/Core'
 
-If you are not using Cocoapods, simply add the top level *.m and *.h files, and the
+If you are not using CocoaPods, simply add the top level *.m and *.h files, and the
 provider(s) you wish from the `Providers` directory to your project.
 
 NOTE: You will be responsible for adding the dependent provider library/libraries
