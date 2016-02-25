@@ -1,0 +1,19 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '7.0'
+pod 'GRKAnalytics', :path => '..', :subspecs => ['Fabric']
+
+# def import_pods
+# 	pod 'GRKAnalytics', :path => '..', :subspecs => ['Fabric']
+# end
+# 
+# target :GRKAnalyticsLib do
+#     platform :ios, '7.0'
+#     import_pods
+# end
+# 
+# target :GRKAnalyticsLibOSX do
+#     platform :osx, '10.9'
+#     import_pods
+# end
+# 

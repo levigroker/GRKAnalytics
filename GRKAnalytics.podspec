@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
         analytics_spec[:weak_classes].each do |weak_class|
           flags += ',-U,_OBJC_CLASS_$_' + weak_class
         end
-        ss.pod_target_xcconfig = { 'OTHER_LDFLAGS' => "#{flags}" }
+        ss.pod_target_xcconfig = { 'OTHER_LDFLAGS' => "$(inherited) #{flags}" }
       end
       all_names << specname
 

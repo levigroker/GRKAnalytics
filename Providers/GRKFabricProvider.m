@@ -56,6 +56,8 @@
 
 #endif
 
+//Weak link to these mock classes so we can compile without the real thing, but the linker will prefer the real thing when available.
+//See http://stackoverflow.com/a/32151697/397210
 __attribute__((weak_import)) @interface Fabric : NSObject
 + (instancetype)with:(NSArray *)kits;
 + (instancetype)sharedSDK;

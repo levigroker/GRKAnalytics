@@ -1,0 +1,16 @@
+PODS:
+  - GRKAnalytics/Core (1.0)
+  - GRKAnalytics/Fabric (1.0):
+    - GRKAnalytics/Core
+
+DEPENDENCIES:
+  - GRKAnalytics/Fabric (from `..`)
+
+EXTERNAL SOURCES:
+  GRKAnalytics:
+    :path: ..
+
+SPEC CHECKSUMS:
+  GRKAnalytics: 7b5f52d1c11410d5ee32a99b6bbd65fda5ea8ebf
+
+COCOAPODS: 0.39.0
