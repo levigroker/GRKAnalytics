@@ -25,6 +25,21 @@ extern NSString *const GRKAnalyticsEventKeyTimingLength;
 
 @interface GRKAnalyticsProvider : NSObject
 
+#pragma mark - Meta
+
+/**
+ * Set the state of this provider's tracking.
+ * While the `GRKAnalitics` implementation will adhere to its `enabled` setting by not delivering
+events to the providers if disabled, this method allows the provider to take additional steps as needed to conform to the enabled/disabled state.
+ * @param enabled If `YES`, the tracker should consider itself able to track and report analytics. If `NO` the tracker should immediately prevent all recording and reporting of every kind of event.
+ */
+- (void)setEnabled:(BOOL)enabled;
+
+/**
+ * @returns the enabled state of this tracker.
+ */
+- (BOOL)enabled;
+
 #pragma mark - User
 
 #pragma mark User Identity

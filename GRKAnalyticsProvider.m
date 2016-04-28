@@ -20,6 +20,12 @@
 
 NSString *const GRKAnalyticsEventKeyTimingLength = @"length";
 
+@interface GRKAnalyticsProvider ()
+
+@property (nonatomic,assign) BOOL enabled;
+
+@end
+
 @implementation GRKAnalyticsProvider
 
 #pragma mark - User

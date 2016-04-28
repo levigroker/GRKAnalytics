@@ -194,6 +194,16 @@
 
 ///////////////////////////////////////////////////////
 
+#pragma mark - Accessors
+
+- (void)setEnabled:(BOOL)enabled
+{
+    _enabled = enabled;
+    for (GRKAnalyticsProvider *provider in self.providers) {
+        provider.enabled = enabled;
+    }
+}
+
 #pragma mark - Implementation
 
 #pragma mark - Providers
