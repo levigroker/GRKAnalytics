@@ -8,5 +8,5 @@ install:
 - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 - cd GRKAnalyticsTestApp; pod install; cd ..
 script:
-- set -o pipefail && xcodebuild test -workspace GRKAnalyticsTestApp/GRKAnalyticsTestApp.xcworkspace -scheme ios -destination "platform=iOS Simulator,OS=9.2,name=iPhone 6" ONLY_ACTIVE_ARCH=NO | xcpretty -c
+- set -o pipefail && xcodebuild test -workspace GRKAnalyticsTestApp/GRKAnalyticsTestApp.xcworkspace -scheme GRKAnalyticsTestApp -destination "platform=iOS Simulator,OS=9.2,name=iPhone 6" ONLY_ACTIVE_ARCH=NO | xcpretty -c
 - pod lib lint --quick
