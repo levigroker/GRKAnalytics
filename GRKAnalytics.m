@@ -100,12 +100,14 @@
 
 + (void)trackEvent:(NSString *)event
 {
-    [self trackEvent:event customProperties:nil];
+    [self trackEvent:event category:nil properties:nil];
 }
 
-+ (void)trackEvent:(NSString *)event customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties
++ (void)trackEvent:(NSString *)event
+          category:(nullable NSString *)category
+        properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
-    [[self sharedInstance] trackEvent:event customProperties:customProperties];
+    [[self sharedInstance] trackEvent:event category:category properties:properties];
 }
 
 #pragma mark Event Properties
@@ -132,35 +134,36 @@
 
 + (void)trackUserAccountCreatedMethod:(nullable NSString *)method
                               success:(nullable NSNumber *)success
-                     customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties
+                           properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
-    [[self sharedInstance] trackUserAccountCreatedMethod:method success:success customProperties:customProperties];
+    [[self sharedInstance] trackUserAccountCreatedMethod:method success:success properties:properties];
 }
 
 + (void)trackLoginWithMethod:(nullable NSString *)method
                      success:(nullable NSNumber *)success
-            customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties
+                  properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
-    [[self sharedInstance] trackLoginWithMethod:method success:success customProperties:customProperties];
+    [[self sharedInstance] trackLoginWithMethod:method success:success properties:properties];
 }
 
-+ (void)trackPurchaseWithPrice:(nullable NSDecimalNumber *)price
-                      currency:(nullable NSString *)currency
-                       success:(nullable NSNumber *)success
-                      itemName:(nullable NSString *)itemName
-                      itemType:(nullable NSString *)itemType
-                        itemID:(nullable NSString *)identifier
-              customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties
++ (void)trackPurchaseInCategory:(nullable NSString *)category
+                          price:(nullable NSDecimalNumber *)price
+                       currency:(nullable NSString *)currency
+                        success:(nullable NSNumber *)success
+                       itemName:(nullable NSString *)itemName
+                       itemType:(nullable NSString *)itemType
+                         itemID:(nullable NSString *)identifier
+                     properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
-    [[self sharedInstance] trackPurchaseWithPrice:price currency:currency success:success itemName:itemName itemType:itemType itemID:identifier customProperties:customProperties];
+    [[self sharedInstance] trackPurchaseInCategory:category price:price currency:currency success:success itemName:itemName itemType:itemType itemID:identifier properties:properties];
 }
 
 + (void)trackContentViewWithName:(nullable NSString *)name
                      contentType:(nullable NSString *)type
                        contentID:(nullable NSString *)identifier
-                customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties
+                      properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
-    [[self sharedInstance] trackContentViewWithName:name contentType:type contentID:identifier customProperties:customProperties];
+    [[self sharedInstance] trackContentViewWithName:name contentType:type contentID:identifier properties:properties];
 }
 
 #pragma mark - Timing
@@ -172,24 +175,27 @@
 
 + (void)trackTimeEnd:(NSString *)event
 {
-    [self trackTimeEnd:event customProperties:nil];
+    [self trackTimeEnd:event category:nil properties:nil];
 }
 
-+ (void)trackTimeEnd:(NSString *)event customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties
++ (void)trackTimeEnd:(NSString *)event
+            category:(nullable NSString *)category
+          properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
-    [[self sharedInstance] trackTimeEnd:event customProperties:customProperties];
+    [[self sharedInstance] trackTimeEnd:event category:category properties:properties];
 }
 
 #pragma mark - Errors
 
 + (void)trackError:(NSError *)error
 {
-    [self trackError:error customProperties:nil];
+    [self trackError:error properties:nil];
 }
 
-+ (void)trackError:(NSError *)error customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties
++ (void)trackError:(NSError *)error
+        properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
-    [[self sharedInstance] trackError:error customProperties:customProperties];
+    [[self sharedInstance] trackError:error properties:properties];
 }
 
 ///////////////////////////////////////////////////////
@@ -249,13 +255,15 @@
 
 #pragma mark - Events
 
-- (void)trackEvent:(NSString *)event customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties
+- (void)trackEvent:(NSString *)event
+          category:(nullable NSString *)category
+        properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
     if (event)
     {
-        NSDictionary *properties = [self allPropertiesWithProperties:customProperties];
+        NSDictionary *allProperties = [self allPropertiesWithProperties:properties];
         [self doForEachProvider:^(GRKAnalyticsProvider *provider) {
-            [provider trackEvent:event properties:properties];
+            [provider trackEvent:event category:category properties:allProperties];
         }];
     }
 }
@@ -286,46 +294,47 @@
 
 - (void)trackUserAccountCreatedMethod:(nullable NSString *)method
                               success:(nullable NSNumber *)success
-                     customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties
+                           properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
-    NSDictionary *properties = [self allPropertiesWithProperties:customProperties];
+    NSDictionary *allProperties = [self allPropertiesWithProperties:properties];
     [self doForEachProvider:^(GRKAnalyticsProvider *provider) {
-        [provider trackUserAccountCreatedMethod:method success:success properties:properties];
+        [provider trackUserAccountCreatedMethod:method success:success properties:allProperties];
     }];
 }
 
 - (void)trackLoginWithMethod:(nullable NSString *)method
                      success:(nullable NSNumber *)success
-            customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties
+                  properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 {
-    NSDictionary *properties = [self allPropertiesWithProperties:customProperties];
+    NSDictionary *allProperties = [self allPropertiesWithProperties:properties];
     [self doForEachProvider:^(GRKAnalyticsProvider *provider) {
-        [provider trackLoginWithMethod:method success:success properties:properties];
+        [provider trackLoginWithMethod:method success:success properties:allProperties];
     }];
 }
 
-- (void)trackPurchaseWithPrice:(nullable NSDecimalNumber *)price
-                      currency:(nullable NSString *)currency
-                       success:(nullable NSNumber *)success
-                      itemName:(nullable NSString *)itemName
-                      itemType:(nullable NSString *)itemType
-                        itemID:(nullable NSString *)identifier
-              customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties
+- (void)trackPurchaseInCategory:(nullable NSString *)category
+                          price:(nullable NSDecimalNumber *)price
+                       currency:(nullable NSString *)currency
+                        success:(nullable NSNumber *)success
+                       itemName:(nullable NSString *)itemName
+                       itemType:(nullable NSString *)itemType
+                         itemID:(nullable NSString *)identifier
+                     properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
-    NSDictionary *properties = [self allPropertiesWithProperties:customProperties];
+    NSDictionary *allProperties = [self allPropertiesWithProperties:properties];
     [self doForEachProvider:^(GRKAnalyticsProvider *provider) {
-        [provider trackPurchaseWithPrice:price currency:currency success:success itemName:itemName itemType:itemType itemID:identifier properties:properties];
+        [provider trackPurchaseInCategory:category price:price currency:currency success:success itemName:itemName itemType:itemType itemID:identifier properties:allProperties];
     }];
 }
 
 - (void)trackContentViewWithName:(nullable NSString *)name
                      contentType:(nullable NSString *)type
                        contentID:(nullable NSString *)identifier
-                customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties
+                      properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
-    NSDictionary *properties = [self allPropertiesWithProperties:customProperties];
+    NSDictionary *allProperties = [self allPropertiesWithProperties:properties];
     [self doForEachProvider:^(GRKAnalyticsProvider *provider) {
-        [provider trackContentViewWithName:name contentType:type contentID:identifier properties:properties];
+        [provider trackContentViewWithName:name contentType:type contentID:identifier properties:allProperties];
     }];
 }
 
@@ -343,7 +352,9 @@
     }
 }
 
-- (void)trackTimeEnd:(NSString *)event customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties
+- (void)trackTimeEnd:(NSString *)event
+            category:(nullable NSString *)category
+          properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
     NSDate *startDate = self.eventsDictionary[event];
     NSAssert(startDate, @"End timing event '%@' called without a corrosponding start timing event", event);
@@ -353,22 +364,23 @@
         NSTimeInterval eventInterval = [[NSDate date] timeIntervalSinceDate:startDate];
         [self.eventsDictionary removeObjectForKey:event];
         
-        NSDictionary *properties = [self allPropertiesWithProperties:customProperties];
+        NSDictionary *allProperties = [self allPropertiesWithProperties:properties];
         [self doForEachProvider:^(GRKAnalyticsProvider *provider) {
-            [provider trackTimingEvent:event timeInterval:eventInterval properties:properties];
+            [provider trackTimingEvent:event category:category timeInterval:eventInterval properties:allProperties];
         }];
     }
 }
 
 #pragma mark - Errors
 
-- (void)trackError:(NSError *)error customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties
+- (void)trackError:(NSError *)error
+        properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
     if (error)
     {
-        NSDictionary *properties = [self allPropertiesWithProperties:customProperties];
+        NSDictionary *allProperties = [self allPropertiesWithProperties:properties];
         [self doForEachProvider:^(GRKAnalyticsProvider *provider) {
-            [provider trackError:error properties:properties];
+            [provider trackError:error properties:allProperties];
         }];
     }
 }

@@ -104,6 +104,8 @@ NS_ASSUME_NONNULL_END
 
 #endif //GRK_FABRIC_EXISTS
 
+static NSString * const kGRKFabricProviderPropertyKeyCategory = @"Category";
+
 @implementation GRKFabricProvider
 
 - (instancetype)init
@@ -153,11 +155,21 @@ NS_ASSUME_NONNULL_END
 
 #pragma mark - Events
 
-- (void)trackEvent:(NSString *)event properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
+- (void)trackEvent:(NSString *)event
+          category:(nullable NSString *)category
+        properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
     if (event.length > 0)
     {
         properties = properties ?: @{};
+        
+        if (category.length > 0)
+        {
+            GRK_GENERIC_NSMUTABLEDICTIONARY(NSString *, id) *mutableProperties = [properties mutableCopy];
+            mutableProperties[kGRKFabricProviderPropertyKeyCategory] = category;
+            properties = mutableProperties;
+        }
+        
         [Answers logCustomEventWithName:event customAttributes:properties];
     }
 }
@@ -178,14 +190,24 @@ NS_ASSUME_NONNULL_END
     [Answers logLoginWithMethod:method success:success customAttributes:properties];
 }
 
-- (void)trackPurchaseWithPrice:(nullable NSDecimalNumber *)price
-                      currency:(nullable NSString *)currency
-                       success:(nullable NSNumber *)success
-                      itemName:(nullable NSString *)itemName
-                      itemType:(nullable NSString *)itemType
-                        itemID:(nullable NSString *)identifier
-                    properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
+- (void)trackPurchaseInCategory:(nullable NSString *)category
+                          price:(nullable NSDecimalNumber *)price
+                       currency:(nullable NSString *)currency
+                        success:(nullable NSNumber *)success
+                       itemName:(nullable NSString *)itemName
+                       itemType:(nullable NSString *)itemType
+                         itemID:(nullable NSString *)identifier
+                     properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 {
+    properties = properties ?: @{};
+    
+    if (category.length > 0)
+    {
+        GRK_GENERIC_NSMUTABLEDICTIONARY(NSString *, id) *mutableProperties = [properties mutableCopy];
+        mutableProperties[kGRKFabricProviderPropertyKeyCategory] = category;
+        properties = mutableProperties;
+    }
+    
     [Answers logPurchaseWithPrice:price currency:currency success:success itemName:itemName itemType:itemType itemId:identifier customAttributes:properties];
 }
 

@@ -51,7 +51,9 @@ NSString *const GRKAnalyticsEventKeyTimingLength = @"length";
 
 #pragma mark - Events
 
-- (void)trackEvent:(NSString *)event properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
+- (void)trackEvent:(NSString *)event
+          category:(nullable NSString *)category
+        properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
     //Not implemented at this level
 }
@@ -72,13 +74,14 @@ NSString *const GRKAnalyticsEventKeyTimingLength = @"length";
     //Not implemented at this level
 }
 
-- (void)trackPurchaseWithPrice:(nullable NSDecimalNumber *)price
-                      currency:(nullable NSString *)currency
-                       success:(nullable NSNumber *)success
-                      itemName:(nullable NSString *)itemName
-                      itemType:(nullable NSString *)itemType
-                        itemID:(nullable NSString *)identifier
-                    properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
+- (void)trackPurchaseInCategory:(nullable NSString *)category
+                          price:(nullable NSDecimalNumber *)price
+                       currency:(nullable NSString *)currency
+                        success:(nullable NSNumber *)success
+                       itemName:(nullable NSString *)itemName
+                       itemType:(nullable NSString *)itemType
+                         itemID:(nullable NSString *)identifier
+                     properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
     //Not implemented at this level
 }
@@ -93,14 +96,17 @@ NSString *const GRKAnalyticsEventKeyTimingLength = @"length";
 
 #pragma mark - Timing
 
-- (void)trackTimingEvent:(NSString *)event timeInterval:(NSTimeInterval)timeInterval properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
+- (void)trackTimingEvent:(NSString *)event
+                category:(nullable NSString *)category
+            timeInterval:(NSTimeInterval)timeInterval
+              properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
     NSAssert(!properties[GRKAnalyticsEventKeyTimingLength], @"Timing event '%@' contains custom property which conflicts with internal key '%@'", event, GRKAnalyticsEventKeyTimingLength);
     
     NSMutableDictionary *mutableProperties = [NSMutableDictionary dictionaryWithDictionary:properties];
     mutableProperties[GRKAnalyticsEventKeyTimingLength] = @(timeInterval);
     
-    [self trackEvent:event properties:mutableProperties];
+    [self trackEvent:event category:category properties:mutableProperties];
 }
 
 #pragma mark - Errors

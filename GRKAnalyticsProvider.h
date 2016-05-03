@@ -68,9 +68,12 @@ events to the providers if disabled, this method allows the provider to take add
  * Track the given event, with custom properties.
  *
  * @param event      The unique event name to track.
+ * @param category   The category of the event.
  * @param properties A dictionary of all additional properties to associate with this event.
  */
-- (void)trackEvent:(NSString *)event properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
+- (void)trackEvent:(NSString *)event
+          category:(nullable NSString *)category
+        properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 
 #pragma mark Event Specific Cases
 
@@ -99,6 +102,7 @@ events to the providers if disabled, this method allows the provider to take add
 /**
  * Track a purchse.
  *
+ * @param category   The category of the event.
  * @param price      The purchased item's price.
  * @param currency   The ISO4217 currency code. Example: USD
  * @param success    Successful purchse?
@@ -107,13 +111,14 @@ events to the providers if disabled, this method allows the provider to take add
  * @param itemId     The machine-readable, unique item identifier Example: SKU
  * @param properties A dictionary of all additional properties to associate with this event.
  */
-- (void)trackPurchaseWithPrice:(nullable NSDecimalNumber *)price
-                      currency:(nullable NSString *)currency
-                       success:(nullable NSNumber *)success
-                      itemName:(nullable NSString *)itemName
-                      itemType:(nullable NSString *)itemType
-                        itemID:(nullable NSString *)identifier
-                    properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
+- (void)trackPurchaseInCategory:(nullable NSString *)category
+                          price:(nullable NSDecimalNumber *)price
+                       currency:(nullable NSString *)currency
+                        success:(nullable NSNumber *)success
+                       itemName:(nullable NSString *)itemName
+                       itemType:(nullable NSString *)itemType
+                         itemID:(nullable NSString *)identifier
+                     properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 
 /**
  * Track a content view.
@@ -134,10 +139,14 @@ events to the providers if disabled, this method allows the provider to take add
  * Track a timing event.
  *
  * @param event        The name of the event.
+ * @param category     The category of the event.
  * @param timeInterval The amount of time elapsed.
  * @param properties   A dictionary of all additional properties to associate with this event.
  */
-- (void)trackTimingEvent:(NSString *)event timeInterval:(NSTimeInterval)timeInterval properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
+- (void)trackTimingEvent:(NSString *)event
+                category:(nullable NSString *)category
+            timeInterval:(NSTimeInterval)timeInterval
+              properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 
 #pragma mark - Errors
 
@@ -147,7 +156,8 @@ events to the providers if disabled, this method allows the provider to take add
  * @param error The error to track.
  * @param properties A dictionary of all additional properties to associate with this event.
  */
-- (void)trackError:(NSError *)error properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
+- (void)trackError:(NSError *)error
+        properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 
 @end
 

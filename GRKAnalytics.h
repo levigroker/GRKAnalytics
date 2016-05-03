@@ -80,10 +80,13 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Track the given event, with custom properties.
  *
- * @param event            The unique event name to track.
- * @param customProperties A dictionary of custom properties to associate with this event.
+ * @param event      The unique event name to track.
+ * @param category   The category of the event.
+ * @param properties A dictionary of all additional properties to associate with this event.
  */
-+ (void)trackEvent:(NSString *)event customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties;
++ (void)trackEvent:(NSString *)event
+          category:(nullable NSString *)category
+        properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 
 #pragma mark Event Properties
 
@@ -114,56 +117,58 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Track user account creation.
  *
- * @param method           The method by which a user logged in, e.g. Twitter or Digits.
- * @param success          Successful account creation?
- * @param customProperties A dictionary of custom properties to associate with this event.
+ * @param method     The method by which a user logged in, e.g. Twitter or Digits.
+ * @param success    Successful account creation?
+ * @param properties A dictionary of all additional properties to associate with this event.
  */
 + (void)trackUserAccountCreatedMethod:(nullable NSString *)method
-                    success:(nullable NSNumber *)success
-           customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties;
+                              success:(nullable NSNumber *)success
+                           properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 
 /**
  * Track a user login.
  *
- * @param method           The method by which a user logged in, e.g. email, Twitter, Facebook, etc.
- * @param success          Successful login?
- * @param customProperties A dictionary of custom properties to associate with this login.
+ * @param method     The method by which a user logged in, e.g. email, Twitter, Facebook, etc.
+ * @param success    Successful login?
+ * @param properties A dictionary of all additional properties to associate with this event.
  */
 + (void)trackLoginWithMethod:(nullable NSString *)method
-                   success:(nullable NSNumber *)success
-          customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties;
+                     success:(nullable NSNumber *)success
+                  properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 
 /**
  * Track a purchse.
  *
- * @param price            The purchased item's price.
- * @param currency         The ISO4217 currency code. Example: USD
- * @param success          Successful purchse?
- * @param itemName         The human-readable form of the item's name.
- * @param itemType         The type, or genre of the item. Example: Song
- * @param itemId           The machine-readable, unique item identifier Example: SKU
- * @param customProperties A dictionary of custom properties to associate with this purchase.
+ * @param category   The category of the event.
+ * @param price      The purchased item's price.
+ * @param currency   The ISO4217 currency code. Example: USD
+ * @param success    Successful purchse?
+ * @param itemName   The human-readable form of the item's name.
+ * @param itemType   The type, or genre of the item. Example: Song
+ * @param itemId     The machine-readable, unique item identifier Example: SKU
+ * @param properties A dictionary of all additional properties to associate with this event.
  */
-+ (void)trackPurchaseWithPrice:(nullable NSDecimalNumber *)price
-                      currency:(nullable NSString *)currency
-                       success:(nullable NSNumber *)success
-                      itemName:(nullable NSString *)itemName
-                      itemType:(nullable NSString *)itemType
-                        itemID:(nullable NSString *)identifier
-              customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties;
++ (void)trackPurchaseInCategory:(nullable NSString *)category
+                          price:(nullable NSDecimalNumber *)price
+                       currency:(nullable NSString *)currency
+                        success:(nullable NSNumber *)success
+                       itemName:(nullable NSString *)itemName
+                       itemType:(nullable NSString *)itemType
+                         itemID:(nullable NSString *)identifier
+                     properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 
 /**
  * Track a content view.
  *
- * @param name             The human-readable name for this piece of content.
- * @param type             The type of content viewed.
- * @param identifier       The unique identifier for this piece of content.
- * @param customProperties A dictionary of custom properties to associate with this content view.
+ * @param name       The human-readable name for this piece of content.
+ * @param type       The type of content viewed.
+ * @param identifier The unique identifier for this piece of content.
+ * @param properties A dictionary of all additional properties to associate with this event.
  */
 + (void)trackContentViewWithName:(nullable NSString *)name
-                   contentType:(nullable NSString *)type
-                     contentID:(nullable NSString *)identifier
-              customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties;
+                     contentType:(nullable NSString *)type
+                       contentID:(nullable NSString *)identifier
+                      properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 
 #pragma mark - Timing
 
@@ -185,11 +190,14 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Finish tracking time elapsed for the given event.
  *
- * @param event            The unique event name.
- * @param customProperties A dictionary of custom properties to associate with this event.
+ * @param event        The name of the event.
+ * @param category     The category of the event.
+ * @param properties   A dictionary of all additional properties to associate with this event.
  * @warning customProperties must not contain the key `length`.
  */
-+ (void)trackTimeEnd:(NSString *)event customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties;
++ (void)trackTimeEnd:(NSString *)event
+            category:(nullable NSString *)category
+          properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 
 #pragma mark - Errors
 
@@ -204,9 +212,10 @@ NS_ASSUME_NONNULL_BEGIN
  * Track a given error.
  *
  * @param error The error to track.
- * @param customProperties A dictionary of custom properties to associate with this error.
+ * @param properties A dictionary of all additional properties to associate with this event.
  */
-+ (void)trackError:(NSError *)error customProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)customProperties;
++ (void)trackError:(NSError *)error
+        properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 
 @end
 
