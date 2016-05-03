@@ -2,15 +2,18 @@ PODS:
   - GRKAnalytics/Core (1.0)
   - GRKAnalytics/Fabric (1.0):
     - GRKAnalytics/Core
+  - GRKAnalytics/GoogleAnalytics (1.0):
+    - GRKAnalytics/Core
 
 DEPENDENCIES:
   - GRKAnalytics/Fabric (from `..`)
+  - GRKAnalytics/GoogleAnalytics (from `..`)
 
 EXTERNAL SOURCES:
   GRKAnalytics:
     :path: ..
 
 SPEC CHECKSUMS:
-  GRKAnalytics: 7b5f52d1c11410d5ee32a99b6bbd65fda5ea8ebf
+  GRKAnalytics: 3cdba989250a7e1e0373ff9d6b03cbcc09e872fe
 
 COCOAPODS: 0.39.0

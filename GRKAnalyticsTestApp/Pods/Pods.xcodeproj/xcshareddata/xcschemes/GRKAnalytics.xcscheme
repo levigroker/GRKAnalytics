@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '424EFBC24DFAE09E9207F592'
+               BlueprintIdentifier = '22431E12878496994DF4B121'
                BlueprintName = 'GRKAnalytics'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libGRKAnalytics.a'>

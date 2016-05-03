@@ -17,7 +17,7 @@
     "osx": "10.9"
   },
   "frameworks": "Foundation",
-  "description": "GRKAnalytics is a lightweight abstraction allowing for the agnostic use of multiple and varying analytics providers. Supported providers:  and Fabric.",
+  "description": "GRKAnalytics is a lightweight abstraction allowing for the agnostic use of multiple and varying analytics providers. Supported providers: Fabric and GoogleAnalytics.",
   "subspecs": [
     {
       "name": "Core",
@@ -35,7 +35,25 @@
       },
       "source_files": [
         "Providers/GRKFabricProvider.{h,m}"
-      ]
+      ],
+      "pod_target_xcconfig": {
+        "OTHER_LDFLAGS": "$(inherited) -Wl,-U,_OBJC_CLASS_$_Fabric,-U,_OBJC_CLASS_$_Crashlytics,-U,_OBJC_CLASS_$_Answers"
+      }
+    },
+    {
+      "name": "GoogleAnalytics",
+      "prefix_header_contents": "#define GRK_GOOGLEANALYTICS_EXISTS 1",
+      "dependencies": {
+        "GRKAnalytics/Core": [
+
+        ]
+      },
+      "source_files": [
+        "Providers/GRKGoogleAnalyticsProvider.{h,m}"
+      ],
+      "pod_target_xcconfig": {
+        "OTHER_LDFLAGS": "$(inherited) -Wl,-U,_OBJC_CLASS_$_Fabric,-U,_OBJC_CLASS_$_Crashlytics,-U,_OBJC_CLASS_$_Answers"
+      }
     }
   ]
 }
