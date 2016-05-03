@@ -14,8 +14,9 @@ Pod::Spec.new do |s|
   
   ### Supported Providers
   fabric = { :spec_name => 'Fabric', :provider_class => 'GRKFabricProvider', :weak_classes => ['Fabric', 'Crashlytics', 'Answers'] }
+  googleanalytics = { :spec_name => 'GoogleAnalytics', :provider_class => 'GRKGoogleAnalyticsProvider', :weak_classes => ['Fabric', 'Crashlytics', 'Answers'] }
 
-  all_analytics = [fabric]
+  all_analytics = [fabric, googleanalytics]
   ### 
   
   s.subspec "Core" do |ss|
