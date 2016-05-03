@@ -18,91 +18,9 @@
 
 #import "GRKFabricProvider.h"
 
-#ifdef GRK_FABRIC_EXISTS
-
-#ifndef FABRIC_GENERIC
-#define FABRIC_GENERIC
-
-#if !__has_feature(nullability)
-#define nonnull
-#define nullable
-#define _Nullable
-#define _Nonnull
-#endif
-
-#ifndef NS_ASSUME_NONNULL_BEGIN
-#define NS_ASSUME_NONNULL_BEGIN
-#endif
-
-#ifndef NS_ASSUME_NONNULL_END
-#define NS_ASSUME_NONNULL_END
-#endif
-
-#if __has_feature(objc_generics)
-#define CLS_GENERIC_NSARRAY(type) NSArray<type>
-#define CLS_GENERIC_NSDICTIONARY(key_type,object_key) NSDictionary<key_type, object_key>
-#else
-#define CLS_GENERIC_NSARRAY(type) NSArray
-#define CLS_GENERIC_NSDICTIONARY(key_type,object_key) NSDictionary
-#endif
-
-#if __has_feature(objc_generics)
-#define ANS_GENERIC_NSARRAY(type) NSArray<type>
-#define ANS_GENERIC_NSDICTIONARY(key_type,object_key) NSDictionary<key_type, object_key>
-#else
-#define ANS_GENERIC_NSARRAY(type) NSArray
-#define ANS_GENERIC_NSDICTIONARY(key_type,object_key) NSDictionary
-#endif
-
-#endif
-
-//Weak link to these mock classes so we can compile without the real thing, but the linker will prefer the real thing when available.
-//See http://stackoverflow.com/a/32151697/397210
-__attribute__((weak_import)) @interface Fabric : NSObject
-+ (instancetype)with:(NSArray *)kits;
-+ (instancetype)sharedSDK;
-@end
-
-__attribute__((weak_import)) @interface Crashlytics : NSObject
-+ (Crashlytics *)sharedInstance;
-- (void)setUserIdentifier:(NSString *)identifier;
-- (void)setUserName:(NSString *)name;
-- (void)setUserEmail:(NSString *)email;
-- (void)setObjectValue:(id)value forKey:(NSString *)key;
-- (void)recordError:(NSError *)error withAdditionalUserInfo:(nullable CLS_GENERIC_NSDICTIONARY(NSString *, id) *)userInfo;
-@end
-
-NS_ASSUME_NONNULL_BEGIN
-__attribute__((weak_import)) @interface Answers : NSObject
-
-+ (void)logSignUpWithMethod:(nullable NSString *)signUpMethodOrNil
-                    success:(nullable NSNumber *)signUpSucceededOrNil
-           customAttributes:(nullable ANS_GENERIC_NSDICTIONARY(NSString *, id) *)customAttributesOrNil;
-
-+ (void)logLoginWithMethod:(nullable NSString *)loginMethodOrNil
-                   success:(nullable NSNumber *)loginSucceededOrNil
-          customAttributes:(nullable ANS_GENERIC_NSDICTIONARY(NSString *, id) *)customAttributesOrNil;
-
-+ (void)logPurchaseWithPrice:(nullable NSDecimalNumber *)itemPriceOrNil
-                    currency:(nullable NSString *)currencyOrNil
-                     success:(nullable NSNumber *)purchaseSucceededOrNil
-                    itemName:(nullable NSString *)itemNameOrNil
-                    itemType:(nullable NSString *)itemTypeOrNil
-                      itemId:(nullable NSString *)itemIdOrNil
-            customAttributes:(nullable ANS_GENERIC_NSDICTIONARY(NSString *, id) *)customAttributesOrNil;
-
-+ (void)logContentViewWithName:(nullable NSString *)contentNameOrNil
-                   contentType:(nullable NSString *)contentTypeOrNil
-                     contentId:(nullable NSString *)contentIdOrNil
-              customAttributes:(nullable ANS_GENERIC_NSDICTIONARY(NSString *, id) *)customAttributesOrNil;
-
-+ (void)logCustomEventWithName:(NSString *)eventName
-              customAttributes:(nullable ANS_GENERIC_NSDICTIONARY(NSString *, id) *)customAttributesOrNil;
-
-@end
-NS_ASSUME_NONNULL_END
-
-#endif //GRK_FABRIC_EXISTS
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+#import <Crashlytics/Answers.h>
 
 static NSString * const kGRKFabricProviderPropertyKeyCategory = @"Category";
 
@@ -115,19 +33,15 @@ static NSString * const kGRKFabricProviderPropertyKeyCategory = @"Category";
 
 - (instancetype)initWithKits:(GRK_GENERIC_NSARRAY(Class) *)kits
 {
-#ifdef GRK_FABRIC_EXISTS
     NSAssert([Fabric class], @"Fabric is not included");
     NSAssert([[Fabric class] respondsToSelector:@selector(sharedSDK)], @"Fabric not installed correctly.");
     
     NSAssert(kits.count, @"No kits were specified.");
     
     [Fabric with:kits];
-#endif //GRK_FABRIC_EXISTS
     
     return [super init];
 }
-
-#ifdef GRK_FABRIC_EXISTS
 
 #pragma mark - User
 
@@ -225,7 +139,5 @@ static NSString * const kGRKFabricProviderPropertyKeyCategory = @"Category";
 {
     [[Crashlytics sharedInstance] recordError:error withAdditionalUserInfo:properties];
 }
-
-#endif //GRK_FABRIC_EXISTS
 
 @end

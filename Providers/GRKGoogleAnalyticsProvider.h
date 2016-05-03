@@ -92,6 +92,7 @@ extern NSString * const kGRKPurchaseEventDefaultCategory;
  * Configure this ordered set with keys to be used with event `properties` which are to be mapped to your custom dimensions.
  * For example, if this ordered set was configured as `@[@"my_dimension_c", @"my_dimension_a", @"my_dimension_b"]` and then within the `properties` dictionary of an tracking call you included one or more of these keys, as in `@{@"my_dimension_b" : @"Some String Value"}`, the event would be sent to Google with the custom dimension `[GAIFields customDimensionForIndex:3]` (NOTE: 1-based) with value `Some String Value`.
  * @see https://developers.google.com/analytics/devguides/collection/ios/v3/customdimsmets
+ * @see https://support.google.com/analytics/answer/2709829?hl=en&ref_topic=2709827
  */
 @property (nonatomic, strong) NSOrderedSet *customDimensionKeys;
 
@@ -100,6 +101,7 @@ extern NSString * const kGRKPurchaseEventDefaultCategory;
  * Configure this ordered set with keys to be used with event `properties` which are to be mapped to your custom metrics.
  * For example, if this ordered set was configured as `@[@"my_metric_c", @"my_metric_a", @"my_metric_b"]` and then within the `properties` dictionary of an tracking call you included one or more of these keys, as in `@{@"my_metric_b" : @"Some String Value"}`, the event would be sent to Google with the custom metric `[GAIFields customMetricForIndex:3]` (NOTE: 1-based) with value `Some String Value`.
  * @see https://developers.google.com/analytics/devguides/collection/ios/v3/customdimsmets
+ * @see https://support.google.com/analytics/answer/2709829?hl=en&ref_topic=2709827
  */
 @property (nonatomic, strong) NSOrderedSet *customMetricKeys;
 

@@ -35,10 +35,7 @@
       },
       "source_files": [
         "Providers/GRKFabricProvider.{h,m}"
-      ],
-      "pod_target_xcconfig": {
-        "OTHER_LDFLAGS": "$(inherited) -Wl,-U,_OBJC_CLASS_$_Fabric,-U,_OBJC_CLASS_$_Crashlytics,-U,_OBJC_CLASS_$_Answers"
-      }
+      ]
     },
     {
       "name": "GoogleAnalytics",
@@ -50,10 +47,7 @@
       },
       "source_files": [
         "Providers/GRKGoogleAnalyticsProvider.{h,m}"
-      ],
-      "pod_target_xcconfig": {
-        "OTHER_LDFLAGS": "$(inherited) -Wl,-U,_OBJC_CLASS_$_Fabric,-U,_OBJC_CLASS_$_Crashlytics,-U,_OBJC_CLASS_$_Answers"
-      }
+      ]
     }
   ]
 }

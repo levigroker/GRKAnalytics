@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation'
   
   ### Supported Providers
-  fabric = { :spec_name => 'Fabric', :provider_class => 'GRKFabricProvider', :weak_classes => ['Fabric', 'Crashlytics', 'Answers'] }
-  googleanalytics = { :spec_name => 'GoogleAnalytics', :provider_class => 'GRKGoogleAnalyticsProvider', :weak_classes => ['Fabric', 'Crashlytics', 'Answers'] }
+  fabric = { :spec_name => 'Fabric', :provider_class => 'GRKFabricProvider' }
+  googleanalytics = { :spec_name => 'GoogleAnalytics', :provider_class => 'GRKGoogleAnalyticsProvider' }
 
   all_analytics = [fabric, googleanalytics]
   ### 
@@ -37,15 +37,6 @@ Pod::Spec.new do |s|
       sources = ["Providers/#{provider}.{h,m}"]
       ss.dependency 'GRKAnalytics/Core'
       ss.source_files = sources
-      # We need to weakly link the stub classes
-      #see http://stackoverflow.com/a/32151697/397210
-      if analytics_spec[:weak_classes]
-        flags = '-Wl'
-        analytics_spec[:weak_classes].each do |weak_class|
-          flags += ',-U,_OBJC_CLASS_$_' + weak_class
-        end
-        ss.pod_target_xcconfig = { 'OTHER_LDFLAGS' => "$(inherited) #{flags}" }
-      end
       all_names << specname
 
     end

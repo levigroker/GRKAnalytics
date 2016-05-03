@@ -1,4 +1,8 @@
 PODS:
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
+  - GoogleAnalytics (3.14.0)
   - GRKAnalytics/Core (1.0)
   - GRKAnalytics/Fabric (1.0):
     - GRKAnalytics/Core
@@ -6,6 +10,9 @@ PODS:
     - GRKAnalytics/Core
 
 DEPENDENCIES:
+  - Crashlytics (~> 3.6)
+  - Fabric (~> 1.6)
+  - GoogleAnalytics (~> 3.14)
   - GRKAnalytics/Fabric (from `..`)
   - GRKAnalytics/GoogleAnalytics (from `..`)
 
@@ -14,6 +21,9 @@ EXTERNAL SOURCES:
     :path: ..
 
 SPEC CHECKSUMS:
-  GRKAnalytics: 3cdba989250a7e1e0373ff9d6b03cbcc09e872fe
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  GoogleAnalytics: 9be1afdb8deeac4bb5f13ca7f7d3b9db2a1f43dc
+  GRKAnalytics: 6bbad2d08ceaf736551d2e1ad3f91792b82826d8
 
 COCOAPODS: 0.39.0
