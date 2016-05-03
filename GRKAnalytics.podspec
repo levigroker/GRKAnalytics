@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GRKAnalytics"
-  s.version      = "1.0"
+  s.version      = "2.0"
   s.summary      = "A lightweight abstraction for underlying analytics providers."
   s.homepage     = "https://github.com/levigroker/GRKAnalytics"
   s.license      = 'Creative Commons Attribution 3.0 Unported License'
