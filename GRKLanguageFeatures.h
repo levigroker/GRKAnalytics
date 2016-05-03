@@ -36,7 +36,9 @@
 #if __has_feature(objc_generics)
     #define GRK_GENERIC_NSARRAY(type) NSArray<type>
     #define GRK_GENERIC_NSDICTIONARY(key_type,object_key) NSDictionary<key_type, object_key>
+    #define GRK_GENERIC_NSMUTABLEDICTIONARY(key_type,object_key) NSMutableDictionary<key_type, object_key>
 #else
     #define GRK_GENERIC_NSARRAY(type) NSArray
     #define GRK_GENERIC_NSDICTIONARY(key_type,object_key) NSDictionary
+    #define GRK_GENERIC_NSMUTABLEDICTIONARY(key_type,object_key) NSMutableDictionary
 #endif
