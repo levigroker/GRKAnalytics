@@ -32,8 +32,6 @@ Pod::Spec.new do |s|
       specname = analytics_spec[:spec_name]
       provider = analytics_spec[:provider_class]
 
-      # Each subspec adds a compiler flag saying that the spec was included
-      ss.prefix_header_contents = "#define GRK_#{specname.upcase}_EXISTS 1"
       sources = ["Providers/#{provider}.{h,m}"]
       ss.dependency 'GRKAnalytics/Core'
       ss.source_files = sources

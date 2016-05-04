@@ -6,17 +6,27 @@ pod 'Fabric',          '~> 1.6'
 pod 'Crashlytics',     '~> 3.7'
 pod 'GoogleAnalytics', '~> 3.14'
 
-# def import_pods
-# 	pod 'GRKAnalytics', :path => '..', :subspecs => ['Fabric']
-# end
-# 
-# target :GRKAnalyticsLib do
-#     platform :ios, '7.0'
-#     import_pods
-# end
-# 
-# target :GRKAnalyticsLibOSX do
-#     platform :osx, '10.9'
-#     import_pods
-# end
-# 
+post_install do |installer_representation|
+
+  # Grab the `project` object from the installer (cocoapods < 0.38 use `project`, cocoapods >= 0.38 use pods_project)
+  # See https://github.com/CocoaPods/CocoaPods/issues/2292
+  if installer_representation.respond_to?(:project)
+    project = installer_representation.project
+  else
+    project = installer_representation.pods_project
+  end
+
+  project.targets.each do |target|
+    if target.name == 'Fabric'
+      target.build_configurations.each do |config|
+        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)']
+		config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'GRK_FABRIC_EXISTS=1'
+      end
+    else if target.name == 'GoogleAnalytics'
+      target.build_configurations.each do |config|
+        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)']
+		config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'GRK_GOOGLEANALYTICS_EXISTS=1'
+      end
+    end
+  end
+end
