@@ -18,7 +18,7 @@
 
 #import "GRKGoogleAnalyticsProvider.h"
 
-#ifdef GRK_GOOGLEANALYTICS_EXISTS
+#ifdef GRK_ANALYTICS_ENABLED
 
 #import "GAI.h"
 #import "GAITracker.h"
@@ -27,7 +27,7 @@
 
 static CGFloat const kGRKPurchaseAppleTax = 0.3f;
 
-#endif //GRK_GOOGLEANALYTICS_EXISTS
+#endif //GRK_ANALYTICS_ENABLED
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -43,11 +43,11 @@ NSString * const kGRKGoogleAnalyticsProviderPropertyKeyDefaultCategory = @"defau
 
 @interface GRKGoogleAnalyticsProvider ()
 
-#ifdef GRK_GOOGLEANALYTICS_EXISTS
+#ifdef GRK_ANALYTICS_ENABLED
 
 @property (nonatomic, strong) id <GAITracker>tracker;
 
-#endif //GRK_GOOGLEANALYTICS_EXISTS
+#endif //GRK_ANALYTICS_ENABLED
 
 @property(nonatomic, copy) void (^dispatchHandler)(NSUInteger result);
 
@@ -68,7 +68,7 @@ NSString * const kGRKGoogleAnalyticsProviderPropertyKeyDefaultCategory = @"defau
 
 - (instancetype)initWithTrackingID:(nullable NSString *)trackingID
 {
-#ifdef GRK_GOOGLEANALYTICS_EXISTS
+#ifdef GRK_ANALYTICS_ENABLED
 
     NSAssert([GAI class], @"Google Analytics SDK is not included");
     NSAssert([[GAI class] respondsToSelector:@selector(sharedInstance)], @"Google Analytics is not installed correctly.");
@@ -93,11 +93,11 @@ NSString * const kGRKGoogleAnalyticsProviderPropertyKeyDefaultCategory = @"defau
 
     return [super init];
 
-#endif //GRK_GOOGLEANALYTICS_EXISTS
+#endif //GRK_ANALYTICS_ENABLED
 
 }
 
-#ifdef GRK_GOOGLEANALYTICS_EXISTS
+#ifdef GRK_ANALYTICS_ENABLED
 
 #pragma mark - Meta
 
@@ -452,7 +452,7 @@ NSString * const kGRKGoogleAnalyticsProviderPropertyKeyDefaultCategory = @"defau
 
 #endif //TARGET_OS_IPHONE
 
-#endif //GRK_GOOGLEANALYTICS_EXISTS
+#endif //GRK_ANALYTICS_ENABLED
 
 @end
 

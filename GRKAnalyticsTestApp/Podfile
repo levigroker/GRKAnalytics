@@ -16,17 +16,13 @@ post_install do |installer_representation|
     project = installer_representation.pods_project
   end
 
-  project.targets.each do |target|
-    if target.name == 'Fabric'
-      target.build_configurations.each do |config|
-        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)']
-		config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'GRK_FABRIC_EXISTS=1'
-      end
-    else if target.name == 'GoogleAnalytics'
-      target.build_configurations.each do |config|
-        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)']
-		config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'GRK_GOOGLEANALYTICS_EXISTS=1'
-      end
+  # Update the GRKAnalytics pod project to enable compilation of the desired providers
+  grkanalytics = (project.targets.select { |target| target.name == 'GRKAnalytics' }).first
+  if grkanalytics
+    grkanalytics.build_configurations.each do |config|
+      config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)']
+      config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'GRK_ANALYTICS_ENABLED=1'
     end
   end
+
 end

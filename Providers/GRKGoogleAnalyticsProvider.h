@@ -31,7 +31,7 @@ extern NSString * const kGRKPurchaseEventDefaultCategory;
 
 @interface GRKGoogleAnalyticsProvider : GRKAnalyticsProvider
 
-#ifdef GRK_GOOGLEANALYTICS_EXISTS
+#ifdef GRK_ANALYTICS_ENABLED
 
 /**
  * If this value is positive, tracking information will be automatically
@@ -107,7 +107,7 @@ extern NSString * const kGRKPurchaseEventDefaultCategory;
  */
 @property (nonatomic, strong) NSOrderedSet *customMetricKeys;
 
-#endif //GRK_GOOGLEANALYTICS_EXISTS
+#endif //GRK_ANALYTICS_ENABLED
 
 @end
 
