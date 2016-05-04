@@ -25,11 +25,11 @@
 #import "GAIFields.h"
 #import "GAIDictionaryBuilder.h"
 
+static CGFloat const kGRKPurchaseAppleTax = 0.3f;
+
 #endif //GRK_GOOGLEANALYTICS_EXISTS
 
 NS_ASSUME_NONNULL_BEGIN
-
-static CGFloat const kGRKPurchaseAppleTax = 0.3f;
 
 NSString * const kGRKUserEventCategory = @"User";
 NSString * const kGRKEventUserAccountCreated = @"UserAccountCreated";

@@ -24,11 +24,11 @@
 #import <Crashlytics/Crashlytics.h>
 #import <Crashlytics/Answers.h>
 
+static NSString * const kGRKFabricProviderPropertyKeyCategory = @"Category";
+
 #endif //GRK_FABRIC_EXISTS
 
 NS_ASSUME_NONNULL_BEGIN
-
-static NSString * const kGRKFabricProviderPropertyKeyCategory = @"Category";
 
 @implementation GRKFabricProvider
 
