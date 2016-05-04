@@ -61,6 +61,18 @@ GRKAnalytics only makes use of the underlying provider APIs when the related sub
 specified, so you'll want to modify the test application's podfile to include the subspec
 and the related pod(s) to compile against.
 
+Additionally, for Cocoapods to be happy when validating the spec, the provider classes
+must compile, and since we are not forcing the dependencies, compilation will fail (since
+the underlying providers are not available). To avoid this, the provider code must compile
+without the underlying provider frameworks/libraries being included. So, each provider
+makes use of preprocessor defines to activate or deactivate code at compile time depending
+on the inclusion of its subspec. Please refer to the use of the preprocessor flag
+`GRK_FABRIC_EXISTS` in the `GRKFabricProvider` implementation as an example of how this
+define can be used. These preprocessor defines are are generated automatically by the
+`podspec` as `GRK_{specname.upcase}_EXISTS`. The specname is defined in the podspec, along
+with some other information which will need to be supplied so the podspec can generate the
+appropriate subspec for your added provider.
+
 Within the `GRKAnalytics.podspec` you will need to add your provider and add it to the
 `all_analytics` array:
 

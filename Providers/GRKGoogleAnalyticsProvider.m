@@ -18,10 +18,16 @@
 
 #import "GRKGoogleAnalyticsProvider.h"
 
+#ifdef GRK_GOOGLEANALYTICS_EXISTS
+
 #import "GAI.h"
 #import "GAITracker.h"
 #import "GAIFields.h"
 #import "GAIDictionaryBuilder.h"
+
+#endif //GRK_GOOGLEANALYTICS_EXISTS
+
+NS_ASSUME_NONNULL_BEGIN
 
 static CGFloat const kGRKPurchaseAppleTax = 0.3f;
 
@@ -29,7 +35,6 @@ NSString * const kGRKUserEventCategory = @"User";
 NSString * const kGRKEventUserAccountCreated = @"UserAccountCreated";
 NSString * const kGRKEventUserLogin = @"UserLogin";
 NSString * const kGRKUserEventLabelSuccess = @"Success";
-
 NSString * const kGRKEventPurchaseFailure = @"PurchaseFailure";
 NSString * const kGRKPurchaseEventDefaultCategory = @"In-App Store";
 
@@ -38,10 +43,16 @@ NSString * const kGRKGoogleAnalyticsProviderPropertyKeyDefaultCategory = @"defau
 
 @interface GRKGoogleAnalyticsProvider ()
 
+#ifdef GRK_GOOGLEANALYTICS_EXISTS
+
 @property (nonatomic, strong) id <GAITracker>tracker;
+
+#endif //GRK_GOOGLEANALYTICS_EXISTS
+
 @property(nonatomic, copy) void (^dispatchHandler)(NSUInteger result);
 
 @end
+
 
 @implementation GRKGoogleAnalyticsProvider
 
@@ -57,6 +68,8 @@ NSString * const kGRKGoogleAnalyticsProviderPropertyKeyDefaultCategory = @"defau
 
 - (instancetype)initWithTrackingID:(nullable NSString *)trackingID
 {
+#ifdef GRK_GOOGLEANALYTICS_EXISTS
+
     NSAssert([GAI class], @"Google Analytics SDK is not included");
     NSAssert([[GAI class] respondsToSelector:@selector(sharedInstance)], @"Google Analytics is not installed correctly.");
     
@@ -75,7 +88,16 @@ NSString * const kGRKGoogleAnalyticsProviderPropertyKeyDefaultCategory = @"defau
     }
 
     return self;
+    
+#else
+
+    return [super init];
+
+#endif //GRK_GOOGLEANALYTICS_EXISTS
+
 }
+
+#ifdef GRK_GOOGLEANALYTICS_EXISTS
 
 #pragma mark - Meta
 
@@ -428,6 +450,10 @@ NSString * const kGRKGoogleAnalyticsProviderPropertyKeyDefaultCategory = @"defau
     }
 }
 
-#endif
+#endif //TARGET_OS_IPHONE
+
+#endif //GRK_GOOGLEANALYTICS_EXISTS
 
 @end
+
+NS_ASSUME_NONNULL_END

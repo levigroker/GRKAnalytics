@@ -18,9 +18,15 @@
 
 #import "GRKFabricProvider.h"
 
+#ifdef GRK_FABRIC_EXISTS
+
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 #import <Crashlytics/Answers.h>
+
+#endif //GRK_FABRIC_EXISTS
+
+NS_ASSUME_NONNULL_BEGIN
 
 static NSString * const kGRKFabricProviderPropertyKeyCategory = @"Category";
 
@@ -33,6 +39,8 @@ static NSString * const kGRKFabricProviderPropertyKeyCategory = @"Category";
 
 - (instancetype)initWithKits:(GRK_GENERIC_NSARRAY(Class) *)kits
 {
+#ifdef GRK_FABRIC_EXISTS
+
     NSAssert([Fabric class], @"Fabric is not included");
     NSAssert([[Fabric class] respondsToSelector:@selector(sharedSDK)], @"Fabric not installed correctly.");
     
@@ -40,8 +48,12 @@ static NSString * const kGRKFabricProviderPropertyKeyCategory = @"Category";
     
     [Fabric with:kits];
     
+#endif //GRK_FABRIC_EXISTS
+    
     return [super init];
 }
+
+#ifdef GRK_FABRIC_EXISTS
 
 #pragma mark - User
 
@@ -140,4 +152,8 @@ static NSString * const kGRKFabricProviderPropertyKeyCategory = @"Category";
     [[Crashlytics sharedInstance] recordError:error withAdditionalUserInfo:properties];
 }
 
+#endif //GRK_FABRIC_EXISTS
+
 @end
+
+NS_ASSUME_NONNULL_END
