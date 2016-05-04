@@ -31,7 +31,7 @@ extern NSString * const kGRKPurchaseEventDefaultCategory;
 
 @interface GRKGoogleAnalyticsProvider : GRKAnalyticsProvider
 
-#if GRK_GOOGLEANALYTICS_EXISTS
+#ifdef GRK_GOOGLEANALYTICS_EXISTS
 
 /**
  * If this value is positive, tracking information will be automatically
