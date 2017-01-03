@@ -7,24 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3125694F0ADA7F0EEB31EDDA2ED4E5EF /* GRKFabricProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B961D53365F7F4F6FCA4A5BF986937 /* GRKFabricProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3779340A75A3455044727828FA7CFEA3 /* GRKGoogleAnalyticsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 804BEA9C31647BF839653A49473C4293 /* GRKGoogleAnalyticsProvider.m */; };
+		262C176E4B014673C8575E1713A59B29 /* GRKAnalyticsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B67C8DA64376870F1C020827ABA24B2 /* GRKAnalyticsProvider.m */; };
 		3846A71158712BB5E9E35B9660F02682 /* Pods-GRKAnalyticsTestAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F426A78779F1A695F2D1387F32A68842 /* Pods-GRKAnalyticsTestAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B94D677D2C3F6369EEF03ACB0EEDC6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		4B0010866AAD2F11227066C2D48503FF /* GRKAnalytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F2FEACA9BD38DCDB4C2CEE8E5B49D8 /* GRKAnalytics-dummy.m */; };
-		4B0AF30C15B6157A4A9C6E9BEC6FEC38 /* GRKAnalyticsProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 939C33B8623C1F4E8F9C6B07F88B44E3 /* GRKAnalyticsProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B860766514890800002ECBDED7071EE /* GRKAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BCD18B7B2421D01F7446D7B310895F0 /* GRKAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C81404F09DA9539FDD5925CEC5B3EB3 /* GRKLanguageFeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = A13853A536E9094511F2B135E513D580 /* GRKLanguageFeatures.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DBB78129D585BBD2C8B8A40F207C559 /* GRKAnalytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B45223D163ED04449DA34DA1AF1AD1 /* GRKAnalytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F158B587BC49FC851E5AF62E126D5A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		690BE16AD02D77B2ED52FC385DEAB4F0 /* GRKAnalytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB377E9810006A933319C0117054A6F5 /* GRKAnalytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C175792072C4AFAE009CD6F339E5A35 /* GRKAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B6E59A2FE17D3714C687158B0CFBED /* GRKAnalytics.m */; };
 		6C5D715718A3AB0E1D37EF7069FDE983 /* Pods-GRKAnalyticsTestApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 466C59FF06405E74853DBEA65220A4D6 /* Pods-GRKAnalyticsTestApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		716A3481DE3E69682028AD6CF221DC6F /* GRKAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D95749F0215539230EC5CB82328C9D7 /* GRKAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75DA0861E78CBA3A63BA8A762487C338 /* GRKAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D4474406600DBB0956D8D0F6B875A5E2 /* GRKAnalytics.m */; };
 		8753981753A3ED270066F6DF593205EC /* Pods-GRKAnalyticsTestApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1566A77D53CFAF7A7C3CD5D789B519 /* Pods-GRKAnalyticsTestApp-dummy.m */; };
-		8A446DC62333A01EF77F08BCC95029A3 /* GRKLanguageFeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD500036F71AC4B8C8FEDA7D0F5CED8 /* GRKLanguageFeatures.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9FBD6F5ED30C1CBCD8135773DB03EE2 /* GRKFabricProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E61E065AFB471A57AFBC2AB33F01188 /* GRKFabricProvider.m */; };
+		99D9E678F620D898926A8CA697661BEB /* GRKAnalyticsProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 7043A0AC8FB5E7C2967F86B17F32667D /* GRKAnalyticsProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE56A62195F4AC82B11C2CF5CD83E174 /* GRKAnalytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 138481F8C72ABAD6693A2BEE9B375B56 /* GRKAnalytics-dummy.m */; };
+		B6D92FFC766AE678DAC7D5636973E20F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		D42026574AD0B1F1BBAF97F8CA156869 /* Pods-GRKAnalyticsTestAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9309DD0EC9A5EB283AC8B4FFB96544FF /* Pods-GRKAnalyticsTestAppTests-dummy.m */; };
-		F00E73E1EC08F2E981DDBAB1F9D8ED6D /* GRKGoogleAnalyticsProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0F26277E843B0B2E48124DF673B68A /* GRKGoogleAnalyticsProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1CCD5E81E0C116257A630325E5856C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		FCDF17AA989EA8D9D56286A16DB516DB /* GRKAnalyticsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCF412BF8BEF4A0E13E4426B079CC7F /* GRKAnalyticsProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,66 +28,62 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 22279878C84AC4C283D4FAE51C6215CB;
+			remoteGlobalIDString = F291F933FC2B1128AE4E528944B2F764;
 			remoteInfo = GRKAnalytics;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		004A6520D3A0815008820E35B009857D /* GRKAnalytics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GRKAnalytics.xcconfig; sourceTree = "<group>"; };
 		01594FDA315226631ABAF83A1732B110 /* Pods-GRKAnalyticsTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GRKAnalyticsTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		018638B9882289F0387D8C23C1FF394D /* Pods-GRKAnalyticsTestAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GRKAnalyticsTestAppTests-resources.sh"; sourceTree = "<group>"; };
 		02B76E4CE4089A068D356C7399797246 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProductAction.h; path = Sources/GAIEcommerceProductAction.h; sourceTree = "<group>"; };
 		02D207D5868F5182EA7083FE7438FADA /* GAI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = Sources/GAI.h; sourceTree = "<group>"; };
+		0640E24B7579AD78A9CB11E3847071D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EECD028984F4EEFBC3619878429A9C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		138481F8C72ABAD6693A2BEE9B375B56 /* GRKAnalytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GRKAnalytics-dummy.m"; sourceTree = "<group>"; };
 		14DEACF5B510B9245D9C0EE4C473E7B4 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
 		19BC5650E6E04FC8B53D1FD89890A549 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = Sources/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
 		1A3D504EF7A026D1886D80DDC39DDAC1 /* GAILogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = Sources/GAILogger.h; sourceTree = "<group>"; };
+		1FF797CB4AF7C1C533DAD934E1510190 /* GRKAnalytics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRKAnalytics-prefix.pch"; sourceTree = "<group>"; };
 		20362E6B34210DBE55A5EAC2D25B518E /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
 		25E20829E59839D73FB36BA39CF45199 /* Pods_GRKAnalyticsTestAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GRKAnalyticsTestAppTests.framework; path = "Pods-GRKAnalyticsTestAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C98839F058797DE166D2A5739030AF /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
-		2C0F26277E843B0B2E48124DF673B68A /* GRKGoogleAnalyticsProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GRKGoogleAnalyticsProvider.h; sourceTree = "<group>"; };
 		302ABB9EC52950B50E69F9F725DA0E4A /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
-		3CCF412BF8BEF4A0E13E4426B079CC7F /* GRKAnalyticsProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GRKAnalyticsProvider.m; sourceTree = "<group>"; };
 		3D77196F2006F9CFA2D0714844521E92 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProduct.h; path = Sources/GAIEcommerceProduct.h; sourceTree = "<group>"; };
 		3DDE2063F73BD74386FAE3632329A2E6 /* Pods-GRKAnalyticsTestApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GRKAnalyticsTestApp.modulemap"; sourceTree = "<group>"; };
-		3E61E065AFB471A57AFBC2AB33F01188 /* GRKFabricProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GRKFabricProvider.m; sourceTree = "<group>"; };
 		466C59FF06405E74853DBEA65220A4D6 /* Pods-GRKAnalyticsTestApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GRKAnalyticsTestApp-umbrella.h"; sourceTree = "<group>"; };
 		46BF25B275BB593700594CB800D6C110 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceFields.h; path = Sources/GAIEcommerceFields.h; sourceTree = "<group>"; };
 		503D29BB38546B04F521699AF11B0EAE /* Pods-GRKAnalyticsTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GRKAnalyticsTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		506FC4F7C4EC5E31B27A50DB08D7EB94 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		564D2ACF8DC86B2A1E5A5CA0F765C39A /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
 		581DFB7712E059925B363009507B0EBE /* Pods-GRKAnalyticsTestApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GRKAnalyticsTestApp-resources.sh"; sourceTree = "<group>"; };
-		5D95749F0215539230EC5CB82328C9D7 /* GRKAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GRKAnalytics.h; sourceTree = "<group>"; };
+		5BCD18B7B2421D01F7446D7B310895F0 /* GRKAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GRKAnalytics.h; sourceTree = "<group>"; };
 		5E2649BF95A40A5FCAE63B016775B0EB /* Pods-GRKAnalyticsTestApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GRKAnalyticsTestApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		605DD1D5254DC443F95B4F23E997DBEC /* Pods-GRKAnalyticsTestApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GRKAnalyticsTestApp-frameworks.sh"; sourceTree = "<group>"; };
+		62B45223D163ED04449DA34DA1AF1AD1 /* GRKAnalytics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRKAnalytics-umbrella.h"; sourceTree = "<group>"; };
 		64E6FEFDEC0CEC52073BCC130A0A7F20 /* Pods-GRKAnalyticsTestAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GRKAnalyticsTestAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		7043A0AC8FB5E7C2967F86B17F32667D /* GRKAnalyticsProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GRKAnalyticsProvider.h; sourceTree = "<group>"; };
 		797C67D24DE74066A7DF351075F11C69 /* GRKAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GRKAnalytics.framework; path = GRKAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BED8B6CBF11A1EC2AA41F6D9678002A /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
-		804BEA9C31647BF839653A49473C4293 /* GRKGoogleAnalyticsProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GRKGoogleAnalyticsProvider.m; sourceTree = "<group>"; };
+		7F7668E268B5DBB81FFDC462B176DD94 /* GRKAnalytics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GRKAnalytics.modulemap; sourceTree = "<group>"; };
 		83E5121791A5432EDF10BB8008F07EDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		889912E7EC1BE44024139049644558F7 /* GAIFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = Sources/GAIFields.h; sourceTree = "<group>"; };
-		8AD83E1AB9EE0CB2203B0950B65CBD99 /* GRKAnalytics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GRKAnalytics.modulemap; sourceTree = "<group>"; };
-		8CB8E15C626C067EAFB6A9B98B1FCBB2 /* GRKAnalytics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRKAnalytics-prefix.pch"; sourceTree = "<group>"; };
+		8B67C8DA64376870F1C020827ABA24B2 /* GRKAnalyticsProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GRKAnalyticsProvider.m; sourceTree = "<group>"; };
 		8D7C4364F920AAD2EB8456F20E973A3D /* Pods-GRKAnalyticsTestAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GRKAnalyticsTestAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8F3992E0CC13FE119A1E14766912593E /* Pods-GRKAnalyticsTestAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GRKAnalyticsTestAppTests.modulemap"; sourceTree = "<group>"; };
 		9309DD0EC9A5EB283AC8B4FFB96544FF /* Pods-GRKAnalyticsTestAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GRKAnalyticsTestAppTests-dummy.m"; sourceTree = "<group>"; };
-		939C33B8623C1F4E8F9C6B07F88B44E3 /* GRKAnalyticsProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GRKAnalyticsProvider.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93B961D53365F7F4F6FCA4A5BF986937 /* GRKFabricProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GRKFabricProvider.h; sourceTree = "<group>"; };
-		96F2FEACA9BD38DCDB4C2CEE8E5B49D8 /* GRKAnalytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GRKAnalytics-dummy.m"; sourceTree = "<group>"; };
 		98B315DFBE05D883877B7E3843AEB211 /* Pods-GRKAnalyticsTestApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GRKAnalyticsTestApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9971565414710FC1B81A1023C59E7731 /* Pods-GRKAnalyticsTestAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GRKAnalyticsTestAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A13853A536E9094511F2B135E513D580 /* GRKLanguageFeatures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GRKLanguageFeatures.h; sourceTree = "<group>"; };
 		A3A8EE70C1817D874CD716C1EF94C95D /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
-		AB377E9810006A933319C0117054A6F5 /* GRKAnalytics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRKAnalytics-umbrella.h"; sourceTree = "<group>"; };
-		ADD500036F71AC4B8C8FEDA7D0F5CED8 /* GRKLanguageFeatures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GRKLanguageFeatures.h; sourceTree = "<group>"; };
-		B28881A668B0B4002BE556C1AC36CFAC /* GRKAnalytics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GRKAnalytics.xcconfig; sourceTree = "<group>"; };
 		B803A11B4D7EC8B1CB787CC17C2732C8 /* Pods_GRKAnalyticsTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GRKAnalyticsTestApp.framework; path = "Pods-GRKAnalyticsTestApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B984A0DB1D6DA2A77A2DB04CA3CA72F6 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		B9B6E59A2FE17D3714C687158B0CFBED /* GRKAnalytics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GRKAnalytics.m; sourceTree = "<group>"; };
 		BC481A7C0B08DC92E1E86676312F152F /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommercePromotion.h; path = Sources/GAIEcommercePromotion.h; sourceTree = "<group>"; };
-		BFB115CB35C2C3FEF208650BFC190E59 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C77D00B6361AAE0505989DE4BBDCB2D9 /* Pods-GRKAnalyticsTestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GRKAnalyticsTestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D4474406600DBB0956D8D0F6B875A5E2 /* GRKAnalytics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GRKAnalytics.m; sourceTree = "<group>"; };
 		D5761DE55344C901F64A7A7517B4D606 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = Libraries/libGoogleAnalytics.a; sourceTree = "<group>"; };
 		DD081D98E5B110D4C1488EBD05F78D58 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
 		E7212B225B6FEB0338C12FFC975C0854 /* Pods-GRKAnalyticsTestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GRKAnalyticsTestAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,11 +103,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		828872E1A95EB6AAAB7CE347516E7B34 /* Frameworks */ = {
+		7686CA1B6D1410833365B5CC414FAAE8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B94D677D2C3F6369EEF03ACB0EEDC6E /* Foundation.framework in Frameworks */,
+				B6D92FFC766AE678DAC7D5636973E20F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,36 +122,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09CF05C4D1E6AE59C5AD59AA3B5510B7 /* Providers */ = {
-			isa = PBXGroup;
-			children = (
-				2C0F26277E843B0B2E48124DF673B68A /* GRKGoogleAnalyticsProvider.h */,
-				804BEA9C31647BF839653A49473C4293 /* GRKGoogleAnalyticsProvider.m */,
-			);
-			name = Providers;
-			path = Providers;
-			sourceTree = "<group>";
-		};
 		146F19509EC43378EF00DD6D0B42B533 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D5761DE55344C901F64A7A7517B4D606 /* libGoogleAnalytics.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1B80C86E2F68E5534778F2198F5A7E83 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8AD83E1AB9EE0CB2203B0950B65CBD99 /* GRKAnalytics.modulemap */,
-				B28881A668B0B4002BE556C1AC36CFAC /* GRKAnalytics.xcconfig */,
-				96F2FEACA9BD38DCDB4C2CEE8E5B49D8 /* GRKAnalytics-dummy.m */,
-				8CB8E15C626C067EAFB6A9B98B1FCBB2 /* GRKAnalytics-prefix.pch */,
-				AB377E9810006A933319C0117054A6F5 /* GRKAnalytics-umbrella.h */,
-				BFB115CB35C2C3FEF208650BFC190E59 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "GRKAnalyticsTestApp/Pods/Target Support Files/GRKAnalytics";
 			sourceTree = "<group>";
 		};
 		1FA15DED1307C82047E968CD46185223 /* Frameworks */ = {
@@ -170,6 +138,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2515DADB5FD924856EC92E1444938943 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D2A1A31BBC49EAEF11B7D193157C9B7 /* GRKAnalytics */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2D2A1A31BBC49EAEF11B7D193157C9B7 /* GRKAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				DC21851082BFF0CEFF5FBE119E3B64BE /* GRKAnalytics */,
+				6E98E93949704751430421E091947540 /* Support Files */,
+			);
+			name = GRKAnalytics;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		31AA8589BD517D0C907FE8FB23B43FD0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,35 +164,6 @@
 				6379F9403891E2036C6597F84A85170B /* GoogleAnalytics */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		3A5A54550E029087B884A43578A1673B /* GRKAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				5D95749F0215539230EC5CB82328C9D7 /* GRKAnalytics.h */,
-				D4474406600DBB0956D8D0F6B875A5E2 /* GRKAnalytics.m */,
-				939C33B8623C1F4E8F9C6B07F88B44E3 /* GRKAnalyticsProvider.h */,
-				3CCF412BF8BEF4A0E13E4426B079CC7F /* GRKAnalyticsProvider.m */,
-				ADD500036F71AC4B8C8FEDA7D0F5CED8 /* GRKLanguageFeatures.h */,
-			);
-			name = GRKAnalytics;
-			path = GRKAnalytics;
-			sourceTree = "<group>";
-		};
-		46FCF42E42AD7379BFF75AE548D2E2C4 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				3A5A54550E029087B884A43578A1673B /* GRKAnalytics */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		48DB7BA1F0833829867E93CBEC84907B /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EC084414A4C84095075192E367A1A053 /* GRKAnalytics */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		50FCED9AB2D61B60573D5B9A02FAD1F3 /* Crashlytics */ = {
@@ -223,24 +180,6 @@
 			);
 			name = Crashlytics;
 			path = Crashlytics;
-			sourceTree = "<group>";
-		};
-		51B9873B9F4DA670A0AEC868D0F917AC /* Providers */ = {
-			isa = PBXGroup;
-			children = (
-				93B961D53365F7F4F6FCA4A5BF986937 /* GRKFabricProvider.h */,
-				3E61E065AFB471A57AFBC2AB33F01188 /* GRKFabricProvider.m */,
-			);
-			name = Providers;
-			path = Providers;
-			sourceTree = "<group>";
-		};
-		53AB5B8FE284B74337C9D539F5C4A78E /* Fabric */ = {
-			isa = PBXGroup;
-			children = (
-				873FDCA9ABE9DF201D7DBB159C2E4901 /* GRKAnalytics */,
-			);
-			name = Fabric;
 			sourceTree = "<group>";
 		};
 		6379F9403891E2036C6597F84A85170B /* GoogleAnalytics */ = {
@@ -262,12 +201,18 @@
 			path = GoogleAnalytics;
 			sourceTree = "<group>";
 		};
-		73713B2793503115C1BE2CB7D3304449 /* GoogleAnalytics */ = {
+		6E98E93949704751430421E091947540 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DC37DA1DD9CF9E5A37709152D801B09B /* GRKAnalytics */,
+				7F7668E268B5DBB81FFDC462B176DD94 /* GRKAnalytics.modulemap */,
+				004A6520D3A0815008820E35B009857D /* GRKAnalytics.xcconfig */,
+				138481F8C72ABAD6693A2BEE9B375B56 /* GRKAnalytics-dummy.m */,
+				1FF797CB4AF7C1C533DAD934E1510190 /* GRKAnalytics-prefix.pch */,
+				62B45223D163ED04449DA34DA1AF1AD1 /* GRKAnalytics-umbrella.h */,
+				0640E24B7579AD78A9CB11E3847071D2 /* Info.plist */,
 			);
-			name = GoogleAnalytics;
+			name = "Support Files";
+			path = "GRKAnalyticsTestApp/Pods/Target Support Files/GRKAnalytics";
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -300,21 +245,12 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				48DB7BA1F0833829867E93CBEC84907B /* Development Pods */,
+				2515DADB5FD924856EC92E1444938943 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				31AA8589BD517D0C907FE8FB23B43FD0 /* Pods */,
 				F650DB589A9D42A71B6A21430CE6941E /* Products */,
 				889255E5B3C6D4D06512DAADE7B00712 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		873FDCA9ABE9DF201D7DBB159C2E4901 /* GRKAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				51B9873B9F4DA670A0AEC868D0F917AC /* Providers */,
-			);
-			name = GRKAnalytics;
-			path = GRKAnalytics;
 			sourceTree = "<group>";
 		};
 		884BE551939644CDF52B654F2502CABB /* Pods-GRKAnalyticsTestApp */ = {
@@ -371,25 +307,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DC37DA1DD9CF9E5A37709152D801B09B /* GRKAnalytics */ = {
+		DC21851082BFF0CEFF5FBE119E3B64BE /* GRKAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				09CF05C4D1E6AE59C5AD59AA3B5510B7 /* Providers */,
+				5BCD18B7B2421D01F7446D7B310895F0 /* GRKAnalytics.h */,
+				B9B6E59A2FE17D3714C687158B0CFBED /* GRKAnalytics.m */,
+				7043A0AC8FB5E7C2967F86B17F32667D /* GRKAnalyticsProvider.h */,
+				8B67C8DA64376870F1C020827ABA24B2 /* GRKAnalyticsProvider.m */,
+				A13853A536E9094511F2B135E513D580 /* GRKLanguageFeatures.h */,
 			);
 			name = GRKAnalytics;
 			path = GRKAnalytics;
-			sourceTree = "<group>";
-		};
-		EC084414A4C84095075192E367A1A053 /* GRKAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				46FCF42E42AD7379BFF75AE548D2E2C4 /* Core */,
-				53AB5B8FE284B74337C9D539F5C4A78E /* Fabric */,
-				73713B2793503115C1BE2CB7D3304449 /* GoogleAnalytics */,
-				1B80C86E2F68E5534778F2198F5A7E83 /* Support Files */,
-			);
-			name = GRKAnalytics;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		F650DB589A9D42A71B6A21430CE6941E /* Products */ = {
@@ -413,19 +341,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CCBE10B220CD8EFA7206E6844092183 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				690BE16AD02D77B2ED52FC385DEAB4F0 /* GRKAnalytics-umbrella.h in Headers */,
-				716A3481DE3E69682028AD6CF221DC6F /* GRKAnalytics.h in Headers */,
-				4B0AF30C15B6157A4A9C6E9BEC6FEC38 /* GRKAnalyticsProvider.h in Headers */,
-				3125694F0ADA7F0EEB31EDDA2ED4E5EF /* GRKFabricProvider.h in Headers */,
-				F00E73E1EC08F2E981DDBAB1F9D8ED6D /* GRKGoogleAnalyticsProvider.h in Headers */,
-				8A446DC62333A01EF77F08BCC95029A3 /* GRKLanguageFeatures.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C178193905BF1477D26BCAC17C391E3E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -434,26 +349,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C89A8830484870DC5796A50BA8BC2C61 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DBB78129D585BBD2C8B8A40F207C559 /* GRKAnalytics-umbrella.h in Headers */,
+				3B860766514890800002ECBDED7071EE /* GRKAnalytics.h in Headers */,
+				99D9E678F620D898926A8CA697661BEB /* GRKAnalyticsProvider.h in Headers */,
+				4C81404F09DA9539FDD5925CEC5B3EB3 /* GRKLanguageFeatures.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		22279878C84AC4C283D4FAE51C6215CB /* GRKAnalytics */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4ED0F020AC8127D6162BF6E079EF790C /* Build configuration list for PBXNativeTarget "GRKAnalytics" */;
-			buildPhases = (
-				85D72C35E77BC027CA018CABEC97E60E /* Sources */,
-				828872E1A95EB6AAAB7CE347516E7B34 /* Frameworks */,
-				9CCBE10B220CD8EFA7206E6844092183 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GRKAnalytics;
-			productName = GRKAnalytics;
-			productReference = 797C67D24DE74066A7DF351075F11C69 /* GRKAnalytics.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		41DE5F2C613FC3C7A2E1A95E605EED57 /* Pods-GRKAnalyticsTestApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 572CC5019E2A0188D3B4160BAB2F9F50 /* Build configuration list for PBXNativeTarget "Pods-GRKAnalyticsTestApp" */;
@@ -489,6 +398,23 @@
 			productReference = 25E20829E59839D73FB36BA39CF45199 /* Pods_GRKAnalyticsTestAppTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F291F933FC2B1128AE4E528944B2F764 /* GRKAnalytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7F411D7324709CD0476B37D480A8720 /* Build configuration list for PBXNativeTarget "GRKAnalytics" */;
+			buildPhases = (
+				A914AD2D3A53B25DD123CEA4CF6A7AA2 /* Sources */,
+				7686CA1B6D1410833365B5CC414FAAE8 /* Frameworks */,
+				C89A8830484870DC5796A50BA8BC2C61 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GRKAnalytics;
+			productName = GRKAnalytics;
+			productReference = 797C67D24DE74066A7DF351075F11C69 /* GRKAnalytics.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -510,7 +436,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				22279878C84AC4C283D4FAE51C6215CB /* GRKAnalytics */,
+				F291F933FC2B1128AE4E528944B2F764 /* GRKAnalytics */,
 				41DE5F2C613FC3C7A2E1A95E605EED57 /* Pods-GRKAnalyticsTestApp */,
 				A4976E90E18B1ECB070BB640E040A8AD /* Pods-GRKAnalyticsTestAppTests */,
 			);
@@ -526,15 +452,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85D72C35E77BC027CA018CABEC97E60E /* Sources */ = {
+		A914AD2D3A53B25DD123CEA4CF6A7AA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B0010866AAD2F11227066C2D48503FF /* GRKAnalytics-dummy.m in Sources */,
-				75DA0861E78CBA3A63BA8A762487C338 /* GRKAnalytics.m in Sources */,
-				FCDF17AA989EA8D9D56286A16DB516DB /* GRKAnalyticsProvider.m in Sources */,
-				B9FBD6F5ED30C1CBCD8135773DB03EE2 /* GRKFabricProvider.m in Sources */,
-				3779340A75A3455044727828FA7CFEA3 /* GRKGoogleAnalyticsProvider.m in Sources */,
+				AE56A62195F4AC82B11C2CF5CD83E174 /* GRKAnalytics-dummy.m in Sources */,
+				6C175792072C4AFAE009CD6F339E5A35 /* GRKAnalytics.m in Sources */,
+				262C176E4B014673C8575E1713A59B29 /* GRKAnalyticsProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,12 +476,43 @@
 		8C5881080BB04BC302BB330142BF442D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GRKAnalytics;
-			target = 22279878C84AC4C283D4FAE51C6215CB /* GRKAnalytics */;
+			target = F291F933FC2B1128AE4E528944B2F764 /* GRKAnalytics */;
 			targetProxy = FA8ECB25DEF96CBE64089AE8BC858CF9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0D9765B1007D9BADA7E7FCEC103C9973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 004A6520D3A0815008820E35B009857D /* GRKAnalytics.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GRKAnalytics/GRKAnalytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GRKAnalytics/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GRKAnalytics/GRKAnalytics.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GRKAnalytics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		0EA62157EA747384709859BAE5757B25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 503D29BB38546B04F521699AF11B0EAE /* Pods-GRKAnalyticsTestApp.debug.xcconfig */;
@@ -628,37 +583,6 @@
 			};
 			name = Debug;
 		};
-		2A31990BCD6D018BA7C3217A6CC9D976 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B28881A668B0B4002BE556C1AC36CFAC /* GRKAnalytics.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GRKAnalytics/GRKAnalytics-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GRKAnalytics/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GRKAnalytics/GRKAnalytics.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = GRKAnalytics;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		33DDD9E74044EEF94999F142D1C41FE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E7212B225B6FEB0338C12FFC975C0854 /* Pods-GRKAnalyticsTestAppTests.release.xcconfig */;
@@ -694,15 +618,15 @@
 			};
 			name = Release;
 		};
-		68973DAC1D0C92CD2F65228C9E063C06 /* Release */ = {
+		60EDEB402C9012CF2A31DA9D2E800940 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B28881A668B0B4002BE556C1AC36CFAC /* GRKAnalytics.xcconfig */;
+			baseConfigurationReference = 004A6520D3A0815008820E35B009857D /* GRKAnalytics.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -715,7 +639,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GRKAnalytics/GRKAnalytics.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = GRKAnalytics;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -723,7 +647,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -856,15 +780,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4ED0F020AC8127D6162BF6E079EF790C /* Build configuration list for PBXNativeTarget "GRKAnalytics" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2A31990BCD6D018BA7C3217A6CC9D976 /* Debug */,
-				68973DAC1D0C92CD2F65228C9E063C06 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		572CC5019E2A0188D3B4160BAB2F9F50 /* Build configuration list for PBXNativeTarget "Pods-GRKAnalyticsTestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -879,6 +794,15 @@
 			buildConfigurations = (
 				22FE9C696A059AE582611ED410ABEC3C /* Debug */,
 				33DDD9E74044EEF94999F142D1C41FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7F411D7324709CD0476B37D480A8720 /* Build configuration list for PBXNativeTarget "GRKAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60EDEB402C9012CF2A31DA9D2E800940 /* Debug */,
+				0D9765B1007D9BADA7E7FCEC103C9973 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

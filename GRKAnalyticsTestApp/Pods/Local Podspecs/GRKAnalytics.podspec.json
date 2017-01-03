@@ -1,6 +1,6 @@
 {
   "name": "GRKAnalytics",
-  "version": "2.0.1",
+  "version": "3.0",
   "summary": "A lightweight abstraction for underlying analytics providers.",
   "homepage": "https://github.com/levigroker/GRKAnalytics",
   "license": "Creative Commons Attribution 3.0 Unported License",
@@ -10,45 +10,18 @@
   "social_media_url": "https://twitter.com/levigroker",
   "source": {
     "git": "https://github.com/levigroker/GRKAnalytics.git",
-    "tag": "2.0.1"
+    "tag": "3.0"
   },
   "platforms": {
     "ios": "7.0",
     "osx": "10.9"
   },
   "frameworks": "Foundation",
-  "description": "GRKAnalytics is a lightweight abstraction allowing for the agnostic use of multiple and varying analytics providers. Supported providers: Fabric and GoogleAnalytics.",
-  "subspecs": [
-    {
-      "name": "Core",
-      "source_files": [
-        "GRKAnalytics/*.{h,m}"
-      ],
-      "user_target_xcconfig": {
-        "GCC_PREPROCESSOR_DEFINITIONS": "GRK_ANALYTICS_ENABLED=1"
-      }
-    },
-    {
-      "name": "Fabric",
-      "dependencies": {
-        "GRKAnalytics/Core": [
-
-        ]
-      },
-      "source_files": [
-        "GRKAnalytics/Providers/GRKFabricProvider.{h,m}"
-      ]
-    },
-    {
-      "name": "GoogleAnalytics",
-      "dependencies": {
-        "GRKAnalytics/Core": [
-
-        ]
-      },
-      "source_files": [
-        "GRKAnalytics/Providers/GRKGoogleAnalyticsProvider.{h,m}"
-      ]
-    }
-  ]
+  "source_files": [
+    "GRKAnalytics/*.{h,m}"
+  ],
+  "user_target_xcconfig": {
+    "GCC_PREPROCESSOR_DEFINITIONS": "GRK_ANALYTICS_ENABLED=1"
+  },
+  "description": "GRKAnalytics is a lightweight abstraction allowing for the agnostic use of multiple and varying analytics providers. Supported providers: Fabric and GoogleAnalytics."
 }

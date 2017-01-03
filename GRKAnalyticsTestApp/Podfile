@@ -3,7 +3,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '7.0'
 use_frameworks!
 
-pod 'GRKAnalytics', :path => '..', :subspecs => ['Fabric', 'GoogleAnalytics']
+pod 'GRKAnalytics', :path => '..'
 pod 'Fabric',          '~> 1.6'
 pod 'Crashlytics',     '~> 3.7'
 pod 'GoogleAnalytics', '~> 3.14'

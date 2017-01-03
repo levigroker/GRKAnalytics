@@ -15,6 +15,8 @@
 		DB1E42861C7F7DF300ABC168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1E42851C7F7DF300ABC168 /* Assets.xcassets */; };
 		DB1E42891C7F7DF300ABC168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1E42871C7F7DF300ABC168 /* LaunchScreen.storyboard */; };
 		DB1E42941C7F7DF300ABC168 /* GRKAnalyticsTestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1E42931C7F7DF300ABC168 /* GRKAnalyticsTestAppTests.m */; };
+		DB8B0CBB1E1C28DC00FBE00C /* GRKFabricProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8B0CB81E1C28DC00FBE00C /* GRKFabricProvider.m */; };
+		DB8B0CBC1E1C28DC00FBE00C /* GRKGoogleAnalyticsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8B0CBA1E1C28DC00FBE00C /* GRKGoogleAnalyticsProvider.m */; };
 		F7FC6F40CF31B17B2BD01512 /* Pods_GRKAnalyticsTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3D85711715FBBAEA4F507C /* Pods_GRKAnalyticsTestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,10 @@
 		DB1E428F1C7F7DF300ABC168 /* GRKAnalyticsTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRKAnalyticsTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1E42931C7F7DF300ABC168 /* GRKAnalyticsTestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRKAnalyticsTestAppTests.m; sourceTree = "<group>"; };
 		DB1E42951C7F7DF300ABC168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB8B0CB71E1C28DC00FBE00C /* GRKFabricProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRKFabricProvider.h; sourceTree = "<group>"; };
+		DB8B0CB81E1C28DC00FBE00C /* GRKFabricProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRKFabricProvider.m; sourceTree = "<group>"; };
+		DB8B0CB91E1C28DC00FBE00C /* GRKGoogleAnalyticsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRKGoogleAnalyticsProvider.h; sourceTree = "<group>"; };
+		DB8B0CBA1E1C28DC00FBE00C /* GRKGoogleAnalyticsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRKGoogleAnalyticsProvider.m; sourceTree = "<group>"; };
 		E0D51939C49362A5D8579B17 /* Pods-GRKAnalyticsTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GRKAnalyticsTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GRKAnalyticsTestApp/Pods-GRKAnalyticsTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FACF229B64F23940B21BE472 /* Pods_GRKAnalyticsTestAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GRKAnalyticsTestAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,6 +119,7 @@
 		DB1E42781C7F7DF300ABC168 /* GRKAnalyticsTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				DB8B0CB61E1C28DC00FBE00C /* Providers */,
 				DB1E427C1C7F7DF300ABC168 /* AppDelegate.h */,
 				DB1E427D1C7F7DF300ABC168 /* AppDelegate.m */,
 				DB1E427F1C7F7DF300ABC168 /* ViewController.h */,
@@ -141,6 +148,18 @@
 				DB1E42951C7F7DF300ABC168 /* Info.plist */,
 			);
 			path = GRKAnalyticsTestAppTests;
+			sourceTree = "<group>";
+		};
+		DB8B0CB61E1C28DC00FBE00C /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				DB8B0CB71E1C28DC00FBE00C /* GRKFabricProvider.h */,
+				DB8B0CB81E1C28DC00FBE00C /* GRKFabricProvider.m */,
+				DB8B0CB91E1C28DC00FBE00C /* GRKGoogleAnalyticsProvider.h */,
+				DB8B0CBA1E1C28DC00FBE00C /* GRKGoogleAnalyticsProvider.m */,
+			);
+			name = Providers;
+			path = ../../GRKAnalytics/Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,7 +361,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB8B0CBB1E1C28DC00FBE00C /* GRKFabricProvider.m in Sources */,
 				DB1E42811C7F7DF300ABC168 /* ViewController.m in Sources */,
+				DB8B0CBC1E1C28DC00FBE00C /* GRKGoogleAnalyticsProvider.m in Sources */,
 				DB1E427E1C7F7DF300ABC168 /* AppDelegate.m in Sources */,
 				DB1E427B1C7F7DF300ABC168 /* main.m in Sources */,
 			);
