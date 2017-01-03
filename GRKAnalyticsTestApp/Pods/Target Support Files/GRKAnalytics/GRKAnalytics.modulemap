@@ -1,0 +1,6 @@
+framework module GRKAnalytics {
+  umbrella header "GRKAnalytics-umbrella.h"
+
+  export *
+  module * { export * }
+}

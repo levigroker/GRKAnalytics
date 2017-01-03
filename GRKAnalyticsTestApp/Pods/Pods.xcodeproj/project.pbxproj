@@ -1,1475 +1,889 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>037C0CA694176A3C0915F62C9D20B3E6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B3D1D13E0C6553800746CB8FD61CF946</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>046AB761D6C6F90155EC0653426407FA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>GRKAnalytics.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>052A17875CB827423D627183396CEB60</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0B5D79002EB0D8C3D6BD76FC781D53FF</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F3C2CA79DC4C2E78660D915BDA1A5F84</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/GRKAnalytics/GRKAnalytics-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>GRK_ANALYTICS_ENABLED=1</string>
-				</array>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0D17567F0F5815BBD9D67AABC9472C9B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>GRKGoogleAnalyticsProvider.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>10834806BD7B412BC24F347361FA2C8E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>112C23C5D395C786E3E22B926C3B91F4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9962DC1377BFDDD243726EEECC752AFB</string>
-				<string>AE553A7B4FB95055A0FEDC97F6B150C2</string>
-				<string>5E3622C448A88481EC7DDF0A8D767884</string>
-				<string>6A954AB90BE306DC64E9BD19B1C8B108</string>
-				<string>C40CAE394C46BCB5249991022B7ED828</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>124D1C7FC5801940E9D605985CD91D96</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D7670A317BEA67ACEB242F103655B2CE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>15D634A0B63E6FD91254B9ECC54E020D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>4E762F23EC34ED4A6FF3312D84E33A40</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>174B426F881E4A8F08B0C7DDDCD914B8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Crashlytics.framework</string>
-			<key>path</key>
-			<string>iOS/Crashlytics.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1EC506B88D2ECB7F8A56B99709556508</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GAIEcommerceProduct.h</string>
-			<key>path</key>
-			<string>Headers/Public/GAIEcommerceProduct.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>22BC31A400F0048BCD8B2CBACA023E23</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>98FCA0454F9F9E91697B1F658A2C8C21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Fabric</string>
-			<key>path</key>
-			<string>Fabric</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>272643F56613CA0D336AE3DBF19DC404</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2A6202F18D29D8465174E11FB386ED9B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2D2D9E788FBD1F03AF51C2A4944C8DE7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GAILogger.h</string>
-			<key>path</key>
-			<string>Headers/Public/GAILogger.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B37F0F91F85060E28F1DAAB522DC7EC1</string>
-				<string>052A17875CB827423D627183396CEB60</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>319E33CA8DA533761E8A3264DF6DADB0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>GRKAnalytics-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>334C1DAA8AFF9818DB146EAB063E4278</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9762039AA58D7B9BEB86BC8D10AA3A70</string>
-				<string>9DC26522B00DB104DB3B5D17E2753A60</string>
-				<string>4A2514141FAB9C49759518B48FF9C15A</string>
-				<string>1EC506B88D2ECB7F8A56B99709556508</string>
-				<string>9D5344FC217AD0BA86770FFF5A579C63</string>
-				<string>5C7E97E00165556748357BFCDD9E5BD9</string>
-				<string>78FFB1DBE9958EE81227EE7A29CE0598</string>
-				<string>2D2D9E788FBD1F03AF51C2A4944C8DE7</string>
-				<string>C0133DBAB1DBAAD75743CF7CA66933B9</string>
-				<string>95840BF0546D5A888E2F380FCF29AE4E</string>
-				<string>124D1C7FC5801940E9D605985CD91D96</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>GoogleAnalytics</string>
-			<key>path</key>
-			<string>GoogleAnalytics</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>35FEC69B8363047C31EEEEEB2D1EF198</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E521810EF9E62A3AF5C2886E50748488</string>
-				<string>046AB761D6C6F90155EC0653426407FA</string>
-				<string>58C28F181D613F17784EBBD13E85DF9D</string>
-				<string>897855474BAFEA005E8D15E0E23CDE34</string>
-				<string>EE5A594D32AA9C4E026A5F2965C30BF6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Core</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>37DB56D75062CC75FCB0966E1C6E8A8E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3E4E89230EF59BC255123B67864ACF77</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>3F5B6D19A760D0A1728FC4C2C4340877</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>98C98CDFB3F20F2925F6CD1F141BB14F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>4224BEEB7CA1DB1C9FB6B2DDB304E149</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libGRKAnalytics.a</string>
-			<key>path</key>
-			<string>libGRKAnalytics.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>4399900A1D06E91B18B3CB6C8B2593E7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>680D459061C1D71A95F0D591D8469179</string>
-				<string>E546B774060CE9B4A96DE598BE49D2C4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Providers</string>
-			<key>path</key>
-			<string>Providers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>48DB7BA1F0833829867E93CBEC84907B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A5765D13DCAA14BBE964B5EAD9CB8FA6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4A2514141FAB9C49759518B48FF9C15A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GAIEcommerceFields.h</string>
-			<key>path</key>
-			<string>Headers/Public/GAIEcommerceFields.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4E762F23EC34ED4A6FF3312D84E33A40</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>58C28F181D613F17784EBBD13E85DF9D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>GRKAnalyticsProvider.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5C7E97E00165556748357BFCDD9E5BD9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GAIEcommercePromotion.h</string>
-			<key>path</key>
-			<string>Headers/Public/GAIEcommercePromotion.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5E3622C448A88481EC7DDF0A8D767884</key>
-		<dict>
-			<key>fileRef</key>
-			<string>897855474BAFEA005E8D15E0E23CDE34</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>606C17B49906CD04EA95F7ADB1785C1B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4399900A1D06E91B18B3CB6C8B2593E7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Fabric</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>654525AE5E098FF77FE68BDC95F775B4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>272643F56613CA0D336AE3DBF19DC404</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>680D459061C1D71A95F0D591D8469179</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>GRKFabricProvider.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6911BECA35E7518D864239B7E898EEF3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A954AB90BE306DC64E9BD19B1C8B108</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E546B774060CE9B4A96DE598BE49D2C4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6B29FC1DDE5BDB73AFECA0BFF3F85F98</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8B69E9F5FA47E8954C7670043AD9FD7E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>GoogleAnalytics</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>709664C09D8FC14BFE40F88503EA7427</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CA17E7FEEA5457CAB465557B2FB8BB9C</string>
-				<string>22BC31A400F0048BCD8B2CBACA023E23</string>
-				<string>334C1DAA8AFF9818DB146EAB063E4278</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>73DA4D64C55F4805EBB4B2C050DB5D7B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>680D459061C1D71A95F0D591D8469179</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>75BC4D4F1D0E70DBCEB086C452DDD787</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4224BEEB7CA1DB1C9FB6B2DDB304E149</string>
-				<string>806309D4A94C50EE7C54BF7F95AD3B82</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>78FFB1DBE9958EE81227EE7A29CE0598</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GAIFields.h</string>
-			<key>path</key>
-			<string>Headers/Public/GAIFields.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7BCCC1BDE26DC6385FFB24492751B8A7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0D17567F0F5815BBD9D67AABC9472C9B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>7CB2FC7A577CD5E328924AB3A138B85D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>GRKAnalytics</string>
-			<key>target</key>
-			<string>AFEBFF08CB703B8DBD711BC02C73345C</string>
-			<key>targetProxy</key>
-			<string>9B70194638CE67A34047F3F1430C3E3C</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>48DB7BA1F0833829867E93CBEC84907B</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>709664C09D8FC14BFE40F88503EA7427</string>
-				<string>75BC4D4F1D0E70DBCEB086C452DDD787</string>
-				<string>037C0CA694176A3C0915F62C9D20B3E6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7E73390BFFBE9DF9427FF1FDF5C66201</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F3C2CA79DC4C2E78660D915BDA1A5F84</string>
-				<string>319E33CA8DA533761E8A3264DF6DADB0</string>
-				<string>AC8C18E06CE9134E8743F6605A4420AE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>GRKAnalyticsTestApp/Pods/Target Support Files/GRKAnalytics</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>806309D4A94C50EE7C54BF7F95AD3B82</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods.a</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>808B863CF15A339D61E30FF7E1991F69</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C3125BB4639A674BACE059993510B3C4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>875CD19F62D180074D73B60B0F8FD4A2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EE5A594D32AA9C4E026A5F2965C30BF6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>8867EEC299CE9F559783D3F590F1CA99</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>654525AE5E098FF77FE68BDC95F775B4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>897855474BAFEA005E8D15E0E23CDE34</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>GRKAnalyticsProvider.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>89820CD311FD975F4076391976EA2119</key>
-		<dict>
-			<key>fileRef</key>
-			<string>58C28F181D613F17784EBBD13E85DF9D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>8B69E9F5FA47E8954C7670043AD9FD7E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0D17567F0F5815BBD9D67AABC9472C9B</string>
-				<string>D8A00F236FF7202BC08221C41B65EE51</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Providers</string>
-			<key>path</key>
-			<string>Providers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>95840BF0546D5A888E2F380FCF29AE4E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GAITracker.h</string>
-			<key>path</key>
-			<string>Headers/Public/GAITracker.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9762039AA58D7B9BEB86BC8D10AA3A70</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GAI.h</string>
-			<key>path</key>
-			<string>Headers/Public/GAI.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>98C98CDFB3F20F2925F6CD1F141BB14F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>98FCA0454F9F9E91697B1F658A2C8C21</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B4F965EB0430445B6CBF206920958D9E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9962DC1377BFDDD243726EEECC752AFB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>319E33CA8DA533761E8A3264DF6DADB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9B70194638CE67A34047F3F1430C3E3C</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>AFEBFF08CB703B8DBD711BC02C73345C</string>
-			<key>remoteInfo</key>
-			<string>GRKAnalytics</string>
-		</dict>
-		<key>9D5344FC217AD0BA86770FFF5A579C63</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GAIEcommerceProductAction.h</string>
-			<key>path</key>
-			<string>Headers/Public/GAIEcommerceProductAction.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9DC26522B00DB104DB3B5D17E2753A60</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GAIDictionaryBuilder.h</string>
-			<key>path</key>
-			<string>Headers/Public/GAIDictionaryBuilder.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A1A36D34413696BE466E2CA0AFF194DA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A5765D13DCAA14BBE964B5EAD9CB8FA6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>35FEC69B8363047C31EEEEEB2D1EF198</string>
-				<string>606C17B49906CD04EA95F7ADB1785C1B</string>
-				<string>6B29FC1DDE5BDB73AFECA0BFF3F85F98</string>
-				<string>7E73390BFFBE9DF9427FF1FDF5C66201</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>GRKAnalytics</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AA069D5BFDE526AEE18973BBDC9D44C4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D7E966AC1CBD17527A8D16195FEAC48A</string>
-				<string>89820CD311FD975F4076391976EA2119</string>
-				<string>73DA4D64C55F4805EBB4B2C050DB5D7B</string>
-				<string>7BCCC1BDE26DC6385FFB24492751B8A7</string>
-				<string>875CD19F62D180074D73B60B0F8FD4A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AC8C18E06CE9134E8743F6605A4420AE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>GRKAnalytics-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AE553A7B4FB95055A0FEDC97F6B150C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>046AB761D6C6F90155EC0653426407FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AFEBFF08CB703B8DBD711BC02C73345C</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E13570202F6B4BA297DD063884CE3E93</string>
-			<key>buildPhases</key>
-			<array>
-				<string>112C23C5D395C786E3E22B926C3B91F4</string>
-				<string>F8285914C50FBFFF2B031CEABCB6C2C8</string>
-				<string>AA069D5BFDE526AEE18973BBDC9D44C4</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>GRKAnalytics</string>
-			<key>productName</key>
-			<string>GRKAnalytics</string>
-			<key>productReference</key>
-			<string>4224BEEB7CA1DB1C9FB6B2DDB304E149</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>B37F0F91F85060E28F1DAAB522DC7EC1</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B3D1D13E0C6553800746CB8FD61CF946</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>37DB56D75062CC75FCB0966E1C6E8A8E</string>
-				<string>10834806BD7B412BC24F347361FA2C8E</string>
-				<string>272643F56613CA0D336AE3DBF19DC404</string>
-				<string>6911BECA35E7518D864239B7E898EEF3</string>
-				<string>A1A36D34413696BE466E2CA0AFF194DA</string>
-				<string>4E762F23EC34ED4A6FF3312D84E33A40</string>
-				<string>98C98CDFB3F20F2925F6CD1F141BB14F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>path</key>
-			<string>Target Support Files/Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B4F965EB0430445B6CBF206920958D9E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Fabric.framework</string>
-			<key>path</key>
-			<string>iOS/Fabric.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3E4E89230EF59BC255123B67864ACF77</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C00CD8427D98736D01E734112D420292</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>15D634A0B63E6FD91254B9ECC54E020D</string>
-				<string>3F5B6D19A760D0A1728FC4C2C4340877</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C0133DBAB1DBAAD75743CF7CA66933B9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GAITrackedViewController.h</string>
-			<key>path</key>
-			<string>Headers/Public/GAITrackedViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3125BB4639A674BACE059993510B3C4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C40CAE394C46BCB5249991022B7ED828</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D8A00F236FF7202BC08221C41B65EE51</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CA17E7FEEA5457CAB465557B2FB8BB9C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DB757F7ED355760A87B4510573B727A5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Crashlytics</string>
-			<key>path</key>
-			<string>Crashlytics</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D3B2ECF37C3EB8E1B1FA6C4DEC2A0705</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F3C2CA79DC4C2E78660D915BDA1A5F84</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/GRKAnalytics/GRKAnalytics-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>GRK_ANALYTICS_ENABLED=1</string>
-				</array>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0700</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>75BC4D4F1D0E70DBCEB086C452DDD787</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>AFEBFF08CB703B8DBD711BC02C73345C</string>
-				<string>E5E8A9F969E922DEBF82F995AE5B2B30</string>
-			</array>
-		</dict>
-		<key>D7670A317BEA67ACEB242F103655B2CE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>archive.ar</string>
-			<key>name</key>
-			<string>libGoogleAnalytics.a</string>
-			<key>path</key>
-			<string>Libraries/libGoogleAnalytics.a</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D7E966AC1CBD17527A8D16195FEAC48A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E521810EF9E62A3AF5C2886E50748488</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>D8A00F236FF7202BC08221C41B65EE51</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>GRKGoogleAnalyticsProvider.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB757F7ED355760A87B4510573B727A5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>174B426F881E4A8F08B0C7DDDCD914B8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E13570202F6B4BA297DD063884CE3E93</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0B5D79002EB0D8C3D6BD76FC781D53FF</string>
-				<string>D3B2ECF37C3EB8E1B1FA6C4DEC2A0705</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E521810EF9E62A3AF5C2886E50748488</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>GRKAnalytics.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E546B774060CE9B4A96DE598BE49D2C4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>GRKFabricProvider.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5E8A9F969E922DEBF82F995AE5B2B30</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C00CD8427D98736D01E734112D420292</string>
-			<key>buildPhases</key>
-			<array>
-				<string>8867EEC299CE9F559783D3F590F1CA99</string>
-				<string>808B863CF15A339D61E30FF7E1991F69</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>7CB2FC7A577CD5E328924AB3A138B85D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>productName</key>
-			<string>Pods</string>
-			<key>productReference</key>
-			<string>806309D4A94C50EE7C54BF7F95AD3B82</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>EE5A594D32AA9C4E026A5F2965C30BF6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>GRKLanguageFeatures.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F3C2CA79DC4C2E78660D915BDA1A5F84</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>GRKAnalytics.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F8285914C50FBFFF2B031CEABCB6C2C8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2A6202F18D29D8465174E11FB386ED9B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3125694F0ADA7F0EEB31EDDA2ED4E5EF /* GRKFabricProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B961D53365F7F4F6FCA4A5BF986937 /* GRKFabricProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3779340A75A3455044727828FA7CFEA3 /* GRKGoogleAnalyticsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 804BEA9C31647BF839653A49473C4293 /* GRKGoogleAnalyticsProvider.m */; };
+		3846A71158712BB5E9E35B9660F02682 /* Pods-GRKAnalyticsTestAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F426A78779F1A695F2D1387F32A68842 /* Pods-GRKAnalyticsTestAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B94D677D2C3F6369EEF03ACB0EEDC6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		4B0010866AAD2F11227066C2D48503FF /* GRKAnalytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F2FEACA9BD38DCDB4C2CEE8E5B49D8 /* GRKAnalytics-dummy.m */; };
+		4B0AF30C15B6157A4A9C6E9BEC6FEC38 /* GRKAnalyticsProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 939C33B8623C1F4E8F9C6B07F88B44E3 /* GRKAnalyticsProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F158B587BC49FC851E5AF62E126D5A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		690BE16AD02D77B2ED52FC385DEAB4F0 /* GRKAnalytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB377E9810006A933319C0117054A6F5 /* GRKAnalytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C5D715718A3AB0E1D37EF7069FDE983 /* Pods-GRKAnalyticsTestApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 466C59FF06405E74853DBEA65220A4D6 /* Pods-GRKAnalyticsTestApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		716A3481DE3E69682028AD6CF221DC6F /* GRKAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D95749F0215539230EC5CB82328C9D7 /* GRKAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75DA0861E78CBA3A63BA8A762487C338 /* GRKAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D4474406600DBB0956D8D0F6B875A5E2 /* GRKAnalytics.m */; };
+		8753981753A3ED270066F6DF593205EC /* Pods-GRKAnalyticsTestApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1566A77D53CFAF7A7C3CD5D789B519 /* Pods-GRKAnalyticsTestApp-dummy.m */; };
+		8A446DC62333A01EF77F08BCC95029A3 /* GRKLanguageFeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD500036F71AC4B8C8FEDA7D0F5CED8 /* GRKLanguageFeatures.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9FBD6F5ED30C1CBCD8135773DB03EE2 /* GRKFabricProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E61E065AFB471A57AFBC2AB33F01188 /* GRKFabricProvider.m */; };
+		D42026574AD0B1F1BBAF97F8CA156869 /* Pods-GRKAnalyticsTestAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9309DD0EC9A5EB283AC8B4FFB96544FF /* Pods-GRKAnalyticsTestAppTests-dummy.m */; };
+		F00E73E1EC08F2E981DDBAB1F9D8ED6D /* GRKGoogleAnalyticsProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0F26277E843B0B2E48124DF673B68A /* GRKGoogleAnalyticsProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1CCD5E81E0C116257A630325E5856C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		FCDF17AA989EA8D9D56286A16DB516DB /* GRKAnalyticsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCF412BF8BEF4A0E13E4426B079CC7F /* GRKAnalyticsProvider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA8ECB25DEF96CBE64089AE8BC858CF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22279878C84AC4C283D4FAE51C6215CB;
+			remoteInfo = GRKAnalytics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01594FDA315226631ABAF83A1732B110 /* Pods-GRKAnalyticsTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GRKAnalyticsTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		018638B9882289F0387D8C23C1FF394D /* Pods-GRKAnalyticsTestAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GRKAnalyticsTestAppTests-resources.sh"; sourceTree = "<group>"; };
+		02B76E4CE4089A068D356C7399797246 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProductAction.h; path = Sources/GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		02D207D5868F5182EA7083FE7438FADA /* GAI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = Sources/GAI.h; sourceTree = "<group>"; };
+		0EECD028984F4EEFBC3619878429A9C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14DEACF5B510B9245D9C0EE4C473E7B4 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		19BC5650E6E04FC8B53D1FD89890A549 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = Sources/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		1A3D504EF7A026D1886D80DDC39DDAC1 /* GAILogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = Sources/GAILogger.h; sourceTree = "<group>"; };
+		20362E6B34210DBE55A5EAC2D25B518E /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		25E20829E59839D73FB36BA39CF45199 /* Pods_GRKAnalyticsTestAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GRKAnalyticsTestAppTests.framework; path = "Pods-GRKAnalyticsTestAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26C98839F058797DE166D2A5739030AF /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		2C0F26277E843B0B2E48124DF673B68A /* GRKGoogleAnalyticsProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GRKGoogleAnalyticsProvider.h; sourceTree = "<group>"; };
+		302ABB9EC52950B50E69F9F725DA0E4A /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
+		3CCF412BF8BEF4A0E13E4426B079CC7F /* GRKAnalyticsProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GRKAnalyticsProvider.m; sourceTree = "<group>"; };
+		3D77196F2006F9CFA2D0714844521E92 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProduct.h; path = Sources/GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		3DDE2063F73BD74386FAE3632329A2E6 /* Pods-GRKAnalyticsTestApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GRKAnalyticsTestApp.modulemap"; sourceTree = "<group>"; };
+		3E61E065AFB471A57AFBC2AB33F01188 /* GRKFabricProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GRKFabricProvider.m; sourceTree = "<group>"; };
+		466C59FF06405E74853DBEA65220A4D6 /* Pods-GRKAnalyticsTestApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GRKAnalyticsTestApp-umbrella.h"; sourceTree = "<group>"; };
+		46BF25B275BB593700594CB800D6C110 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceFields.h; path = Sources/GAIEcommerceFields.h; sourceTree = "<group>"; };
+		503D29BB38546B04F521699AF11B0EAE /* Pods-GRKAnalyticsTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GRKAnalyticsTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		506FC4F7C4EC5E31B27A50DB08D7EB94 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		564D2ACF8DC86B2A1E5A5CA0F765C39A /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		581DFB7712E059925B363009507B0EBE /* Pods-GRKAnalyticsTestApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GRKAnalyticsTestApp-resources.sh"; sourceTree = "<group>"; };
+		5D95749F0215539230EC5CB82328C9D7 /* GRKAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GRKAnalytics.h; sourceTree = "<group>"; };
+		5E2649BF95A40A5FCAE63B016775B0EB /* Pods-GRKAnalyticsTestApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GRKAnalyticsTestApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		605DD1D5254DC443F95B4F23E997DBEC /* Pods-GRKAnalyticsTestApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GRKAnalyticsTestApp-frameworks.sh"; sourceTree = "<group>"; };
+		64E6FEFDEC0CEC52073BCC130A0A7F20 /* Pods-GRKAnalyticsTestAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GRKAnalyticsTestAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		797C67D24DE74066A7DF351075F11C69 /* GRKAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GRKAnalytics.framework; path = GRKAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BED8B6CBF11A1EC2AA41F6D9678002A /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		804BEA9C31647BF839653A49473C4293 /* GRKGoogleAnalyticsProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GRKGoogleAnalyticsProvider.m; sourceTree = "<group>"; };
+		83E5121791A5432EDF10BB8008F07EDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		889912E7EC1BE44024139049644558F7 /* GAIFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = Sources/GAIFields.h; sourceTree = "<group>"; };
+		8AD83E1AB9EE0CB2203B0950B65CBD99 /* GRKAnalytics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GRKAnalytics.modulemap; sourceTree = "<group>"; };
+		8CB8E15C626C067EAFB6A9B98B1FCBB2 /* GRKAnalytics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRKAnalytics-prefix.pch"; sourceTree = "<group>"; };
+		8D7C4364F920AAD2EB8456F20E973A3D /* Pods-GRKAnalyticsTestAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GRKAnalyticsTestAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8F3992E0CC13FE119A1E14766912593E /* Pods-GRKAnalyticsTestAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GRKAnalyticsTestAppTests.modulemap"; sourceTree = "<group>"; };
+		9309DD0EC9A5EB283AC8B4FFB96544FF /* Pods-GRKAnalyticsTestAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GRKAnalyticsTestAppTests-dummy.m"; sourceTree = "<group>"; };
+		939C33B8623C1F4E8F9C6B07F88B44E3 /* GRKAnalyticsProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GRKAnalyticsProvider.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93B961D53365F7F4F6FCA4A5BF986937 /* GRKFabricProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GRKFabricProvider.h; sourceTree = "<group>"; };
+		96F2FEACA9BD38DCDB4C2CEE8E5B49D8 /* GRKAnalytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GRKAnalytics-dummy.m"; sourceTree = "<group>"; };
+		98B315DFBE05D883877B7E3843AEB211 /* Pods-GRKAnalyticsTestApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GRKAnalyticsTestApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9971565414710FC1B81A1023C59E7731 /* Pods-GRKAnalyticsTestAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GRKAnalyticsTestAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A3A8EE70C1817D874CD716C1EF94C95D /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		AB377E9810006A933319C0117054A6F5 /* GRKAnalytics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRKAnalytics-umbrella.h"; sourceTree = "<group>"; };
+		ADD500036F71AC4B8C8FEDA7D0F5CED8 /* GRKLanguageFeatures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GRKLanguageFeatures.h; sourceTree = "<group>"; };
+		B28881A668B0B4002BE556C1AC36CFAC /* GRKAnalytics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GRKAnalytics.xcconfig; sourceTree = "<group>"; };
+		B803A11B4D7EC8B1CB787CC17C2732C8 /* Pods_GRKAnalyticsTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GRKAnalyticsTestApp.framework; path = "Pods-GRKAnalyticsTestApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B984A0DB1D6DA2A77A2DB04CA3CA72F6 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		BC481A7C0B08DC92E1E86676312F152F /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommercePromotion.h; path = Sources/GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		BFB115CB35C2C3FEF208650BFC190E59 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C77D00B6361AAE0505989DE4BBDCB2D9 /* Pods-GRKAnalyticsTestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GRKAnalyticsTestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D4474406600DBB0956D8D0F6B875A5E2 /* GRKAnalytics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GRKAnalytics.m; sourceTree = "<group>"; };
+		D5761DE55344C901F64A7A7517B4D606 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = Libraries/libGoogleAnalytics.a; sourceTree = "<group>"; };
+		DD081D98E5B110D4C1488EBD05F78D58 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		E7212B225B6FEB0338C12FFC975C0854 /* Pods-GRKAnalyticsTestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GRKAnalyticsTestAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EBDFC296E1E8703E8B1041229BCF9F74 /* GAITracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = Sources/GAITracker.h; sourceTree = "<group>"; };
+		EE1566A77D53CFAF7A7C3CD5D789B519 /* Pods-GRKAnalyticsTestApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GRKAnalyticsTestApp-dummy.m"; sourceTree = "<group>"; };
+		F000103168D64EA689C6B1B3D058ED19 /* GAITrackedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = Sources/GAITrackedViewController.h; sourceTree = "<group>"; };
+		F26B72F1828FC8C074127196E96781AA /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
+		F426A78779F1A695F2D1387F32A68842 /* Pods-GRKAnalyticsTestAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GRKAnalyticsTestAppTests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EC06CF28C3B3328F4C4911089E2683E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F158B587BC49FC851E5AF62E126D5A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		828872E1A95EB6AAAB7CE347516E7B34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B94D677D2C3F6369EEF03ACB0EEDC6E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8DA164FC918D9643F156CF030546216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CCD5E81E0C116257A630325E5856C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09CF05C4D1E6AE59C5AD59AA3B5510B7 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				2C0F26277E843B0B2E48124DF673B68A /* GRKGoogleAnalyticsProvider.h */,
+				804BEA9C31647BF839653A49473C4293 /* GRKGoogleAnalyticsProvider.m */,
+			);
+			name = Providers;
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		146F19509EC43378EF00DD6D0B42B533 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5761DE55344C901F64A7A7517B4D606 /* libGoogleAnalytics.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B80C86E2F68E5534778F2198F5A7E83 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AD83E1AB9EE0CB2203B0950B65CBD99 /* GRKAnalytics.modulemap */,
+				B28881A668B0B4002BE556C1AC36CFAC /* GRKAnalytics.xcconfig */,
+				96F2FEACA9BD38DCDB4C2CEE8E5B49D8 /* GRKAnalytics-dummy.m */,
+				8CB8E15C626C067EAFB6A9B98B1FCBB2 /* GRKAnalytics-prefix.pch */,
+				AB377E9810006A933319C0117054A6F5 /* GRKAnalytics-umbrella.h */,
+				BFB115CB35C2C3FEF208650BFC190E59 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "GRKAnalyticsTestApp/Pods/Target Support Files/GRKAnalytics";
+			sourceTree = "<group>";
+		};
+		1FA15DED1307C82047E968CD46185223 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				506FC4F7C4EC5E31B27A50DB08D7EB94 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31AA8589BD517D0C907FE8FB23B43FD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50FCED9AB2D61B60573D5B9A02FAD1F3 /* Crashlytics */,
+				93E3DB24D556708B391FDD589E55FF0C /* Fabric */,
+				6379F9403891E2036C6597F84A85170B /* GoogleAnalytics */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3A5A54550E029087B884A43578A1673B /* GRKAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				5D95749F0215539230EC5CB82328C9D7 /* GRKAnalytics.h */,
+				D4474406600DBB0956D8D0F6B875A5E2 /* GRKAnalytics.m */,
+				939C33B8623C1F4E8F9C6B07F88B44E3 /* GRKAnalyticsProvider.h */,
+				3CCF412BF8BEF4A0E13E4426B079CC7F /* GRKAnalyticsProvider.m */,
+				ADD500036F71AC4B8C8FEDA7D0F5CED8 /* GRKLanguageFeatures.h */,
+			);
+			name = GRKAnalytics;
+			path = GRKAnalytics;
+			sourceTree = "<group>";
+		};
+		46FCF42E42AD7379BFF75AE548D2E2C4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3A5A54550E029087B884A43578A1673B /* GRKAnalytics */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		48DB7BA1F0833829867E93CBEC84907B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC084414A4C84095075192E367A1A053 /* GRKAnalytics */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		50FCED9AB2D61B60573D5B9A02FAD1F3 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				26C98839F058797DE166D2A5739030AF /* ANSCompatibility.h */,
+				A3A8EE70C1817D874CD716C1EF94C95D /* Answers.h */,
+				564D2ACF8DC86B2A1E5A5CA0F765C39A /* CLSAttributes.h */,
+				F26B72F1828FC8C074127196E96781AA /* CLSLogging.h */,
+				DD081D98E5B110D4C1488EBD05F78D58 /* CLSReport.h */,
+				B984A0DB1D6DA2A77A2DB04CA3CA72F6 /* CLSStackFrame.h */,
+				14DEACF5B510B9245D9C0EE4C473E7B4 /* Crashlytics.h */,
+				A0DA8C74DC5EC28FE01C76400E61ECC6 /* Frameworks */,
+			);
+			name = Crashlytics;
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		51B9873B9F4DA670A0AEC868D0F917AC /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				93B961D53365F7F4F6FCA4A5BF986937 /* GRKFabricProvider.h */,
+				3E61E065AFB471A57AFBC2AB33F01188 /* GRKFabricProvider.m */,
+			);
+			name = Providers;
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		53AB5B8FE284B74337C9D539F5C4A78E /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				873FDCA9ABE9DF201D7DBB159C2E4901 /* GRKAnalytics */,
+			);
+			name = Fabric;
+			sourceTree = "<group>";
+		};
+		6379F9403891E2036C6597F84A85170B /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				02D207D5868F5182EA7083FE7438FADA /* GAI.h */,
+				19BC5650E6E04FC8B53D1FD89890A549 /* GAIDictionaryBuilder.h */,
+				46BF25B275BB593700594CB800D6C110 /* GAIEcommerceFields.h */,
+				3D77196F2006F9CFA2D0714844521E92 /* GAIEcommerceProduct.h */,
+				02B76E4CE4089A068D356C7399797246 /* GAIEcommerceProductAction.h */,
+				BC481A7C0B08DC92E1E86676312F152F /* GAIEcommercePromotion.h */,
+				889912E7EC1BE44024139049644558F7 /* GAIFields.h */,
+				1A3D504EF7A026D1886D80DDC39DDAC1 /* GAILogger.h */,
+				F000103168D64EA689C6B1B3D058ED19 /* GAITrackedViewController.h */,
+				EBDFC296E1E8703E8B1041229BCF9F74 /* GAITracker.h */,
+				146F19509EC43378EF00DD6D0B42B533 /* Frameworks */,
+			);
+			name = GoogleAnalytics;
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		73713B2793503115C1BE2CB7D3304449 /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				DC37DA1DD9CF9E5A37709152D801B09B /* GRKAnalytics */,
+			);
+			name = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7C2500E42808E739F25A3A97CC12E89B /* Pods-GRKAnalyticsTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				83E5121791A5432EDF10BB8008F07EDA /* Info.plist */,
+				8F3992E0CC13FE119A1E14766912593E /* Pods-GRKAnalyticsTestAppTests.modulemap */,
+				9971565414710FC1B81A1023C59E7731 /* Pods-GRKAnalyticsTestAppTests-acknowledgements.markdown */,
+				8D7C4364F920AAD2EB8456F20E973A3D /* Pods-GRKAnalyticsTestAppTests-acknowledgements.plist */,
+				9309DD0EC9A5EB283AC8B4FFB96544FF /* Pods-GRKAnalyticsTestAppTests-dummy.m */,
+				64E6FEFDEC0CEC52073BCC130A0A7F20 /* Pods-GRKAnalyticsTestAppTests-frameworks.sh */,
+				018638B9882289F0387D8C23C1FF394D /* Pods-GRKAnalyticsTestAppTests-resources.sh */,
+				F426A78779F1A695F2D1387F32A68842 /* Pods-GRKAnalyticsTestAppTests-umbrella.h */,
+				C77D00B6361AAE0505989DE4BBDCB2D9 /* Pods-GRKAnalyticsTestAppTests.debug.xcconfig */,
+				E7212B225B6FEB0338C12FFC975C0854 /* Pods-GRKAnalyticsTestAppTests.release.xcconfig */,
+			);
+			name = "Pods-GRKAnalyticsTestAppTests";
+			path = "Target Support Files/Pods-GRKAnalyticsTestAppTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				48DB7BA1F0833829867E93CBEC84907B /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				31AA8589BD517D0C907FE8FB23B43FD0 /* Pods */,
+				F650DB589A9D42A71B6A21430CE6941E /* Products */,
+				889255E5B3C6D4D06512DAADE7B00712 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		873FDCA9ABE9DF201D7DBB159C2E4901 /* GRKAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				51B9873B9F4DA670A0AEC868D0F917AC /* Providers */,
+			);
+			name = GRKAnalytics;
+			path = GRKAnalytics;
+			sourceTree = "<group>";
+		};
+		884BE551939644CDF52B654F2502CABB /* Pods-GRKAnalyticsTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				0EECD028984F4EEFBC3619878429A9C6 /* Info.plist */,
+				3DDE2063F73BD74386FAE3632329A2E6 /* Pods-GRKAnalyticsTestApp.modulemap */,
+				98B315DFBE05D883877B7E3843AEB211 /* Pods-GRKAnalyticsTestApp-acknowledgements.markdown */,
+				5E2649BF95A40A5FCAE63B016775B0EB /* Pods-GRKAnalyticsTestApp-acknowledgements.plist */,
+				EE1566A77D53CFAF7A7C3CD5D789B519 /* Pods-GRKAnalyticsTestApp-dummy.m */,
+				605DD1D5254DC443F95B4F23E997DBEC /* Pods-GRKAnalyticsTestApp-frameworks.sh */,
+				581DFB7712E059925B363009507B0EBE /* Pods-GRKAnalyticsTestApp-resources.sh */,
+				466C59FF06405E74853DBEA65220A4D6 /* Pods-GRKAnalyticsTestApp-umbrella.h */,
+				503D29BB38546B04F521699AF11B0EAE /* Pods-GRKAnalyticsTestApp.debug.xcconfig */,
+				01594FDA315226631ABAF83A1732B110 /* Pods-GRKAnalyticsTestApp.release.xcconfig */,
+			);
+			name = "Pods-GRKAnalyticsTestApp";
+			path = "Target Support Files/Pods-GRKAnalyticsTestApp";
+			sourceTree = "<group>";
+		};
+		889255E5B3C6D4D06512DAADE7B00712 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				884BE551939644CDF52B654F2502CABB /* Pods-GRKAnalyticsTestApp */,
+				7C2500E42808E739F25A3A97CC12E89B /* Pods-GRKAnalyticsTestAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		93E3DB24D556708B391FDD589E55FF0C /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				302ABB9EC52950B50E69F9F725DA0E4A /* FABAttributes.h */,
+				7BED8B6CBF11A1EC2AA41F6D9678002A /* Fabric.h */,
+				1FA15DED1307C82047E968CD46185223 /* Frameworks */,
+			);
+			name = Fabric;
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		A0DA8C74DC5EC28FE01C76400E61ECC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20362E6B34210DBE55A5EAC2D25B518E /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC37DA1DD9CF9E5A37709152D801B09B /* GRKAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				09CF05C4D1E6AE59C5AD59AA3B5510B7 /* Providers */,
+			);
+			name = GRKAnalytics;
+			path = GRKAnalytics;
+			sourceTree = "<group>";
+		};
+		EC084414A4C84095075192E367A1A053 /* GRKAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				46FCF42E42AD7379BFF75AE548D2E2C4 /* Core */,
+				53AB5B8FE284B74337C9D539F5C4A78E /* Fabric */,
+				73713B2793503115C1BE2CB7D3304449 /* GoogleAnalytics */,
+				1B80C86E2F68E5534778F2198F5A7E83 /* Support Files */,
+			);
+			name = GRKAnalytics;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F650DB589A9D42A71B6A21430CE6941E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				797C67D24DE74066A7DF351075F11C69 /* GRKAnalytics.framework */,
+				B803A11B4D7EC8B1CB787CC17C2732C8 /* Pods_GRKAnalyticsTestApp.framework */,
+				25E20829E59839D73FB36BA39CF45199 /* Pods_GRKAnalyticsTestAppTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1541319B0CE799EDC7765D5AD282A447 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3846A71158712BB5E9E35B9660F02682 /* Pods-GRKAnalyticsTestAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CCBE10B220CD8EFA7206E6844092183 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690BE16AD02D77B2ED52FC385DEAB4F0 /* GRKAnalytics-umbrella.h in Headers */,
+				716A3481DE3E69682028AD6CF221DC6F /* GRKAnalytics.h in Headers */,
+				4B0AF30C15B6157A4A9C6E9BEC6FEC38 /* GRKAnalyticsProvider.h in Headers */,
+				3125694F0ADA7F0EEB31EDDA2ED4E5EF /* GRKFabricProvider.h in Headers */,
+				F00E73E1EC08F2E981DDBAB1F9D8ED6D /* GRKGoogleAnalyticsProvider.h in Headers */,
+				8A446DC62333A01EF77F08BCC95029A3 /* GRKLanguageFeatures.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C178193905BF1477D26BCAC17C391E3E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C5D715718A3AB0E1D37EF7069FDE983 /* Pods-GRKAnalyticsTestApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		22279878C84AC4C283D4FAE51C6215CB /* GRKAnalytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED0F020AC8127D6162BF6E079EF790C /* Build configuration list for PBXNativeTarget "GRKAnalytics" */;
+			buildPhases = (
+				85D72C35E77BC027CA018CABEC97E60E /* Sources */,
+				828872E1A95EB6AAAB7CE347516E7B34 /* Frameworks */,
+				9CCBE10B220CD8EFA7206E6844092183 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GRKAnalytics;
+			productName = GRKAnalytics;
+			productReference = 797C67D24DE74066A7DF351075F11C69 /* GRKAnalytics.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		41DE5F2C613FC3C7A2E1A95E605EED57 /* Pods-GRKAnalyticsTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 572CC5019E2A0188D3B4160BAB2F9F50 /* Build configuration list for PBXNativeTarget "Pods-GRKAnalyticsTestApp" */;
+			buildPhases = (
+				E9FB55D12B855672F38D8035BAA7B95E /* Sources */,
+				E8DA164FC918D9643F156CF030546216 /* Frameworks */,
+				C178193905BF1477D26BCAC17C391E3E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C5881080BB04BC302BB330142BF442D /* PBXTargetDependency */,
+			);
+			name = "Pods-GRKAnalyticsTestApp";
+			productName = "Pods-GRKAnalyticsTestApp";
+			productReference = B803A11B4D7EC8B1CB787CC17C2732C8 /* Pods_GRKAnalyticsTestApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A4976E90E18B1ECB070BB640E040A8AD /* Pods-GRKAnalyticsTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B4A7A89E96E3BED91179C91FB9C4FB1 /* Build configuration list for PBXNativeTarget "Pods-GRKAnalyticsTestAppTests" */;
+			buildPhases = (
+				27274638AE2F5C54E8E06142D1A16032 /* Sources */,
+				3EC06CF28C3B3328F4C4911089E2683E /* Frameworks */,
+				1541319B0CE799EDC7765D5AD282A447 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GRKAnalyticsTestAppTests";
+			productName = "Pods-GRKAnalyticsTestAppTests";
+			productReference = 25E20829E59839D73FB36BA39CF45199 /* Pods_GRKAnalyticsTestAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F650DB589A9D42A71B6A21430CE6941E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22279878C84AC4C283D4FAE51C6215CB /* GRKAnalytics */,
+				41DE5F2C613FC3C7A2E1A95E605EED57 /* Pods-GRKAnalyticsTestApp */,
+				A4976E90E18B1ECB070BB640E040A8AD /* Pods-GRKAnalyticsTestAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27274638AE2F5C54E8E06142D1A16032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D42026574AD0B1F1BBAF97F8CA156869 /* Pods-GRKAnalyticsTestAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85D72C35E77BC027CA018CABEC97E60E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B0010866AAD2F11227066C2D48503FF /* GRKAnalytics-dummy.m in Sources */,
+				75DA0861E78CBA3A63BA8A762487C338 /* GRKAnalytics.m in Sources */,
+				FCDF17AA989EA8D9D56286A16DB516DB /* GRKAnalyticsProvider.m in Sources */,
+				B9FBD6F5ED30C1CBCD8135773DB03EE2 /* GRKFabricProvider.m in Sources */,
+				3779340A75A3455044727828FA7CFEA3 /* GRKGoogleAnalyticsProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9FB55D12B855672F38D8035BAA7B95E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8753981753A3ED270066F6DF593205EC /* Pods-GRKAnalyticsTestApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C5881080BB04BC302BB330142BF442D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GRKAnalytics;
+			target = 22279878C84AC4C283D4FAE51C6215CB /* GRKAnalytics */;
+			targetProxy = FA8ECB25DEF96CBE64089AE8BC858CF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EA62157EA747384709859BAE5757B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 503D29BB38546B04F521699AF11B0EAE /* Pods-GRKAnalyticsTestApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GRKAnalyticsTestApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GRKAnalyticsTestApp/Pods-GRKAnalyticsTestApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GRKAnalyticsTestApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		22FE9C696A059AE582611ED410ABEC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C77D00B6361AAE0505989DE4BBDCB2D9 /* Pods-GRKAnalyticsTestAppTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GRKAnalyticsTestAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GRKAnalyticsTestAppTests/Pods-GRKAnalyticsTestAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GRKAnalyticsTestAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2A31990BCD6D018BA7C3217A6CC9D976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28881A668B0B4002BE556C1AC36CFAC /* GRKAnalytics.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GRKAnalytics/GRKAnalytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GRKAnalytics/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GRKAnalytics/GRKAnalytics.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GRKAnalytics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		33DDD9E74044EEF94999F142D1C41FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7212B225B6FEB0338C12FFC975C0854 /* Pods-GRKAnalyticsTestAppTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GRKAnalyticsTestAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GRKAnalyticsTestAppTests/Pods-GRKAnalyticsTestAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GRKAnalyticsTestAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		68973DAC1D0C92CD2F65228C9E063C06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28881A668B0B4002BE556C1AC36CFAC /* GRKAnalytics.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GRKAnalytics/GRKAnalytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GRKAnalytics/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GRKAnalytics/GRKAnalytics.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GRKAnalytics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		962F339B93B58AB9341502B384C3F4C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01594FDA315226631ABAF83A1732B110 /* Pods-GRKAnalyticsTestApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GRKAnalyticsTestApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GRKAnalyticsTestApp/Pods-GRKAnalyticsTestApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GRKAnalyticsTestApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF7953F66E785E8876EB4D370D777D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7953F66E785E8876EB4D370D777D50 /* Debug */,
+				79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ED0F020AC8127D6162BF6E079EF790C /* Build configuration list for PBXNativeTarget "GRKAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A31990BCD6D018BA7C3217A6CC9D976 /* Debug */,
+				68973DAC1D0C92CD2F65228C9E063C06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		572CC5019E2A0188D3B4160BAB2F9F50 /* Build configuration list for PBXNativeTarget "Pods-GRKAnalyticsTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EA62157EA747384709859BAE5757B25 /* Debug */,
+				962F339B93B58AB9341502B384C3F4C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B4A7A89E96E3BED91179C91FB9C4FB1 /* Build configuration list for PBXNativeTarget "Pods-GRKAnalyticsTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22FE9C696A059AE582611ED410ABEC3C /* Debug */,
+				33DDD9E74044EEF94999F142D1C41FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

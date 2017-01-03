@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GRKAnalytics"
-  s.version      = "2.0.1"
+  s.version      = "3.0"
   s.summary      = "A lightweight abstraction for underlying analytics providers."
   s.homepage     = "https://github.com/levigroker/GRKAnalytics"
   s.license      = 'Creative Commons Attribution 3.0 Unported License'
@@ -11,6 +11,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.0'
   s.osx.deployment_target = '10.9'
   s.frameworks = 'Foundation'
+  s.source_files = ['GRKAnalytics/*.{h,m}']
+  s.user_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'GRK_ANALYTICS_ENABLED=1' }
   
   ### Supported Providers
   fabric = { :spec_name => 'Fabric', :provider_class => 'GRKFabricProvider' }
@@ -19,25 +21,12 @@ Pod::Spec.new do |s|
   all_analytics = [fabric, googleanalytics]
   ### 
   
-  s.subspec "Core" do |ss|
-    ss.source_files = ['*.{h,m}']
-  end
-
   all_names = []
 
-  # Dynamically make sub-specs for each provider
+  # Dynamically generate the description
   all_analytics.each do |analytics_spec|
-    s.subspec analytics_spec[:spec_name] do |ss|
-
-      specname = analytics_spec[:spec_name]
-      provider = analytics_spec[:provider_class]
-
-      sources = ["Providers/#{provider}.{h,m}"]
-      ss.dependency 'GRKAnalytics/Core'
-      ss.source_files = sources
-      all_names << specname
-
-    end
+    specname = analytics_spec[:spec_name]
+    all_names << specname
   end
 
   # Generate a dynamic description

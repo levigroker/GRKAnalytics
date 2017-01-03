@@ -1,28 +1,15 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '7.0'
+use_frameworks!
+
 pod 'GRKAnalytics', :path => '..', :subspecs => ['Fabric', 'GoogleAnalytics']
 pod 'Fabric',          '~> 1.6'
 pod 'Crashlytics',     '~> 3.7'
 pod 'GoogleAnalytics', '~> 3.14'
 
-post_install do |installer_representation|
-
-  # Grab the `project` object from the installer (cocoapods < 0.38 use `project`, cocoapods >= 0.38 use pods_project)
-  # See https://github.com/CocoaPods/CocoaPods/issues/2292
-  if installer_representation.respond_to?(:project)
-    project = installer_representation.project
-  else
-    project = installer_representation.pods_project
+target 'GRKAnalyticsTestApp' do
+  target 'GRKAnalyticsTestAppTests' do
+    inherit! :search_paths
   end
-
-  # Update the GRKAnalytics pod project to enable compilation of the desired providers
-  grkanalytics = (project.targets.select { |target| target.name == 'GRKAnalytics' }).first
-  if grkanalytics
-    grkanalytics.build_configurations.each do |config|
-      config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)']
-      config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'GRK_ANALYTICS_ENABLED=1'
-    end
-  end
-
 end

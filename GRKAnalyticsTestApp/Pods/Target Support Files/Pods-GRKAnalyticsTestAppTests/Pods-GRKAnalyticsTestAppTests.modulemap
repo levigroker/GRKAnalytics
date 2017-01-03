@@ -1,0 +1,6 @@
+framework module Pods_GRKAnalyticsTestAppTests {
+  umbrella header "Pods-GRKAnalyticsTestAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
