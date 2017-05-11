@@ -1,5 +1,5 @@
 PODS:
-  - Crashlytics (3.8.3):
+  - Crashlytics (3.8.4):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.11)
   - GoogleAnalytics (3.17.0)
@@ -16,11 +16,11 @@ EXTERNAL SOURCES:
     :path: ".."
 
 SPEC CHECKSUMS:
-  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GRKAnalytics: e4cf2e7a91d9ee15daf9af8ad31e0f7690049732
 
 PODFILE CHECKSUM: 47603aab4903b42f3aa6baf0dec03cc67674691a
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1

@@ -3,17 +3,13 @@
 //  GRKAnalytics
 //
 //  Created by Levi Brown on January, 29 2016.
-//  Copyright (c) 2016 Levi Brown <mailto:levigroker@gmail.com>
-//  This work is licensed under the Creative Commons Attribution 3.0
-//  Unported License. To view a copy of this license, visit
-//  http://creativecommons.org/licenses/by/3.0/ or send a letter to Creative
-//  Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041,
-//  USA.
+//  Copyright (c) 2016-2017 Levi Brown <mailto:levigroker@gmail.com> This work is
+//  licensed under the Creative Commons Attribution 4.0 International License. To
+//  view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
+//  or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 //
-//  The above attribution and the included license must accompany any version
-//  of the source code. Visible attribution in any binary distributable
-//  including this work (or derivatives) is not required, but would be
-//  appreciated.
+//  The above attribution and the included license must accompany any version of
+//  the source code, binary distributable, or derivatives.
 //
 
 #import <Foundation/Foundation.h>
@@ -108,7 +104,7 @@ events to the providers if disabled, this method allows the provider to take add
  * @param success    Successful purchse?
  * @param itemName   The human-readable form of the item's name.
  * @param itemType   The type, or genre of the item. Example: Song
- * @param itemId     The machine-readable, unique item identifier Example: SKU
+ * @param itemID     The machine-readable, unique item identifier Example: SKU
  * @param properties A dictionary of all additional properties to associate with this event.
  */
 - (void)trackPurchaseInCategory:(nullable NSString *)category
@@ -117,7 +113,7 @@ events to the providers if disabled, this method allows the provider to take add
                         success:(nullable NSNumber *)success
                        itemName:(nullable NSString *)itemName
                        itemType:(nullable NSString *)itemType
-                         itemID:(nullable NSString *)identifier
+                         itemID:(nullable NSString *)itemID
                      properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 
 /**

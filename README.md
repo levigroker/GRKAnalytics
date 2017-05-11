@@ -106,7 +106,7 @@ NOTE: At this time the podspec is designed such that all providers are cross-pla
 
 * Inspiration was taken from [ARAnalytics](https://github.com/orta/ARAnalytics)
 * This work is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
-  Please see the included [LICENSE.txt](https://github.com/levigroker/Sprout/blob/master/LICENSE.txt) for complete details.
+  Please see the included [LICENSE.txt](https://github.com/levigroker/GRKAnalytics/blob/master/LICENSE.txt) for complete details.
 
 #### About
 A professional iOS engineer by day, my name is Levi Brown. Authoring a blog
