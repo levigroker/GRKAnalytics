@@ -14,14 +14,35 @@
 
 #import <Foundation/Foundation.h>
 #import "GRKLanguageFeatures.h"
+@class GRKAnalyticsProvider;
 
 NS_ASSUME_NONNULL_BEGIN
 
-extern NSString *const GRKAnalyticsEventKeyTimingLength;
+extern NSString * const kGRKAnalyticsProviderDefaultEventKeyAppBecameActive;
+extern NSString * const kGRKAnalyticsProviderDefaultEventKeyError;
+
+extern NSString * const kGRKAnalyticsProviderDefaultPropertyKeyCategory;
+extern NSString * const kGRKAnalyticsProviderDefaultPropertyKeySuccess;
+
+extern NSString * const GRKAnalyticsEventKeyTimingLength;
+
+@protocol GRKAnalyticsProviderDelegate <NSObject>
+
+@optional
+
+- (NSString *)provider:(GRKAnalyticsProvider *)provider eventForEvent:(NSString *)key;
+- (NSString *)provider:(GRKAnalyticsProvider *)provider propertyForProperty:(NSString *)key;
+
+@end
 
 @interface GRKAnalyticsProvider : NSObject
 
 #pragma mark - Meta
+
+/**
+ Delegate which will be called to translate event names, parameter keys, etc.
+ */
+@property (nonatomic, weak) id<GRKAnalyticsProviderDelegate> delegate;
 
 /**
  * Set the state of this provider's tracking.
@@ -35,6 +56,24 @@ events to the providers if disabled, this method allows the provider to take add
  * @returns the enabled state of this tracker.
  */
 - (BOOL)enabled;
+
+/**
+ The event name for errors tracked by `trackError:properties:`
+ Defaults to `kGRKAnalyticsProviderDefaultEventKeyError`
+ */
+@property (nonatomic, nonnull, copy) NSString *errorEventName;
+
+/**
+ The property key to use for `category` information tracked by various API methods.
+ Defaults to `kGRKAnalyticsProviderDefaultPropertyKeyCategory`
+ */
+@property (nonatomic, nonnull, copy) NSString *categoryPropertyName;
+
+/**
+ The property key to use for `success` information tracked by various API methods.
+ Defaults to `kGRKAnalyticsProviderDefaultPropertyKeySuccess`
+ */
+@property (nonatomic, nonnull, copy) NSString *successPropertyName;
 
 #pragma mark - User
 
@@ -72,6 +111,15 @@ events to the providers if disabled, this method allows the provider to take add
         properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 
 #pragma mark Event Specific Cases
+
+/**
+ * Track application becoming active.
+ *
+ * @param category   The category of the event.
+ * @param properties A dictionary of all additional properties to associate with this event.
+ */
+- (void)trackAppBecameActiveWithCategory:(nullable NSString *)category
+							  properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
 
 /**
  * Track user account creation.
@@ -154,6 +202,32 @@ events to the providers if disabled, this method allows the provider to take add
  */
 - (void)trackError:(NSError *)error
         properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
+
+#pragma mark - Subclassing
+
+/**
+ * Queries the delegate, if any, to offer an alternative property key for the given property key.
+ *
+ * @param property The property key to check with the delegate about.
+ * @return If a non-nil answer is available from the delegate, that answer will be returned, otherwise this returns the given property.
+ */
+- (nullable NSString *)delegatePropertyForProperty:(nullable NSString *)property;
+
+/**
+ * Queries the delegate, if any, to offer alternative property keys for the keys of the given property dictionary.
+ *
+ * @param properties The property dictionary whose keys are to be inspected (and possibly augmented) by the delegate.
+ * @return A new dictionary, which, for each key in the given dictionary, if a non-nil answer is available from the delegate, that answer will be replace the original key, otherwise this the original property key is left intact.
+ */
+- (NSDictionary *)delegatePropertiesForProperties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
+
+/**
+ * Queries the delegate, if any, to offer an alternative event key for the given event key.
+ *
+ * @param event The event key to check with the delegate about.
+ * @return If a non-nil answer is available from the delegate, that answer will be returned, otherwise this returns the given event.
+ */
+- (nullable NSString *)delegateEventForEvent:(nullable NSString *)event;
 
 @end
 

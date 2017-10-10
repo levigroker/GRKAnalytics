@@ -14,6 +14,13 @@
 
 #import "GRKAnalyticsProvider.h"
 
+NSString * const kGRKAnalyticsProviderDefaultEventKeyAppBecameActive = @"App Became Active";
+NSString * const kGRKAnalyticsProviderDefaultEventKeyError = @"Error";
+
+NSString * const kGRKAnalyticsProviderDefaultPropertyKeyCategory = @"Category";
+NSString * const kGRKAnalyticsProviderDefaultPropertyKeySuccess = @"Success";
+
+
 NSString *const GRKAnalyticsEventKeyTimingLength = @"length";
 
 @interface GRKAnalyticsProvider ()
@@ -23,6 +30,35 @@ NSString *const GRKAnalyticsEventKeyTimingLength = @"length";
 @end
 
 @implementation GRKAnalyticsProvider
+
+#pragma mark - Accessors
+
+- (NSString *)errorEventName
+{
+	if (!_errorEventName) {
+		return kGRKAnalyticsProviderDefaultEventKeyError;
+	}
+	
+	return _errorEventName;
+}
+
+- (NSString *)categoryPropertyName
+{
+	if (!_categoryPropertyName) {
+		return kGRKAnalyticsProviderDefaultPropertyKeyCategory;
+	}
+	
+	return _categoryPropertyName;
+}
+
+- (NSString *)successPropertyName
+{
+	if (!_successPropertyName) {
+		return kGRKAnalyticsProviderDefaultPropertyKeySuccess;
+	}
+	
+	return _successPropertyName;
+}
 
 #pragma mark - User
 
@@ -55,6 +91,12 @@ NSString *const GRKAnalyticsEventKeyTimingLength = @"length";
 }
 
 #pragma mark Event Specific Cases
+
+- (void)trackAppBecameActiveWithCategory:(nullable NSString *)category
+							  properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
+{
+	//Not implemented at this level
+}
 
 - (void)trackUserAccountCreatedMethod:(nullable NSString *)method
                               success:(nullable NSNumber *)success
@@ -110,6 +152,54 @@ NSString *const GRKAnalyticsEventKeyTimingLength = @"length";
 - (void)trackError:(NSError *)error properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
     //Not implemented at this level
+}
+
+#pragma mark - Subclassing
+
+- (NSString *)delegatePropertyForProperty:(nullable NSString *)property
+{
+	NSString *retVal = property;
+	
+	if ([self.delegate respondsToSelector:@selector(provider:propertyForProperty:)]) {
+		NSString *key = [self.delegate provider:self propertyForProperty:property];
+		if (key) {
+			retVal = key;
+		}
+	}
+	
+	return retVal;
+}
+
+- (NSDictionary *)delegatePropertiesForProperties:(nullable NSDictionary *)properties
+{
+	NSMutableDictionary *retVal = [NSMutableDictionary dictionaryWithDictionary:properties ?: @{}];
+	
+	if ([self.delegate respondsToSelector:@selector(provider:propertyForProperty:)]) {
+		NSArray *keys = [retVal allKeys];
+		for (NSString *key in keys) {
+			NSString *delegateKey = [self.delegate provider:self propertyForProperty:key];
+			if (delegateKey && ![delegateKey isEqualToString:key]) {
+				retVal[delegateKey] = retVal[key];
+				retVal[key] = nil;
+			}
+		}
+	}
+	
+	return retVal;
+}
+
+- (NSString *)delegateEventForEvent:(NSString *)event
+{
+	NSString *retVal = event;
+	
+	if ([self.delegate respondsToSelector:@selector(provider:eventForEvent:)]) {
+		NSString *key = [self.delegate provider:self eventForEvent:event];
+		if (key) {
+			retVal = key;
+		}
+	}
+	
+	return retVal;
 }
 
 @end

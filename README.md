@@ -36,6 +36,7 @@ related pods, like this:
     pod 'Fabric',          '~> 1.6'
     pod 'Crashlytics',     '~> 3.8'
     pod 'GoogleAnalytics', '~> 3.17'
+    pod 'Firebase/Core',   '~> 4.0'
 
 ### Documentation
 
@@ -49,6 +50,8 @@ track errors, etc.
 	[GRKAnalytics trackEvent:"Hello World"];
 
 The above is the simplest case. Additional documentation is available in the source.
+
+Please note: Firebase does not (yet?) support analytics on macOS.
 
 ### Contributing
 
@@ -77,15 +80,16 @@ it to the `all_analytics` array:
     ### Supported Providers
     fabric = { :spec_name => 'Fabric', :provider_class => 'GRKFabricProvider' }
     googleanalytics = { :spec_name => 'GoogleAnalytics', :provider_class => 'GRKGoogleAnalyticsProvider' }
+    firebase = { :spec_name => 'Firebase', :provider_class => 'GRKFirebaseProvider' }
 
-    all_analytics = [fabric, googleanalytics]
+    all_analytics = [fabric, googleanalytics, firebase]
     ### 
     
 Let's break this down a little...
 
-`fabric` and `googleanalytics` are the ruby variable names which get assigned the
-associative array with the rest of the information. These names will need to be added to
-the `all_analytics` array so the podspec can generate a dynamic description with the
+`fabric`, `googleanalytics`, and `firebase` are the ruby variable names which get assigned
+the associative array with the rest of the information. These names will need to be added
+to the `all_analytics` array so the podspec can generate a dynamic description with the
 supported providers.
 
 The associative array contains several pieces of data:

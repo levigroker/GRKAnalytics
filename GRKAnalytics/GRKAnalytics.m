@@ -128,6 +128,17 @@
 
 #pragma mark Event Specific Cases
 
++ (void)trackAppBecameActive
+{
+	[self trackAppBecameActiveWithCategory:nil properties:nil];
+}
+
++ (void)trackAppBecameActiveWithCategory:(nullable NSString *)category
+							  properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
+{
+	[[self sharedInstance] trackAppBecameActiveWithCategory:category properties:properties];
+}
+
 + (void)trackUserAccountCreatedMethod:(nullable NSString *)method
                               success:(nullable NSNumber *)success
                            properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
@@ -287,6 +298,15 @@
 }
 
 #pragma mark Event Specific Cases
+
+- (void)trackAppBecameActiveWithCategory:(nullable NSString *)category
+							  properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
+{
+	NSDictionary *allProperties = [self allPropertiesWithProperties:properties];
+	[self doForEachProvider:^(GRKAnalyticsProvider *provider) {
+		[provider trackAppBecameActiveWithCategory:category properties:allProperties];
+	}];
+}
 
 - (void)trackUserAccountCreatedMethod:(nullable NSString *)method
                               success:(nullable NSNumber *)success

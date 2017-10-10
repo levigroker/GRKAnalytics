@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GRKAnalytics"
-  s.version      = "3.0.1"
+  s.version      = "3.1"
   s.summary      = "A lightweight abstraction for underlying analytics providers."
   s.homepage     = "https://github.com/levigroker/GRKAnalytics"
   s.license      = 'Creative Commons Attribution 3.0 Unported License'
@@ -17,8 +17,9 @@ Pod::Spec.new do |s|
   ### Supported Providers
   fabric = { :spec_name => 'Fabric', :provider_class => 'GRKFabricProvider' }
   googleanalytics = { :spec_name => 'GoogleAnalytics', :provider_class => 'GRKGoogleAnalyticsProvider' }
+  firebase = { :spec_name => 'Firebase', :provider_class => 'GRKFirebaseProvider' }
 
-  all_analytics = [fabric, googleanalytics]
+  all_analytics = [fabric, googleanalytics, firebase]
   ### 
   
   all_names = []

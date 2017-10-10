@@ -111,6 +111,22 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark Event Specific Cases
 
 /**
+ * Track application becoming active.
+ * This is the same as calling `trackAppBecameActiveWithCategory:properties:` with `nil` parameters.
+ * @see trackAppBecameActiveWithCategory:properties:
+ */
++ (void)trackAppBecameActive;
+
+/**
+ * Track application becoming active.
+ *
+ * @param category   The category of the event.
+ * @param properties A dictionary of all additional properties to associate with this event.
+ */
++ (void)trackAppBecameActiveWithCategory:(nullable NSString *)category
+							  properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties;
+
+/**
  * Track user account creation.
  *
  * @param method     The method by which a user logged in, e.g. Twitter or Digits.

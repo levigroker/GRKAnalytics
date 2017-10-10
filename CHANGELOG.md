@@ -4,3 +4,4 @@
         install due to static library incompatibilities with the `use_frameworks!`
         directive.
 3.0.1 - 2017/01/03 @levigroker - Addressing documentation warnings. Updating licensing.
+3.1 -   2017/10/10 @levigroker - Adding Firebase provider, delegate capabilities, and some refactoring.

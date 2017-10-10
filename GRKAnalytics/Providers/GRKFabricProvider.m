@@ -6,7 +6,6 @@
 //  Copyright (c) 2016-2017 Levi Brown <mailto:levigroker@gmail.com> This work is
 //  licensed under the Creative Commons Attribution 4.0 International License. To
 //  view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
-//  or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 //
 //  The above attribution and the included license must accompany any version of
 //  the source code, binary distributable, or derivatives.
@@ -19,8 +18,6 @@
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 #import <Crashlytics/Answers.h>
-
-static NSString * const kGRKFabricProviderPropertyKeyCategory = @"Category";
 
 #endif //GRK_ANALYTICS_ENABLED
 
@@ -85,10 +82,10 @@ NS_ASSUME_NONNULL_BEGIN
     {
         properties = properties ?: @{};
         
-        if (category.length > 0)
+		if (category.length > 0 && !properties[self.categoryPropertyName])
         {
             GRK_GENERIC_NSMUTABLEDICTIONARY(NSString *, id) *mutableProperties = [properties mutableCopy];
-            mutableProperties[kGRKFabricProviderPropertyKeyCategory] = category;
+			mutableProperties[self.categoryPropertyName] = category;
             properties = mutableProperties;
         }
         
@@ -97,6 +94,12 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 #pragma mark Event Specific Cases
+
+- (void)trackAppBecameActiveWithCategory:(nullable NSString *)category
+							  properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
+{
+	[self trackEvent:kGRKAnalyticsProviderDefaultEventKeyAppBecameActive category:category properties:properties];
+}
 
 - (void)trackUserAccountCreatedMethod:(nullable NSString *)method
                               success:(nullable NSNumber *)success
@@ -126,7 +129,7 @@ NS_ASSUME_NONNULL_BEGIN
     if (category.length > 0)
     {
         GRK_GENERIC_NSMUTABLEDICTIONARY(NSString *, id) *mutableProperties = [properties mutableCopy];
-        mutableProperties[kGRKFabricProviderPropertyKeyCategory] = category;
+		mutableProperties[self.categoryPropertyName] = category;
         properties = mutableProperties;
     }
     
