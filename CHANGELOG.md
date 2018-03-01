@@ -5,3 +5,4 @@
         directive.
 3.0.1 - 2017/01/03 @levigroker - Addressing documentation warnings. Updating licensing.
 3.1 -   2017/10/10 @levigroker - Adding Firebase provider, delegate capabilities, and some refactoring.
+3.1.1 - 2018/03/01 @levigroker - Addressing NSNumber as BOOL issues.
