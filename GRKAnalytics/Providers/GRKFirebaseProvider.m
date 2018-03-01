@@ -156,7 +156,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 	properties = [self delegatePropertiesForProperties:properties];
 
-	if (success)
+	if (success != nil)
 	{
 		GRK_GENERIC_NSMUTABLEDICTIONARY(NSString *, id) *mutableProperties = [properties mutableCopy];
 		mutableProperties[self.successPropertyName] = success;
@@ -175,7 +175,7 @@ NS_ASSUME_NONNULL_BEGIN
 	
 	properties = [self delegatePropertiesForProperties:properties];
 
-	if (success)
+	if (success != nil)
 	{
 		GRK_GENERIC_NSMUTABLEDICTIONARY(NSString *, id) *mutableProperties = [properties mutableCopy];
 		mutableProperties[self.successPropertyName] = success;

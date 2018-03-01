@@ -167,7 +167,7 @@ NSString * const kGRKGoogleAnalyticsProviderPropertyKeyDefaultCategory = @"defau
                               success:(nullable NSNumber *)success
                            properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
-    GAIDictionaryBuilder *builder = [GAIDictionaryBuilder createEventWithCategory:kGRKUserEventCategory action:kGRKEventUserAccountCreated label:kGRKUserEventLabelSuccess value:success ? @YES : @NO];
+    GAIDictionaryBuilder *builder = [GAIDictionaryBuilder createEventWithCategory:kGRKUserEventCategory action:kGRKEventUserAccountCreated label:kGRKUserEventLabelSuccess value:(success != nil && success.boolValue) ? @YES : @NO];
     properties = [self eventPropertiesWithBuilder:builder properties:properties];
     
     [self queue:properties];
@@ -177,7 +177,7 @@ NSString * const kGRKGoogleAnalyticsProviderPropertyKeyDefaultCategory = @"defau
                      success:(nullable NSNumber *)success
                   properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
-    GAIDictionaryBuilder *builder = [GAIDictionaryBuilder createEventWithCategory:kGRKUserEventCategory action:kGRKEventUserLogin label:kGRKUserEventLabelSuccess value:success ? @YES : @NO];
+    GAIDictionaryBuilder *builder = [GAIDictionaryBuilder createEventWithCategory:kGRKUserEventCategory action:kGRKEventUserLogin label:kGRKUserEventLabelSuccess value:(success != nil && success.boolValue) ? @YES : @NO];
     properties = [self eventPropertiesWithBuilder:builder properties:properties];
     
     [self queue:properties];
@@ -197,7 +197,7 @@ NSString * const kGRKGoogleAnalyticsProviderPropertyKeyDefaultCategory = @"defau
     [self extractLabel:nil andValue:&value fromProperties:properties];
     NSNumber *quantity = value ?: @1;
 
-    if (success)
+    if (success != nil && success.boolValue)
     {
         NSString *transactionID = [[NSUUID UUID] UUIDString];
 
