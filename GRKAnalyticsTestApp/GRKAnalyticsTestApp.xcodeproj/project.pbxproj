@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B62271E108105FBCA821F0EE /* Pods_GRKAnalyticsTestAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACF229B64F23940B21BE472 /* Pods_GRKAnalyticsTestAppTests.framework */; };
+		DB0E26A1207BC8C40002E590 /* FirebaseProviderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0E26A0207BC8C40002E590 /* FirebaseProviderTests.m */; };
 		DB1E427B1C7F7DF300ABC168 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1E427A1C7F7DF300ABC168 /* main.m */; };
 		DB1E427E1C7F7DF300ABC168 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1E427D1C7F7DF300ABC168 /* AppDelegate.m */; };
 		DB1E42811C7F7DF300ABC168 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1E42801C7F7DF300ABC168 /* ViewController.m */; };
@@ -36,6 +37,7 @@
 		3C76847D4B5113B328ED8972 /* Pods-GRKAnalyticsTestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GRKAnalyticsTestAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GRKAnalyticsTestAppTests/Pods-GRKAnalyticsTestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81068001A16F84530486BCF2 /* Pods-GRKAnalyticsTestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GRKAnalyticsTestAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GRKAnalyticsTestAppTests/Pods-GRKAnalyticsTestAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F3D85711715FBBAEA4F507C /* Pods_GRKAnalyticsTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GRKAnalyticsTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0E26A0207BC8C40002E590 /* FirebaseProviderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirebaseProviderTests.m; sourceTree = "<group>"; };
 		DB1E42761C7F7DF300ABC168 /* GRKAnalyticsTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRKAnalyticsTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1E427A1C7F7DF300ABC168 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DB1E427C1C7F7DF300ABC168 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				DB1E42931C7F7DF300ABC168 /* GRKAnalyticsTestAppTests.m */,
 				DB1E42951C7F7DF300ABC168 /* Info.plist */,
+				DB0E26A0207BC8C40002E590 /* FirebaseProviderTests.m */,
 			);
 			path = GRKAnalyticsTestAppTests;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB1E42941C7F7DF300ABC168 /* GRKAnalyticsTestAppTests.m in Sources */,
+				DB0E26A1207BC8C40002E590 /* FirebaseProviderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
