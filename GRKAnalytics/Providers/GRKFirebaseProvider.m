@@ -233,7 +233,7 @@ NS_ASSUME_NONNULL_BEGIN
 	NSString *retVal = string;
 	
 	if (retVal.length > 0) {
-		retVal = [retVal substringToIndex:MIN(retVal.length, maxLength) - 1];
+		retVal = [retVal substringToIndex:MIN(retVal.length, maxLength)];
 	}
 	
 	return retVal;
