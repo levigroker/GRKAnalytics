@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046BE1F7EC395AB38AB8D9B4DD96E986 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		05B1F02560378D28FEBD4E8F6D293216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		1655A624C5524B4F7C8499371EB24DDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 26DBA62B4AB7A8CEE2067F431CDE651B /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3846A71158712BB5E9E35B9660F02682 /* Pods-GRKAnalyticsTestAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC1E4FB0961FC452F0C9A030A1A6D19F /* Pods-GRKAnalyticsTestAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		392F2CF142BAA751AC1BB61D8B757D98 /* pb.h in Headers */ = {isa = PBXBuildFile; fileRef = B40D50AFD6AB31D78BB03268BF8487B4 /* pb.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A50F5C8ECED9627F2EBD97F61BD376D /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC69FF9B3F4478C9B5445D0DB15129 /* pb_common.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc -fno-objc-arc"; }; };
 		468DFD90B6C4DA2F7CFA0C1C89F1B615 /* nanopb-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C41E9D9C0DFA8A5816272584B19727E0 /* nanopb-dummy.m */; };
@@ -26,7 +25,8 @@
 		93D51748565CFEB9490FBA7DA993C5C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		A0247C1137834F7D1E3E126D3B1052CB /* Pods-GRKAnalyticsTestApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E02AF760CB7776943796BD716014CE /* Pods-GRKAnalyticsTestApp-dummy.m */; };
 		A0422965CBAEC3328F260B173681F3ED /* GRKAnalyticsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3901DEAD8DAAA7ECF52C94EFB64ED3DD /* GRKAnalyticsProvider.m */; };
-		D42026574AD0B1F1BBAF97F8CA156869 /* Pods-GRKAnalyticsTestAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE269154DA5543C452E61E4ED7E71309 /* Pods-GRKAnalyticsTestAppTests-dummy.m */; };
+		A2683206FFF365C2698447471873671D /* Pods-GRKAnalyticsTestAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE269154DA5543C452E61E4ED7E71309 /* Pods-GRKAnalyticsTestAppTests-dummy.m */; };
+		D061DDF6A3BB30665688A89C84A782D0 /* Pods-GRKAnalyticsTestAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC1E4FB0961FC452F0C9A030A1A6D19F /* Pods-GRKAnalyticsTestAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D625336D471AE08B86FF549C23EEEC89 /* Pods-GRKAnalyticsTestApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 894832349BCA793A34570455102E72D1 /* Pods-GRKAnalyticsTestApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA5A889CC8853DC1CFFAF868FFB92611 /* GRKAnalytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD8FF8FFD2BE33819FD21F183130FB /* GRKAnalytics-dummy.m */; };
 		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C2AD8976E47F7B01679891FB9A35155 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -53,6 +53,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 00103D6C821BE85971C563025527BA5D;
 			remoteInfo = GoogleToolboxForMac;
+		};
+		9EB48394F1AFDA8B84C079FE4F661871 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C161CD51D4C9EAE1A721456CAD210373;
+			remoteInfo = "Pods-GRKAnalyticsTestApp";
 		};
 		BE3BDFE0D07DE801C8E06C44B61176D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -158,14 +165,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3EC06CF28C3B3328F4C4911089E2683E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1655A624C5524B4F7C8499371EB24DDC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7686CA1B6D1410833365B5CC414FAAE8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,6 +186,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1B416101DF1CDF1428628F2F5F7B8D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDFD15230CF03A4A9EA1560AD31D5A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046BE1F7EC395AB38AB8D9B4DD96E986 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,14 +587,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1541319B0CE799EDC7765D5AD282A447 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3846A71158712BB5E9E35B9660F02682 /* Pods-GRKAnalyticsTestAppTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4547B9AF8085A499AA35614798F8F9E4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -597,6 +596,14 @@
 				806BAA4E00218D70995697C4400BE7A0 /* pb_common.h in Headers */,
 				29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */,
 				E181395E73163EB702FCE9A21403D67B /* pb_encode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A160BAC6E7A8D15F85F27A10C948D79B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D061DDF6A3BB30665688A89C84A782D0 /* Pods-GRKAnalyticsTestAppTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,23 +654,6 @@
 			name = GoogleToolboxForMac;
 			productName = GoogleToolboxForMac;
 			productReference = C507D32D3CFDE3A3230995EF328B9193 /* GoogleToolboxForMac.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A4976E90E18B1ECB070BB640E040A8AD /* Pods-GRKAnalyticsTestAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9B4A7A89E96E3BED91179C91FB9C4FB1 /* Build configuration list for PBXNativeTarget "Pods-GRKAnalyticsTestAppTests" */;
-			buildPhases = (
-				27274638AE2F5C54E8E06142D1A16032 /* Sources */,
-				3EC06CF28C3B3328F4C4911089E2683E /* Frameworks */,
-				1541319B0CE799EDC7765D5AD282A447 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-GRKAnalyticsTestAppTests";
-			productName = "Pods-GRKAnalyticsTestAppTests";
-			productReference = 2AEBC41743EECFA5624BCEA16630AAF2 /* Pods_GRKAnalyticsTestAppTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C161CD51D4C9EAE1A721456CAD210373 /* Pods-GRKAnalyticsTestApp */ = {
@@ -720,6 +710,24 @@
 			productReference = 631A320C2D7DED19A7E858F49F75C38E /* GRKAnalytics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F3035FC163FA05E50B59B5F9BB52F110 /* Pods-GRKAnalyticsTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B1EF684EF24FE94446BDE890CABEA29 /* Build configuration list for PBXNativeTarget "Pods-GRKAnalyticsTestAppTests" */;
+			buildPhases = (
+				8763D8EBDF8DB30F959A953086D4E81E /* Sources */,
+				CBDFD15230CF03A4A9EA1560AD31D5A0 /* Frameworks */,
+				A160BAC6E7A8D15F85F27A10C948D79B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5B06E9129B0E9B9301763AE53CD3B1C /* PBXTargetDependency */,
+			);
+			name = "Pods-GRKAnalyticsTestAppTests";
+			productName = "Pods-GRKAnalyticsTestAppTests";
+			productReference = 2AEBC41743EECFA5624BCEA16630AAF2 /* Pods_GRKAnalyticsTestAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -745,7 +753,7 @@
 				F291F933FC2B1128AE4E528944B2F764 /* GRKAnalytics */,
 				E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */,
 				C161CD51D4C9EAE1A721456CAD210373 /* Pods-GRKAnalyticsTestApp */,
-				A4976E90E18B1ECB070BB640E040A8AD /* Pods-GRKAnalyticsTestAppTests */,
+				F3035FC163FA05E50B59B5F9BB52F110 /* Pods-GRKAnalyticsTestAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -772,20 +780,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		27274638AE2F5C54E8E06142D1A16032 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D42026574AD0B1F1BBAF97F8CA156869 /* Pods-GRKAnalyticsTestAppTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */,
 				F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8763D8EBDF8DB30F959A953086D4E81E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2683206FFF365C2698447471873671D /* Pods-GRKAnalyticsTestAppTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,6 +820,12 @@
 			target = 00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */;
 			targetProxy = 16A80C8D638B582594ED482B96B75C15 /* PBXContainerItemProxy */;
 		};
+		B5B06E9129B0E9B9301763AE53CD3B1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GRKAnalyticsTestApp";
+			target = C161CD51D4C9EAE1A721456CAD210373 /* Pods-GRKAnalyticsTestApp */;
+			targetProxy = 9EB48394F1AFDA8B84C079FE4F661871 /* PBXContainerItemProxy */;
+		};
 		C23BE6E48670CCFD09FB52E28428FC06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GRKAnalytics;
@@ -821,10 +835,166 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0B2DD6B8ADD43533E20A68639A9FC3DA /* Release */ = {
+		026715CF4B653A2704902F9AB30B6A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B44A4F5161DEF701D61C64A139E0054 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				PRODUCT_MODULE_NAME = GoogleToolboxForMac;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		144FB574E0572121860C16D1B5CA1FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254F50C9E6A275515CA5816DA324A015 /* nanopb.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/nanopb/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/nanopb/nanopb.modulemap";
+				PRODUCT_MODULE_NAME = nanopb;
+				PRODUCT_NAME = nanopb;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		17653B5A9313A0651043D499A450CCB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B44A4F5161DEF701D61C64A139E0054 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				PRODUCT_MODULE_NAME = GoogleToolboxForMac;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1DFA63D41AEE50ADDCCCD6F5A4ED4261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73013958FD5CE2032B7035E936996501 /* Pods-GRKAnalyticsTestAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GRKAnalyticsTestAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GRKAnalyticsTestAppTests/Pods-GRKAnalyticsTestAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		23F561AC01CBA5A077ECDB7B35979EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254F50C9E6A275515CA5816DA324A015 /* nanopb.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/nanopb/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/nanopb/nanopb.modulemap";
+				PRODUCT_MODULE_NAME = nanopb;
+				PRODUCT_NAME = nanopb;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29D2351A965AF25DD8C68662C93E7077 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22E1CD88E21775C77FE63353C6937DF0 /* Pods-GRKAnalyticsTestApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -844,7 +1014,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GRKAnalyticsTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -854,7 +1024,40 @@
 			};
 			name = Release;
 		};
-		0F1AF314AAE69DEE4284B7D24F00661E /* Release */ = {
+		AD406E591745E9628C5BFFC8BD4FA421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93B071CBE3DE24D3D96B3116DE9C248D /* Pods-GRKAnalyticsTestApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GRKAnalyticsTestApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GRKAnalyticsTestApp/Pods-GRKAnalyticsTestApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B9AC12289CD8978D51F9223B457E7DCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -886,6 +1089,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -906,48 +1110,16 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		2E6AB8D02279ED77F9C6527D5130321A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73013958FD5CE2032B7035E936996501 /* Pods-GRKAnalyticsTestAppTests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GRKAnalyticsTestAppTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GRKAnalyticsTestAppTests/Pods-GRKAnalyticsTestAppTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GRKAnalyticsTestAppTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		336CE0AF0AD3462C348D975FE46CE037 /* Release */ = {
+		C186221FBBCF8F26F781C50D70EEAD10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DC117BABFB8A16C5A85369F6393CE2C9 /* Pods-GRKAnalyticsTestAppTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -967,7 +1139,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GRKAnalyticsTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -977,157 +1149,7 @@
 			};
 			name = Release;
 		};
-		4CDAAA6D4E69A460C9143DF4A36BEAA3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93B071CBE3DE24D3D96B3116DE9C248D /* Pods-GRKAnalyticsTestApp.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GRKAnalyticsTestApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GRKAnalyticsTestApp/Pods-GRKAnalyticsTestApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GRKAnalyticsTestApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		530831DC1755D4C61A1BEF1680F53435 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 254F50C9E6A275515CA5816DA324A015 /* nanopb.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/nanopb/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/nanopb/nanopb.modulemap";
-				PRODUCT_NAME = nanopb;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7E690743812D4401370169536316D67E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F95533EBA420F8F0CDBA05354CB1CF1A /* GRKAnalytics.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GRKAnalytics/GRKAnalytics-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GRKAnalytics/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GRKAnalytics/GRKAnalytics.modulemap";
-				PRODUCT_NAME = GRKAnalytics;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8431427749EF078DF8F3536D6BCA91C1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F95533EBA420F8F0CDBA05354CB1CF1A /* GRKAnalytics.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GRKAnalytics/GRKAnalytics-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GRKAnalytics/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GRKAnalytics/GRKAnalytics.modulemap";
-				PRODUCT_NAME = GRKAnalytics;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9477C57631552BF3F0AE3DB1E6F39CFD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B44A4F5161DEF701D61C64A139E0054 /* GoogleToolboxForMac.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
-				PRODUCT_NAME = GoogleToolboxForMac;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B30DD4CACE0190C651BCBBF67926B630 /* Debug */ = {
+		DEC9569BB66BEC125260336D8D9273BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1159,6 +1181,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1183,16 +1206,15 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		C6E560E450747CBEFE3E1B5DCFA36DA3 /* Debug */ = {
+		E42303B325AC8337B572DBD776283B52 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B44A4F5161DEF701D61C64A139E0054 /* GoogleToolboxForMac.xcconfig */;
+			baseConfigurationReference = F95533EBA420F8F0CDBA05354CB1CF1A /* GRKAnalytics.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1203,13 +1225,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/GRKAnalytics/GRKAnalytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GRKAnalytics/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
-				PRODUCT_NAME = GoogleToolboxForMac;
+				MODULEMAP_FILE = "Target Support Files/GRKAnalytics/GRKAnalytics.modulemap";
+				PRODUCT_MODULE_NAME = GRKAnalytics;
+				PRODUCT_NAME = GRKAnalytics;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1219,9 +1242,9 @@
 			};
 			name = Debug;
 		};
-		EAD99D5D94CB14651AD1661173DB307B /* Release */ = {
+		E5EC4C45800DFF1C40E27A0A648101CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 254F50C9E6A275515CA5816DA324A015 /* nanopb.xcconfig */;
+			baseConfigurationReference = F95533EBA420F8F0CDBA05354CB1CF1A /* GRKAnalytics.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1232,13 +1255,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/nanopb/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/GRKAnalytics/GRKAnalytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GRKAnalytics/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/nanopb/nanopb.modulemap";
-				PRODUCT_NAME = nanopb;
+				MODULEMAP_FILE = "Target Support Files/GRKAnalytics/GRKAnalytics.modulemap";
+				PRODUCT_MODULE_NAME = GRKAnalytics;
+				PRODUCT_NAME = GRKAnalytics;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1255,8 +1279,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B30DD4CACE0190C651BCBBF67926B630 /* Debug */,
-				0F1AF314AAE69DEE4284B7D24F00661E /* Release */,
+				DEC9569BB66BEC125260336D8D9273BA /* Debug */,
+				B9AC12289CD8978D51F9223B457E7DCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1264,17 +1288,17 @@
 		61DF0592E277CD60198A113AC0330BC7 /* Build configuration list for PBXNativeTarget "Pods-GRKAnalyticsTestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4CDAAA6D4E69A460C9143DF4A36BEAA3 /* Debug */,
-				0B2DD6B8ADD43533E20A68639A9FC3DA /* Release */,
+				AD406E591745E9628C5BFFC8BD4FA421 /* Debug */,
+				29D2351A965AF25DD8C68662C93E7077 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B4A7A89E96E3BED91179C91FB9C4FB1 /* Build configuration list for PBXNativeTarget "Pods-GRKAnalyticsTestAppTests" */ = {
+		8B1EF684EF24FE94446BDE890CABEA29 /* Build configuration list for PBXNativeTarget "Pods-GRKAnalyticsTestAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E6AB8D02279ED77F9C6527D5130321A /* Debug */,
-				336CE0AF0AD3462C348D975FE46CE037 /* Release */,
+				1DFA63D41AEE50ADDCCCD6F5A4ED4261 /* Debug */,
+				C186221FBBCF8F26F781C50D70EEAD10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1282,8 +1306,8 @@
 		C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C6E560E450747CBEFE3E1B5DCFA36DA3 /* Debug */,
-				9477C57631552BF3F0AE3DB1E6F39CFD /* Release */,
+				026715CF4B653A2704902F9AB30B6A59 /* Debug */,
+				17653B5A9313A0651043D499A450CCB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1291,8 +1315,8 @@
 		C7F411D7324709CD0476B37D480A8720 /* Build configuration list for PBXNativeTarget "GRKAnalytics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7E690743812D4401370169536316D67E /* Debug */,
-				8431427749EF078DF8F3536D6BCA91C1 /* Release */,
+				E42303B325AC8337B572DBD776283B52 /* Debug */,
+				E5EC4C45800DFF1C40E27A0A648101CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1300,8 +1324,8 @@
 		F118B0FA84AC9116AB2E480C302C3999 /* Build configuration list for PBXNativeTarget "nanopb" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				530831DC1755D4C61A1BEF1680F53435 /* Debug */,
-				EAD99D5D94CB14651AD1661173DB307B /* Release */,
+				23F561AC01CBA5A077ECDB7B35979EA9 /* Debug */,
+				144FB574E0572121860C16D1B5CA1FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

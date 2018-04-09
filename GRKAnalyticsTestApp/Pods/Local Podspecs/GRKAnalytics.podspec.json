@@ -1,6 +1,6 @@
 {
   "name": "GRKAnalytics",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "summary": "A lightweight abstraction for underlying analytics providers.",
   "homepage": "https://github.com/levigroker/GRKAnalytics",
   "license": "Creative Commons Attribution 3.0 Unported License",
@@ -10,7 +10,7 @@
   "social_media_url": "https://twitter.com/levigroker",
   "source": {
     "git": "https://github.com/levigroker/GRKAnalytics.git",
-    "tag": "3.1.1"
+    "tag": "3.1.2"
   },
   "platforms": {
     "ios": "7.0",
