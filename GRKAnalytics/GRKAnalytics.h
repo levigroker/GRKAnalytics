@@ -36,6 +36,33 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (BOOL)enabled;
 
+/**
+ * Enables or disables user identification.
+ *
+ * If enabled, calls to `identifyUserWithID:andEmailAddress:` will be passed to individual providers.
+ * If disabled, `identifyUserWithID:andEmailAddress:` will not pass any information to providers, and the providers will be updated with `nil` values.
+ *
+ * The default value is `NO`
+ *
+ * NOTE: This has no impact on the usage of `setUserProperty:toValue:` or the properties sent along with other methods, so personally identifiable information may still be provided to providers and should be closely audited to ensure anonymity, as desired.
+ *
+ * @param enabled `YES` to enable user identification, `NO` to disable user identification.
+ * @see `identifyUserWithID:andEmailAddress:`
+ */
++ (void)setUserIdentityEnabled:(BOOL)enabled;
+
+/**
+ * Is user identification enabled?
+ *
+ * If enabled, calls to `identifyUserWithID:andEmailAddress:` will be passed to individual providers.
+ * If disabled, `identifyUserWithID:andEmailAddress:` will not pass any information to providers.
+ * NOTE: This has no impact on the usage of `setUserProperty:toValue:` or the properties sent along with other methods, so personally identifiable information may still be provided to providers and should be closely audited to ensure anonymity, as desired.
+ *
+ * @return `YES` if user identification is enabled, `NO` if it is disabled.
+ * @see `identifyUserWithID:andEmailAddress:`
+ */
++ (BOOL)userIdentityEnabled;
+
 #pragma mark - Providers
 
 + (void)addProvider:(GRKAnalyticsProvider *)analyticsProvider;

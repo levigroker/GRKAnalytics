@@ -20,6 +20,7 @@
 @property (nonatomic,strong) NSMutableDictionary *superProperties;
 @property (nonatomic,strong) NSMutableDictionary *eventsDictionary;
 @property (nonatomic,assign) BOOL enabled;
+@property (nonatomic,assign) BOOL userIdentityEnabled;
 
 @end
 
@@ -42,6 +43,7 @@
     {
         _providers = [NSMutableSet set];
         _enabled = YES;
+		_userIdentityEnabled = NO;
     }
     
     return self;
@@ -57,6 +59,16 @@
 + (BOOL)enabled
 {
     return [[self sharedInstance] enabled];
+}
+
++ (void)setUserIdentityEnabled:(BOOL)enabled;
+{
+	[[self sharedInstance] setUserIdentityEnabled:enabled];
+}
+
++ (BOOL)userIdentityEnabled;
+{
+	return [[self sharedInstance] userIdentityEnabled];
 }
 
 #pragma mark - Providers
@@ -217,6 +229,14 @@
     }
 }
 
+- (void)setUserIdentityEnabled:(BOOL)userIdentityEnabled
+{
+	if (!userIdentityEnabled) {
+		[self identifyUserWithID:nil andEmailAddress:nil];
+	}
+	_userIdentityEnabled = userIdentityEnabled;
+}
+
 #pragma mark - Implementation
 
 #pragma mark - Providers
@@ -243,9 +263,11 @@
 
 - (void)identifyUserWithID:(nullable NSString *)userID andEmailAddress:(nullable NSString *)email
 {
-    [self doForEachProvider:^(GRKAnalyticsProvider *provider) {
-        [provider identifyUserWithID:userID andEmailAddress:email];
-    }];
+	if (self.userIdentityEnabled || (userID.length == 0 && email.length == 0)) {
+		[self doForEachProvider:^(GRKAnalyticsProvider *provider) {
+			[provider identifyUserWithID:userID andEmailAddress:email];
+		}];
+	}
 }
 
 #pragma mark User Properties
