@@ -8,4 +8,12 @@
 3.1.1 - 2018/03/01 @levigroker - Addressing NSNumber as BOOL issues.  
 3.1.2 - 2018/04/09 @jpetrich - Fixed `substringToIndex:` bug in `GRKFirebaseProvider` 
         that cut off last character of strings for user properties. @levigroker - Added
-        new test case for said issue.
+        new test case for said issue.  
+3.2   - 2018/04/19 @levigroker - Adding user identification flag to enable/disable the
+		`identifyUserWithID:andEmailAddress:` method from sending user-identifiable
+		information to the individual providers. This flag **disables** the
+		`identifyUserWithID:andEmailAddress:` method by default. Previous users of this
+		framework should be aware this will break user identification if not explicitly
+		enabled. This change is inspired by the
+		[GDPR legislation](https://techblog.bozho.net/gdpr-practical-guide-developers/).
+		Anyone considering enabling this feature must get the user’s *explicit* consent.
