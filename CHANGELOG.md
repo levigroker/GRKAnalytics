@@ -17,3 +17,6 @@
 		enabled. This change is inspired by the
 		[GDPR legislation](https://techblog.bozho.net/gdpr-practical-guide-developers/).
 		Anyone considering enabling this feature must get the user’s *explicit* consent.
+4.0  -  2018/05/15 @levigroker - Fixing import for Firebase 5.0. Updating
+		copyright/license. Updating deployment targets to iOS 9, macOS 10.12.
+		

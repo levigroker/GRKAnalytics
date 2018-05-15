@@ -1,15 +1,15 @@
 Pod::Spec.new do |s|
   s.name         = "GRKAnalytics"
-  s.version      = "3.2"
+  s.version      = "4.0"
   s.summary      = "A lightweight abstraction for underlying analytics providers."
   s.homepage     = "https://github.com/levigroker/GRKAnalytics"
-  s.license      = 'Creative Commons Attribution 3.0 Unported License'
+  s.license      = 'Creative Commons Attribution 4.0 International License'
   s.author       = { "Levi Brown" => "levigroker@gmail.com" }
   s.social_media_url = 'https://twitter.com/levigroker'
   s.source       = { :git => "https://github.com/levigroker/GRKAnalytics.git", :tag => s.version.to_s }
 
-  s.ios.deployment_target = '7.0'
-  s.osx.deployment_target = '10.9'
+  s.ios.deployment_target = '9.0'
+  s.osx.deployment_target = '10.12'
   s.frameworks = 'Foundation'
   s.source_files = ['GRKAnalytics/*.{h,m}']
   s.user_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'GRK_ANALYTICS_ENABLED=1' }
