@@ -33,10 +33,12 @@ and mechanism of import for these dependencies. For example, if you included the
 GRKAnalytics providers for `Fabric` and `GoogleAnalytics` you would also need to add the
 related pods, like this:
 
-    pod 'Fabric',          '~> 1.6'
-    pod 'Crashlytics',     '~> 3.8'
-    pod 'GoogleAnalytics', '~> 3.17'
-    pod 'Firebase/Core',   '~> 4.0'
+	pod 'Fabric',              '~> 1.6'
+	pod 'Crashlytics',         '~> 3.7'
+	pod 'GoogleAnalytics',     '~> 3.14'
+	pod 'Firebase/Core',       '~> 5.0'
+	pod 'GoogleAnalytics',     '~> 3.14'
+	pod 'AppCenter/Analytics', '~> 1.14'
 
 ### Documentation
 
@@ -81,16 +83,17 @@ it to the `all_analytics` array:
     fabric = { :spec_name => 'Fabric', :provider_class => 'GRKFabricProvider' }
     googleanalytics = { :spec_name => 'GoogleAnalytics', :provider_class => 'GRKGoogleAnalyticsProvider' }
     firebase = { :spec_name => 'Firebase', :provider_class => 'GRKFirebaseProvider' }
+	appcenter = { :spec_name => 'AppCenter', :provider_class => 'GRKAppCenterProvider' }
 
-    all_analytics = [fabric, googleanalytics, firebase]
+	all_analytics = [fabric, googleanalytics, firebase, appcenter]
     ### 
     
 Let's break this down a little...
 
-`fabric`, `googleanalytics`, and `firebase` are the ruby variable names which get assigned
-the associative array with the rest of the information. These names will need to be added
-to the `all_analytics` array so the podspec can generate a dynamic description with the
-supported providers.
+`fabric`, `googleanalytics`, `firebase`, and `appcenter` are the ruby variable names which
+get assigned the associative array with the rest of the information. These names will need
+to be added to the `all_analytics` array so the podspec can generate a dynamic description
+with the supported providers.
 
 The associative array contains several pieces of data:
 
