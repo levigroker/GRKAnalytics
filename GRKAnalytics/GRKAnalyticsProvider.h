@@ -229,6 +229,18 @@ events to the providers if disabled, this method allows the provider to take add
  */
 - (nullable NSString *)delegateEventForEvent:(nullable NSString *)event;
 
+#pragma mark - Helpers
+
+
+/**
+ <#Description#>
+
+ @param string <#string description#>
+ @param maxLength <#maxLength description#>
+ @return <#return value description#>
+ */
+- (nullable NSString *)cropString:(nullable NSString *)string maxLength:(NSUInteger)maxLength;
+
 @end
 
 NS_ASSUME_NONNULL_END

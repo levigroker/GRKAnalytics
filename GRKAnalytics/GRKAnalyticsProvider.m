@@ -202,4 +202,17 @@ NSString *const GRKAnalyticsEventKeyTimingLength = @"length";
 	return retVal;
 }
 
+#pragma mark - Helpers
+
+- (nullable NSString *)cropString:(nullable NSString *)string maxLength:(NSUInteger)maxLength
+{
+	NSString *retVal = string;
+	
+	if (retVal.length > 0) {
+		retVal = [retVal substringToIndex:MIN(retVal.length, maxLength)];
+	}
+	
+	return retVal;
+}
+
 @end

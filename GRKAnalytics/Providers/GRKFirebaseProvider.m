@@ -229,17 +229,6 @@ NS_ASSUME_NONNULL_BEGIN
 	return retVal;
 }
 
-- (nullable NSString *)cropString:(nullable NSString *)string maxLength:(NSUInteger)maxLength
-{
-	NSString *retVal = string;
-	
-	if (retVal.length > 0) {
-		retVal = [retVal substringToIndex:MIN(retVal.length, maxLength)];
-	}
-	
-	return retVal;
-}
-
 // The dictionary of event parameters. Passing nil indicates that the event has
 // no parameters. Parameter names can be up to 40 characters long and must start with an
 // alphabetic character and contain only alphanumeric characters and underscores. Only NSString
