@@ -16,6 +16,7 @@
 
 #ifdef GRK_ANALYTICS_ENABLED
 
+// See https://github.com/Microsoft/AppCenter-SDK-Apple
 #import <AppCenter/AppCenter.h>
 #import <AppCenterAnalytics/AppCenterAnalytics.h>
 #import <AppCenterCrashes/AppCenterCrashes.h>
