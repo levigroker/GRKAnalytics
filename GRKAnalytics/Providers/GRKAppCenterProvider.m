@@ -52,6 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)identifyUserWithID:(nullable NSString *)userID andEmailAddress:(nullable NSString *)email
 {
 	[MSAppCenter setUserId:userID];
+	[self setUserProperty:kGRKAnalyticsProviderDefaultPropertyKeyUserEmail toValue:email];
 }
 
 #pragma mark User Properties
