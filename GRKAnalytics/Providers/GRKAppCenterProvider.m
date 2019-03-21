@@ -30,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 {
 	[super setEnabled:enabled];
 	[MSAnalytics setEnabled:enabled];
+	[MSCrashes setEnabled:enabled];
 	// Disable *all* AppCenter services
 	if (!enabled) {
 		[MSAppCenter setEnabled:NO];
@@ -38,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)enabled
 {
-	BOOL enabled = 	MSAnalytics.isEnabled;
+	BOOL enabled = 	MSAnalytics.isEnabled || MSCrashes.isEnabled;
 	return enabled;
 }
 
