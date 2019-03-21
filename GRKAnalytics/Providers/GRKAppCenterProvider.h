@@ -11,8 +11,7 @@
 //  the source code, binary distributable, or derivatives.
 //
 
-#import "GRKAnalyticsProvider.h"
-#import "GRKLanguageFeatures.h"
+#import <GRKAnalytics/GRKAnalyticsProvider.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,20 +19,20 @@ NS_ASSUME_NONNULL_BEGIN
 static NSString *const kGRKAppCenterAnalyticsEventAppOpen NS_SWIFT_NAME(AnalyticsEventAppOpen) = @"app_open";
 
 // Login event
-static NSString *const kGRKAppCenterAnalyticsEventLogin NS_SWIFT_NAME(AnalyticsEventLogin) = @"login";
+static NSString *const kGRKAppCenterAnalyticsEventLogin NS_SWIFT_NAME(AnalyticsEventLogin) = @"user_login";
 // SignUp event
-static NSString *const kGRKAppCenterAnalyticsEventSignUp NS_SWIFT_NAME(AnalyticsEventSignUp) = @"sign_up";
+static NSString *const kGRKAppCenterAnalyticsEventSignUp NS_SWIFT_NAME(AnalyticsEventSignUp) = @"user_sign_up";
 // Login/SignUp method property
 static NSString *const kGRKAppCenterAnalyticsPropertySignUpMethod NS_SWIFT_NAME(AnalyticsPropertySignUpMethod) = @"sign_up_method";
 
 // Purcahse event
 static NSString *const kGRKAppCenterAnalyticsEventPurchase NS_SWIFT_NAME(AnalyticsEventPurchase) = @"purchase";
 // Purchase properties
-static NSString *const kGRKAppCenterAnalyticsPropertyPrice NS_SWIFT_NAME(AnalyticsPropertyPrice) = @"price";
-static NSString *const kGRKAppCenterAnalyticsPropertyCurrency NS_SWIFT_NAME(AnalyticsPropertyCurrency) = @"currency";
-static NSString *const kGRKAppCenterAnalyticsPropertyItemName NS_SWIFT_NAME(AnalyticsPropertyItemName) = @"item_name";
-static NSString *const kGRKAppCenterAnalyticsPropertyItemType NS_SWIFT_NAME(AnalyticsPropertyItemType) = @"item_type";
-static NSString *const kGRKAppCenterAnalyticsPropertyItemID NS_SWIFT_NAME(AnalyticsPropertyItemID) = @"item_id";
+static NSString *const kGRKAppCenterAnalyticsPropertyPrice NS_SWIFT_NAME(AnalyticsPropertyPrice) = @"purchase_price";
+static NSString *const kGRKAppCenterAnalyticsPropertyCurrency NS_SWIFT_NAME(AnalyticsPropertyCurrency) = @"purchase_currency";
+static NSString *const kGRKAppCenterAnalyticsPropertyItemName NS_SWIFT_NAME(AnalyticsPropertyItemName) = @"purchase_item_name";
+static NSString *const kGRKAppCenterAnalyticsPropertyItemType NS_SWIFT_NAME(AnalyticsPropertyItemType) = @"purchase_item_type";
+static NSString *const kGRKAppCenterAnalyticsPropertyItemID NS_SWIFT_NAME(AnalyticsPropertyItemID) = @"purchase_item_id";
 
 // Content View event
 static NSString *const kGRKAppCenterAnalyticsEventContentView NS_SWIFT_NAME(AnalyticsEventContentView) = @"content_view";
