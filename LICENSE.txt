@@ -2,7 +2,7 @@ GRKAnalytics
 https://github.com/levigroker/GRKAnalytics
 A lightweight abstraction for underlying analytics providers.
 
-Copyright (c) 2016-2018 Levi Brown <mailto:levigroker@gmail.com> This work is
+Copyright (c) 2016-2019 Levi Brown <mailto:levigroker@gmail.com> This work is
 licensed under the Creative Commons Attribution 4.0 International License. To
 view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
 

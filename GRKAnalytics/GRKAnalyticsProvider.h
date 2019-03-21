@@ -23,8 +23,9 @@ extern NSString * const kGRKAnalyticsProviderDefaultEventKeyError;
 
 extern NSString * const kGRKAnalyticsProviderDefaultPropertyKeyCategory;
 extern NSString * const kGRKAnalyticsProviderDefaultPropertyKeySuccess;
+extern NSString * const kGRKAnalyticsProviderDefaultPropertyKeyUserEmail;
 
-extern NSString * const GRKAnalyticsEventKeyTimingLength;
+extern NSString * const GRKAnalyticsEventKeyEventDuration;
 
 @protocol GRKAnalyticsProviderDelegate <NSObject>
 
@@ -228,6 +229,18 @@ events to the providers if disabled, this method allows the provider to take add
  * @return If a non-nil answer is available from the delegate, that answer will be returned, otherwise this returns the given event.
  */
 - (nullable NSString *)delegateEventForEvent:(nullable NSString *)event;
+
+#pragma mark - Helpers
+
+
+/**
+ <#Description#>
+
+ @param string <#string description#>
+ @param maxLength <#maxLength description#>
+ @return <#return value description#>
+ */
+- (nullable NSString *)cropString:(nullable NSString *)string maxLength:(NSUInteger)maxLength;
 
 @end
 

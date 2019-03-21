@@ -1,6 +1,6 @@
 {
   "name": "GRKAnalytics",
-  "version": "4.0",
+  "version": "4.1",
   "summary": "A lightweight abstraction for underlying analytics providers.",
   "homepage": "https://github.com/levigroker/GRKAnalytics",
   "license": "Creative Commons Attribution 4.0 International License",
@@ -10,7 +10,7 @@
   "social_media_url": "https://twitter.com/levigroker",
   "source": {
     "git": "https://github.com/levigroker/GRKAnalytics.git",
-    "tag": "4.0"
+    "tag": "4.1"
   },
   "platforms": {
     "ios": "9.0",
@@ -23,5 +23,5 @@
   "user_target_xcconfig": {
     "GCC_PREPROCESSOR_DEFINITIONS": "GRK_ANALYTICS_ENABLED=1"
   },
-  "description": "GRKAnalytics is a lightweight abstraction allowing for the agnostic use of multiple and varying analytics providers. Supported providers: Fabric, GoogleAnalytics and Firebase."
+  "description": "GRKAnalytics is a lightweight abstraction allowing for the agnostic use of multiple and varying analytics providers. Supported providers: Fabric, GoogleAnalytics, Firebase and AppCenter."
 }
