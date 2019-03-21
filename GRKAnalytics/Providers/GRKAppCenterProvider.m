@@ -245,7 +245,7 @@ NS_ASSUME_NONNULL_BEGIN
 	MSEventProperties *msProperties = nil;
 	
 	if (properties) {
-		MSEventProperties *msProperties = [[MSEventProperties alloc] init];
+		msProperties = [[MSEventProperties alloc] init];
 		
 		// "An event property's value may be one of the following types: NSString, double, int64_t, BOOL and NSDate."
 		// We only accept objects, so `BOOL` is not an option (use `NSNumber`).
