@@ -2,6 +2,8 @@ PODS:
   - AppCenter/Analytics (1.14.0):
     - AppCenter/Core
   - AppCenter/Core (1.14.0)
+  - AppCenter/Crashes (1.14.0):
+    - AppCenter/Core
   - Crashlytics (3.12.0):
     - Fabric (~> 1.9.0)
   - Fabric (1.9.0)
@@ -59,6 +61,7 @@ PODS:
 
 DEPENDENCIES:
   - AppCenter/Analytics (~> 1.14)
+  - AppCenter/Crashes (~> 1.14)
   - Crashlytics (~> 3.7)
   - Fabric (~> 1.6)
   - Firebase/Core (~> 5.0)
@@ -97,6 +100,6 @@ SPEC CHECKSUMS:
   GRKAnalytics: da0ca76a08db9891a256e88746f2901d2a6746ae
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 07ae65d4ad6fb381a3170f468c2f55a0db379952
+PODFILE CHECKSUM: f2757d086720b6a791c610f4e35002bc7c5f219b
 
 COCOAPODS: 1.6.1
