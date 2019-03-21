@@ -23,8 +23,9 @@ extern NSString * const kGRKAnalyticsProviderDefaultEventKeyError;
 
 extern NSString * const kGRKAnalyticsProviderDefaultPropertyKeyCategory;
 extern NSString * const kGRKAnalyticsProviderDefaultPropertyKeySuccess;
+extern NSString * const kGRKAnalyticsProviderDefaultPropertyKeyUserEmail;
 
-extern NSString * const GRKAnalyticsEventKeyTimingLength;
+extern NSString * const GRKAnalyticsEventKeyEventDuration;
 
 @protocol GRKAnalyticsProviderDelegate <NSObject>
 

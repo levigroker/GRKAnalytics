@@ -14,14 +14,14 @@
 
 #import "GRKAnalyticsProvider.h"
 
-NSString * const kGRKAnalyticsProviderDefaultEventKeyAppBecameActive = @"App Became Active";
-NSString * const kGRKAnalyticsProviderDefaultEventKeyError = @"Error";
+NSString * const kGRKAnalyticsProviderDefaultEventKeyAppBecameActive = @"app_became_active";
+NSString * const kGRKAnalyticsProviderDefaultEventKeyError = @"error";
 
-NSString * const kGRKAnalyticsProviderDefaultPropertyKeyCategory = @"Category";
-NSString * const kGRKAnalyticsProviderDefaultPropertyKeySuccess = @"Success";
+NSString * const kGRKAnalyticsProviderDefaultPropertyKeyCategory = @"category";
+NSString * const kGRKAnalyticsProviderDefaultPropertyKeySuccess = @"success";
+NSString * const kGRKAnalyticsProviderDefaultPropertyKeyUserEmail = @"user_email";
 
-
-NSString *const GRKAnalyticsEventKeyTimingLength = @"length";
+NSString *const GRKAnalyticsEventKeyEventDuration = @"event_duration";
 
 @interface GRKAnalyticsProvider ()
 
@@ -139,10 +139,10 @@ NSString *const GRKAnalyticsEventKeyTimingLength = @"length";
             timeInterval:(NSTimeInterval)timeInterval
               properties:(nullable GRK_GENERIC_NSDICTIONARY(NSString *, id) *)properties
 {
-    NSAssert(!properties[GRKAnalyticsEventKeyTimingLength], @"Timing event '%@' contains custom property which conflicts with internal key '%@'", event, GRKAnalyticsEventKeyTimingLength);
+    NSAssert(!properties[GRKAnalyticsEventKeyEventDuration], @"Timing event '%@' contains custom property which conflicts with internal key '%@'", event, GRKAnalyticsEventKeyEventDuration);
     
     NSMutableDictionary *mutableProperties = [NSMutableDictionary dictionaryWithDictionary:properties];
-    mutableProperties[GRKAnalyticsEventKeyTimingLength] = @(timeInterval);
+    mutableProperties[GRKAnalyticsEventKeyEventDuration] = @(timeInterval);
     
     [self trackEvent:event category:category properties:mutableProperties];
 }
