@@ -39,6 +39,7 @@ related pods, like this:
 	pod 'Firebase/Core',       '~> 5.0'
 	pod 'GoogleAnalytics',     '~> 3.14'
 	pod 'AppCenter/Analytics', '~> 1.14'
+	pod 'AppCenter/Crashes',   '~> 1.14'
 
 ### Documentation
 

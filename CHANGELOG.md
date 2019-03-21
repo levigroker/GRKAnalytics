@@ -19,4 +19,4 @@
 		Anyone considering enabling this feature must get the user’s *explicit* consent.
 4.0  -  2018/05/15 @levigroker - Fixing import for Firebase 5.0. Updating
 		copyright/license. Updating deployment targets to iOS 9, macOS 10.12.
-		
+4.1 -   2019/03/21 @levigroker - Adding Microsoft App Center Analytics provider.
