@@ -12,6 +12,7 @@
 //
 
 #import "GRKAppCenterProvider.h"
+#import <GRKAnalytics/GRKLanguageFeatures.h>
 
 #ifdef GRK_ANALYTICS_ENABLED
 
